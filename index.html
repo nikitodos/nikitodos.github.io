@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<!--
+			
+				0-----------------------------------------------------------0
+				|                                                           |\
+				|    0               0   0          0                       | \
+				|    |               |   |          |                       |  \
+				|    |               |   |          |                       |   0
+				|    |               |   0          0                       |   |
+				|    |               |  / \        /|                       |   |
+				|    |               | 0   0------0 |                       | \ |
+				|    |               |              |                       |   |
+				|    0       0       0    0-----0 0 | 0       0  0---0		|   |
+				|     \     / \     /    /       \| |  \     /  /     \	    |   |
+				|      \   /   \   /    0         0 |   \   /  0-------0    | \ |
+				|       \ /     \ /      \       /| |    \ /    \           |   |
+				|        0       0        0-----0 0 0     0      0---0      |   |
+				|															|   |
+				|              WRITTEN BY GIOVANNI N. D'ALOISIO             | \ |
+				|															|   |
+				|                 =========================                 |   |
+				|                                                           |   |
+				|    YOU ARE NOT ALLOWED TO REDISTRIBUTE, COPY OR MODIFY    | \ |
+				|  THIS CODE WITHOUT EXPLICIT PERMISSION OF THE WEBMASTER.  |   |
+				|                                                           |   |
+				|                 =========================                 |   |
+				|                                                           | \ |
+				|   Theory is when you know everything but nothing works,   |   |
+				| practice is when everything works but you don't know why. |   |
+				|                                                           |   |
+				|           Here theory and pratice are combined,           | \ |
+				|        because nothing works and we don't know why.       |   |
+				|                                                           |   |
+				0-----------------------------------------------------------0   |
+				 \   \     \      \     \     \     \     \     \     \      \  |
+				  \     \     \     \     \     \     \     \     \     \     \ |
+				   \       \     \     \     \     \     \     \     \    \    \|
+				    0-----------------------------------------------------------0
+			
+		-->
+		
+		<title>Ikarus-Y Encrypted RC</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<meta charset="utf-8" />
+		<meta name="description" content="Software di gestione volo da remoto per Ikarus-Y con Laserfan Mark II.">
+		<meta name="author" content="Giovanni Nicola D'Aloisio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" href="resources/animate.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
+		
+		<!--
+		
+			h1 = Fascia centrale
+			h2 = Pulsante centrale
+			h3 = Links & Copyright
+			h4 = Pannello di controllo
+			
+		-->
+		
+		<style>
+				body {
+					-webkit-touch-callout: none; /* iOS Safari */
+    				-webkit-user-select: none; /* Safari */
+   		    		-moz-user-select: none; /* Firefox */
+   			     	-ms-user-select: none; /* Edge */
+     			    user-select: none; /* Blink */
+					background-color: black;
+				}
+				#bg {
+					position: fixed;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background: url(resources/bg.jpg) no-repeat center top;
+					background-position: center;
+					background-size: cover;
+					z-index: -1;
+					opacity: 0.75;
+					filter: blur(5px);
+				}
+				a {
+					text-decoration: none;
+				}
+				p {
+					height: 100px;
+				}
+				#h1 {
+					position: fixed;
+					left: 0;
+					top: 40%;
+					width: 100%;
+					padding: 0px 0;
+					transition-duration: 0.5s;
+					text-shadow: 1px 1px 1px black;
+				}
+				#h1:hover {
+					position: absolute;
+					left: 0;
+					top: 40%;
+					width: 100%;
+					padding: 0px 0;
+					transition-duration: 0.5s;
+					text-shadow: 1px 1px 1px black;
+				}
+				#h2 {
+					position: relative;
+					margin: 0 auto;
+					width: 75%;
+					text-align: center;
+					text-decoration: none;
+					text-shadow: 1px 1px 1px black;
+					animation: fadeIn 1s;
+					transition-duration: 0.5s;
+				}
+				#h2:hover {
+					position: relative;
+					margin: 0 auto;
+					width: 75%;
+					text-align: center;
+					text-decoration: none;
+					text-shadow: 1px 1px 1px black;
+					animation: pulse 1s;
+					transition-duration: 0.5s;
+    			}
+				h3 {
+					position: fixed;
+					bottom: 0em;
+					left: 0;
+					width: 100%;
+					font-family: "Source Sans Pro", Source Sans Pro, serif;
+					text-align: center;
+					text-decoration: none;
+					font-style: normal;
+					font-size: 1.25em;
+					text-shadow: 1px 1px 1px black;
+					color:#FFFFFF
+				}
+				#h4 {
+					position: absolute;
+					margin: 0 auto;
+					width: 75%;
+					top: 10%;
+					margin-bottom: 10%;
+					left: 12.5%;
+					background-color: #FFFFFF;
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					border-radius: 10px 10px 10px 10px;
+					font-family: "Source Sans Pro", Source Sans Pro, sans-serif;
+					text-align: center;
+					text-decoration: none;
+					font-style: normal;
+					font-size: 0.9em;
+					opacity: 0.9;
+					animation: fadeIn 1s;
+					transition-duration: 0.5s;
+				}
+				#h4:hover {
+					position: absolute;
+					margin:0 auto;
+					width: 75%;
+					top: 10%;
+					margin-bottom: 10%;
+					left: 12.5%;
+					background-color: #FFFFFF;
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					border-radius: 10px 10px 10px 10px;
+					font-family: "Source Sans Pro", Source Sans Pro, sans-serif;
+					text-align: center;
+					text-decoration: none;
+					font-style: normal;
+					font-size: 0.9em;
+					opacity: 1;
+					animation: fadeIn 1s;
+					transition-duration: 0.5s;
+				}
+				#h4a {
+					font-family: 'Source Sans Pro', sans-serif;
+					text-align: center;
+					text-decoration: none;
+					font-style: normal;
+					font-size: 1.25em;
+				}
+				
+				@media only screen and (max-width: 768px) {
+					#h1 {
+						top: 40%;
+					}
+					#h1:hover {
+						top: 40%;
+					}
+					#h2 {
+						width: 90%;
+					}
+					#h2:hover {
+						width: 90%;
+					}
+					#h4 {
+						width: 90%;
+						top: 5%;
+						left: 5%;
+					}
+					#h4:hover {
+						width: 90%;
+						top: 5%;
+						left: 5%;
+					}
+					.responsive {
+						width: 90%;
+						max-width: 350px;
+						height: auto;
+					}
+				}
+
+		</style>
+		
+		<!-- Script per div a comparsa -->
+		
+		<script type="text/javascript" language="javascript">
+			function visualizza(id){
+			  if (document.getElementById){
+				if(document.getElementById(id).style.display == 'none'){
+				  document.getElementById(id).style.display = 'block';
+				}else{
+				  document.getElementById(id).style.display = 'none';
+				}
+			  }
+			}
+		</script>
+
+	</head>
+	
+	<body>
+	
+		<!-- Disattiva click destro, F12, combinazioni di salvataggio pagina -->
+	
+		<script language="JavaScript">
+ 			window.onload = function() {
+ 				document.addEventListener("contextmenu", function(e){e.preventDefault();}, false);
+  				document.addEventListener("keydown", function(e) {
+					//document.onkeydown = function(e) {
+					// "I" key
+					if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {disabledEvent(e);}
+					// "J" key
+					if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {disabledEvent(e);}
+					// "S" key + macOS
+					if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {disabledEvent(e);}
+					// "U" key
+					if (e.ctrlKey && e.keyCode == 85) {disabledEvent(e);}
+					// "F12" key
+					if (event.keyCode == 123) {disabledEvent(e);}
+  			  	}, false);
+  			  	function disabledEvent(e){
+					if (e.stopPropagation){e.stopPropagation();}
+					else if (window.event){window.event.cancelBubble = true;}
+  			   		e.preventDefault();
+     				return false;
+    			}
+  			};
+		</script>
+		
+		<!-- Sfondo -->
+		
+		<div id="bg"></div>
+		<p></p>
+		
+		<!-- Elemento centrale -->
+		
+		<div id=h1>
+			<div id=h2 class="animated fadeIn"><a href="#" onclick="visualizza('h4'); return false" style="color:#FFFFFF" title="Pannello di controllo"><img src="resources/astrologo.png" class="responsive" style="width:900px;"></a></div>
+		</div>
+		<p></p>
+		
+		<!-- Links & Copyright -->
+		
+		<h3 class="animated fadeIn">
+		
+			<br>
+			
+			<font style="font-size:0.8em;" color="#FFFFFF">Disegno di <a href="https://www.instagram.com/thisisgiovannidaloisio/" style="color:#FFFFFF" target=”_blank” title="Giovanni N. D'Aloisio">Giovanni Nicola D'Aloisio</a>.</font>
+			
+		</h3>
+		
+		<!-- Pannello di controllo -->
+		
+		<div id=h4 style="display:none">
+		
+			<div id=h4a onclick="visualizza('h4'); return false">
+				<br><br><img src="resources/ikaruslogo.png" alt="Ops!" width="250"><br>
+			</div>
+			
+			<div id=h4a>
+				<br><strong>Sezione di macchina</strong><br><br>
+			</div>
+			
+			<img src="resources/machine/fan-on.png" alt="Ops!" height="350">
+			<img src="resources/machine/valve-on.png" alt="Ops!" height="350">
+			<img src="resources/machine/scr-off.png" alt="Ops!" height="350">
+			<img src="resources/machine/plume-on.png" alt="Ops!" height="350">
+			
+			<br><br>
+			
+			<div id=h4a>
+				<br><strong>Sezione di coperta</strong><br><br>
+			</div>
+
+			<div id=h4a style="float: left;">
+				&emsp; <iframe width="400" height="400" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDk76P-xDJgdGSd6FqCrf_kpePo-aPBr6w&q=Space+Needle,Seattle+WA">
+				</iframe>
+				<br><br>
+			</div>
+			
+			<br><br>
+			
+		</div>
+		
+	</body>
+	
+</html>
