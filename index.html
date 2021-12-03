@@ -6,18 +6,18 @@
 			
 				0-----------------------------------------------------------0
 				|                                                           |\
-				|    0               0   0          0                       | \
-				|    |               |   |          |                       |  \
-				|    |               |   |          |                       |   0
-				|    |               |   0          0                       |   |
-				|    |               |  / \        /|                       |   |
-				|    |               | 0   0------0 |                       | \ |
-				|    |               |              |                       |   |
-				|    0       0       0    0-----0 0 | 0       0  0---0		|   |
-				|     \     / \     /    /       \| |  \     /  /     \	    |   |
-				|      \   /   \   /    0         0 |   \   /  0-------0    | \ |
-				|       \ /     \ /      \       /| |    \ /    \           |   |
-				|        0       0        0-----0 0 0     0      0---0      |   |
+				|                      0            0 - 0        0          | \
+				|                     / \          / \ - \       |          |  \
+				|                    /   \        /   \ - \      |          |   0
+				|                   /     \      /     \ - \     |          |   |
+				|                  /       \    0 ----- 0 - 0    |          |   |
+				|                 /         \    \ \ \ \ \ \ \   |          | \ |
+				|                /           \                   |          |   |
+				|               0 ------------0            0 ----0          |   |
+				|              /               \          /      |          |   |
+				|             /                 \        0       |          | \ |
+				|            /                   \        \      |          |   |
+				|           0                     0        0 ----0          |   |
 				|															|   |
 				|              WRITTEN BY GIOVANNI N. D'ALOISIO             | \ |
 				|															|   |
@@ -35,9 +35,9 @@
 				|        because nothing works and we don't know why.       |   |
 				|                                                           |   |
 				0-----------------------------------------------------------0   |
-				 \   \     \      \     \     \     \     \     \     \      \  |
+				 \     \     \     \     \     \     \     \     \     \     \  |
 				  \     \     \     \     \     \     \     \     \     \     \ |
-				   \       \     \     \     \     \     \     \     \    \    \|
+				   \     \     \     \     \     \     \     \     \     \     \|
 				    0-----------------------------------------------------------0
 			
 		-->
@@ -279,9 +279,7 @@
 		
 		<h3 class="animated fadeIn">
 		
-			<br>
-			
-			<font style="font-size:0.8em;" color="#FFFFFF">Disegno di <a href="https://www.instagram.com/thisisgiovannidaloisio/" style="color:#FFFFFF" target=”_blank” title="Giovanni N. D'Aloisio">Giovanni Nicola D'Aloisio</a>.</font>
+			<br><font style="font-size:0.8em;" color="#FFFFFF">Disegno di <a href="https://www.instagram.com/thisisgiovannidaloisio/" style="color:#FFFFFF" target=”_blank” title="Giovanni N. D'Aloisio">Giovanni Nicola D'Aloisio</a>.</font>
 			
 		</h3>
 		
@@ -296,23 +294,72 @@
 			<div id=h4a>
 				<br><strong>Sezione di macchina</strong><br><br>
 			</div>
-			
-			<img src="resources/machine/fan-on.png" alt="Ops!" height="350">
-			<img src="resources/machine/valve-on.png" alt="Ops!" height="350">
-			<img src="resources/machine/scr-off.png" alt="Ops!" height="350">
-			<img src="resources/machine/plume-on.png" alt="Ops!" height="350">
-			
-			<br><br>
+				
+				<!-- Schema interattivo -->>
+
+				<img id="fan" src="resources/machine/fan-off.png" height="350" onclick="fan()">
+
+				<script>
+					function fan() {
+						// To be written: send a boolean i as true to Arduino for stating component startup
+						//
+
+						// Then, update the status image (when Arduino resends i = true) - Debugged
+						var i;
+						if(i) {document.getElementById("fan").src = "resources/machine/fan-on.png";}
+						else {document.getElementById("fan").src = "resources/machine/fan-off.png";}
+					}
+				</script>
+
+				<img id="valve" src="resources/machine/valve-off.png" height="350" onclick="valve()">
+
+				<script>
+					function valve() {
+						// To be written: send a boolean i as true to Arduino for stating component startup
+						//
+
+						// Then, update the status image (when Arduino resends i = true) - Debugged
+						var i;
+						if(i) {document.getElementById("valve").src = "resources/machine/valve-on.png";}
+						else {document.getElementById("valve").src = "resources/machine/valve-off.png";}
+					}
+				</script>
+
+				<img id="scr" src="resources/machine/scr-off.png" height="350" onclick="scr()">
+
+				<script>
+					function scr() {
+						// To be written: send a boolean i as true to Arduino for stating component startup
+						//
+
+						// Then, update the status image (when Arduino resends i = true) - Debugged
+						var i;
+						if(i) {document.getElementById("scr").src = "resources/machine/scr-on.png";}
+						else {document.getElementById("scr").src = "resources/machine/scr-off.png";}
+					}
+				</script>
+
+				<img id="plume" src="resources/machine/plume-off.png" height="350" onclick="plume()">
+
+				<script>
+					function plume() {
+						// To be written: send a boolean i as true to Arduino for stating component startup
+						//
+
+						// Then, update the status image (when Arduino resends i = true) - Debugged
+						var i;
+						if(i) {document.getElementById("plume").src = "resources/machine/plume-on.png";}
+						else {document.getElementById("plume").src = "resources/machine/plume-off.png";}
+					}
+				</script>
+
+				<br><br>
 			
 			<div id=h4a>
 				<br><strong>Sezione di coperta</strong><br><br>
 			</div>
 
-			<div id=h4a style="float: left;">
-				&emsp; <iframe width="400" height="400" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDk76P-xDJgdGSd6FqCrf_kpePo-aPBr6w&q=Space+Needle,Seattle+WA">
-				</iframe>
-				<br><br>
-			</div>
+			Scrivi qualcosa.
 			
 			<br><br>
 			
