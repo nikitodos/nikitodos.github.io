@@ -19,7 +19,7 @@
 				|            / /                 \ \    \      | |          |   |
 				|           0 0                   0 0    0 ----0 0          |   |
 				|															|   |
-				|              WRITTEN BY GIOVANNI N. D'ALOISIO             | \ |
+				|     WRITTEN BY GIOVANNI N. D'ALOISIO, a.k.a. NikitoDos    | \ |
 				|															|   |
 				|                 =========================                 |   |
 				|                                                           |   |
@@ -42,7 +42,7 @@
 			
 		-->
 		
-		<title>Ikarus-Y Encrypted RC</title>
+		<title>Astrodynamics Space Framework</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<meta charset="utf-8" />
 		<meta name="description" content="Software di gestione volo da remoto per Ikarus-Y con Laserfan Mark III.">
@@ -143,10 +143,10 @@
 				#h4 {
 					position: absolute;
 					margin: 0 auto;
-					width: 75%;
-					top: 10%;
+					width: 90%;
+					top: 5%;
 					margin-bottom: 10%;
-					left: 12.5%;
+					left: 5%;
 					background-color: #FFFFFF;
 					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 					border-radius: 10px 10px 10px 10px;
@@ -162,10 +162,10 @@
 				#h4:hover {
 					position: absolute;
 					margin:0 auto;
-					width: 75%;
-					top: 10%;
+					width: 90%;
+					top: 5%;
 					margin-bottom: 10%;
-					left: 12.5%;
+					left: 5%;
 					background-color: #FFFFFF;
 					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 					border-radius: 10px 10px 10px 10px;
@@ -185,7 +185,19 @@
 					font-style: normal;
 					font-size: 1.25em;
 				}
-				
+				.button {
+					background-color: #FFFFFF;
+					border-color: #2B292E;
+					border-width: 1 px;
+					color: black;
+					padding: 5px 10px;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+					font-size: 16px;
+					margin: 2px 2px;
+					cursor: pointer;
+				}
 				@media only screen and (max-width: 768px) {
 					#h1 {
 						top: 40%;
@@ -215,7 +227,6 @@
 						height: auto;
 					}
 				}
-
 		</style>
 		
 		<!-- Script per div a comparsa -->
@@ -271,7 +282,7 @@
 		<!-- Elemento centrale -->
 		
 		<div id=h1>
-			<div id=h2 class="animated fadeIn"><a href="#" onclick="visualizza('h4'); return false" style="color:#FFFFFF" title="Pannello di controllo"><img src="resources/astrologo.png" class="responsive" style="width:900px;"></a></div>
+			<div id=h2 class="animated fadeIn"><a href="#" onclick="visualizza('h4'); return false" style="color:#FFFFFF" title="Pannello di controllo"><img src="resources/ikaruslogo.png" class="responsive" style="width:300px;"></a></div>
 		</div>
 		<p></p>
 		
@@ -279,7 +290,7 @@
 		
 		<h3 class="animated fadeIn">
 		
-			<br><font style="font-size:0.8em;" color="#FFFFFF">Disegno di <a href="https://www.instagram.com/thisisgiovannidaloisio/" style="color:#FFFFFF" target=”_blank” title="Giovanni N. D'Aloisio">Giovanni Nicola D'Aloisio</a>.</font>
+			<br><font style="font-size:0.8em;" color="#FFFFFF">Designed and engineered by <a href="https://github.com/nikitodos/" style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio">NikitoDos</a>.</font>
 			
 		</h3>
 		
@@ -288,79 +299,164 @@
 		<div id=h4 style="display:none">
 		
 			<div id=h4a onclick="visualizza('h4'); return false">
-				<br><br><img src="resources/ikaruslogo.png" alt="Ops!" width="250"><br>
+				<br><br><strong><u>Ikarus-Y Remote Control Panel</u></strong><br>
 			</div>
 			
 			<div id=h4a>
-				<br><strong>Sezione di macchina</strong><br><br>
+				<br><strong>Engineering section</strong><br><br>
 			</div>
-				
-				<!-- Schema interattivo -->>
+			
+			<center><table>
 
-				<img id="fan" src="resources/machine/fan-off.png" height="350" onclick="fan()">
+				<tr>
 
-				<script>
-					function fan() {
-						// To be written: send a boolean i as true to Arduino for stating component startup
-						//
+					<td>
 
-						// Then, update the status image (when Arduino resends i = true) - Debugged
-						var i;
-						if(i) {document.getElementById("fan").src = "resources/machine/fan-on.png";}
-						else {document.getElementById("fan").src = "resources/machine/fan-off.png";}
-					}
-				</script>
+						<table>	
+							<tr>
+								<td><center><button class="button">Temperature</button></center></td>
+								<td><center><button class="button">Gears</button></center></td>
+							</tr>
+							<tr>
+								<td><center><button class="button">27.5 °C</button></center></td>		<!-- Misure SI -->
+								<td><center><button class="button">OFF</button></center></td>
+							</tr>
+						</table>
 
-				<img id="valve" src="resources/machine/valve-off.png" height="350" onclick="valve()">
+					</td>
 
-				<script>
-					function valve() {
-						// To be written: send a boolean i as true to Arduino for stating component startup
-						//
+					<td>
+						&emsp; &emsp;
+					</td>
 
-						// Then, update the status image (when Arduino resends i = true) - Debugged
-						var i;
-						if(i) {document.getElementById("valve").src = "resources/machine/valve-on.png";}
-						else {document.getElementById("valve").src = "resources/machine/valve-off.png";}
-					}
-				</script>
+					<td>
 
-				<img id="scr" src="resources/machine/scr-off.png" height="350" onclick="scr()">
+						<!-- Schema interattivo -->
 
-				<script>
-					function scr() {
-						// To be written: send a boolean i as true to Arduino for stating component startup
-						//
+						<img id="fan" src="resources/machine/fan-off.png" height="250" onclick="fan()">
+						<script>
+							function fan() {
+								// To be written: send a boolean i as true to Arduino for stating component startup
+								//
 
-						// Then, update the status image (when Arduino resends i = true) - Debugged
-						var i;
-						if(i) {document.getElementById("scr").src = "resources/machine/scr-on.png";}
-						else {document.getElementById("scr").src = "resources/machine/scr-off.png";}
-					}
-				</script>
+								// Then, update the status image (when Arduino resends i = true) - Debugged
+								var i;
+								if(i) {document.getElementById("fan").src = "resources/machine/fan-on.png";}
+								else {document.getElementById("fan").src = "resources/machine/fan-off.png";}
+							}
+						</script>
 
-				<img id="plume" src="resources/machine/plume-off.png" height="350" onclick="plume()">
+						<img id="valve" src="resources/machine/valve-off.png" height="250" onclick="valve()">
+						<script>
+							function valve() {
+								// To be written: send a boolean i as true to Arduino for stating component startup
+								//
 
-				<script>
-					function plume() {
-						// To be written: send a boolean i as true to Arduino for stating component startup
-						//
+								// Then, update the status image (when Arduino resends i = true) - Debugged
+								var i;
+								if(i) {document.getElementById("valve").src = "resources/machine/valve-on.png";}
+								else {document.getElementById("valve").src = "resources/machine/valve-off.png";}
+							}
+						</script>
 
-						// Then, update the status image (when Arduino resends i = true) - Debugged
-						var i;
-						if(i) {document.getElementById("plume").src = "resources/machine/plume-on.png";}
-						else {document.getElementById("plume").src = "resources/machine/plume-off.png";}
-					}
-				</script>
+						<img id="scr" src="resources/machine/scr-off.png" height="250" onclick="scr()">
+						<script>
+							function scr() {
+								// To be written: send a boolean i as true to Arduino for stating component startup
+								//
 
-				<br><br>
+								// Then, update the status image (when Arduino resends i = true) - Debugged
+								var i;
+								if(i) {document.getElementById("scr").src = "resources/machine/scr-on.png";}
+								else {document.getElementById("scr").src = "resources/machine/scr-off.png";}
+							}
+						</script>
+
+						<img id="plume" src="resources/machine/plume-off.png" height="250" onclick="plume()">
+						<script>
+							function plume() {
+								// To be written: send a boolean i as true to Arduino for stating component startup
+								//
+
+								// Then, update the status image (when Arduino resends i = true) - Debugged
+								var i;
+								if(i) {document.getElementById("plume").src = "resources/machine/plume-on.png";}
+								else {document.getElementById("plume").src = "resources/machine/plume-off.png";}
+							}
+						</script>
+
+					</td>
+
+					<td>
+						&emsp; &emsp;
+					</td>
+
+					<td>
+						<table>
+							<tr>
+								<td><center><button class="button">&emsp; Altitude &emsp;</button></center></td>
+								<td><center><button class="button">&emsp; Speed &emsp;</button></center></td>
+							</tr>
+							<tr>
+								<td><center><button class="button">0.52 M</button></center></td>			<!-- Misure nautiche -->
+								<td><center><button class="button">30.72 kts</button></center></td>		<!-- Misure nautiche -->
+							</tr>
+						</table>
+					</td>
+
+				</tr>
+
+			</table>
+
+			</center>
+
+			<br>
 			
 			<div id=h4a>
-				<br><strong>Sezione di coperta</strong><br><br>
+				<br><strong>Navigation section</strong><br><br>
 			</div>
 
-			Scrivi qualcosa.
-			
+			<div>
+				<center>
+					<table>
+						<tr>
+							<td><center><button class="button">&emsp; &emsp; &emsp; Position &emsp; &emsp; &emsp;</button></center></td>
+							<td><center><button class="button">&emsp; &emsp; TOF &emsp; &emsp;</button></center></td>
+							<td><center><button class="button">Warning</button></center></td>
+							<td><center><button class="button">Remote Control</button></center></td>
+						</tr>
+						<tr>
+							<td><center><button class="button">45.185278° N 9.150000° E</button></center></td>		<!-- Misure nautiche -->
+							<td><center><button class="button">T + 9.50 min</button></center></td>					<!-- Misure aerospaziali -->
+							<td><center><button class="button">OFF</button></center></td>
+							<td><center><button class="button">ON</button></center></td>
+						</tr>
+					</table>
+				</center>
+			</div>
+
+			<br><br>
+
+			<div>
+				<table>
+					<tr>
+						<td>
+							<center>Mappa.</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>Camera di bordo.</center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>Visuale 3D.</center>
+						</td>
+					</tr>
+				</table>
+			</div>
+
 			<br><br>
 			
 		</div>
