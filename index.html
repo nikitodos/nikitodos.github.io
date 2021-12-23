@@ -243,6 +243,12 @@
 			}
 		</script>
 
+		<!-- Script per Three.js - Grafica 3D -->
+
+		<script src="resources/three.js-master/build/three.min.js"></script>
+		<script src="resources/three.js-master/examples/js/loaders/GLTFLoader.js"></script>
+		<script src="resources/three.js-master/examples/js/controls/OrbitControls.js"></script>
+
 	</head>
 	
 	<body>
@@ -299,7 +305,7 @@
 		<div id=h4 style="display:none; overflow-x:auto;">
 		
 			<div id=h4a onclick="visualizza('h4'); return false">
-				<br><strong><u>Ikarus-Y Remote Control Panel</u></strong><br>
+				<br><br><strong><u>Ikarus-Y Remote Control Panel</u></strong><br>
 			</div>
 			
 			<div id=h4a>
@@ -445,14 +451,18 @@
 				<table>
 					<tr>
 						<td>
-							<center>Mappa.</center>
-						</td>
-						<td>
-							<center>Camera di bordo.</center>
+							<center>
+								<iframe width="400" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDk76P-xDJgdGSd6FqCrf_kpePo-aPBr6w&origin=Oslo+Norway&destination=Telemark+Norway" allowfullscreen></iframe>
+							</center>
 						</td>
 						<td>
 							<center>
-								Roba.
+								<iframe width="400" height="250" src="https://www.youtube.com/embed/nHotDPmAxmw" title="Cockpit view saple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</center>
+						</td>
+						<td>
+							<center>
+								3D model.
 							</center>
 						</td>
 					</tr>
@@ -461,9 +471,8 @@
 
 			<br><br>
 
-			<script src="resources/three.js-master/build/three.min.js"></script>
-			<script src="resources/three.js-master/examples/js/loaders/OBJLoader.js"></script>
-			<script src="resources/three.js-master/examples/js/controls/OrbitControls.js"></script>
+			<div style="width: 100vw; height: 100vh; margin: 0; overflow: hidden;">
+
 			<script>
 				let scene, camera, renderer;
 				function init() {
@@ -471,9 +480,9 @@
 					scene.background = new THREE.Color(0xdddddd);
 					camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5000);
 					camera.rotation.y = 45/180*Math.PI;
-					camera.position.x = 800;
+					camera.position.x = 100;
 					camera.position.y = 100;
-					camera.position.z = 1000;
+					camera.position.z = 100;
 					controls = new THREE.OrbitControls(camera);
 					controls.addEventListener('change', renderer);
 					hlight = new THREE.AmbientLight (0x404040,100);
@@ -497,11 +506,11 @@
 					renderer = new THREE.WebGLRenderer({antialias:true});
 					renderer.setSize(window.innerWidth,window.innerHeight);
 					document.body.appendChild(renderer.domElement);
-					let loader = new THREE.OBJLoader();
-					loader.load('resources/ikarus.obj', function(obj){
-						car = obj.scene.children[0];
+					let loader = new THREE.GLTFLoader();
+					loader.load('resources/ikarus.gltf', function(gltf){
+						car = gltf.scene.children[0];
 						car.scale.set(0.5,0.5,0.5);
-						scene.add(obj.scene);
+						scene.add(gltf.scene);
 						animate();
 					});
 				}
@@ -511,6 +520,8 @@
 				}
 				init();
 				</script>
+
+			</div>
 
 			<br><br>
 			
