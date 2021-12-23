@@ -51,7 +51,6 @@
 		<link rel="stylesheet" href="resources/animate.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
-		<link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css" type="text/css">
 
 		<!--
 		
@@ -244,10 +243,6 @@
 			}
 		</script>
 
-		<script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/three.min.js"></script>
-		<script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js"></script>
-
-
 	</head>
 	
 	<body>
@@ -301,7 +296,7 @@
 		
 		<!-- Pannello di controllo -->
 		
-		<div id=h4 style="display:none">
+		<div id=h4 style="display:none; overflow-x:auto;">
 		
 			<div id=h4a onclick="visualizza('h4'); return false">
 				<br><strong><u>Ikarus-Y Remote Control Panel</u></strong><br>
@@ -311,7 +306,7 @@
 				<br><strong>Engineering section</strong><br><br>
 			</div>
 			
-			<center><table style="overflow-x:auto;">
+			<center><table>
 
 				<tr>
 
@@ -441,7 +436,7 @@
 			<br><br>
 
 			<div>
-				<center><table style="overflow-x:auto;">
+				<center><table>
 					<tr>
 						<td>
 							<center>Mappa.</center>
