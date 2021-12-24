@@ -400,173 +400,181 @@
 				<br><strong>Engineering section</strong><br><br>
 			</div>
 			
-			<center><table>
+			<center>
+				
+				<table>
+					<tr>
 
-				<tr>
+						<!-- Dati a sinistra dello schema interattivo -->
 
-					<!-- Dati a sinistra dello schema interattivo -->
+						<td>
 
-					<td>
+							<table>	
+								<tr>
+									<td><center><button class="button">Temperature</button></center></td>
+									<td><center><button class="button">Gears</button></center></td>
+								</tr>
+								<tr>
+									<td><center><button class="button">27.5 °C</button></center></td>		<!-- Misure SI -->
+									<td><center><button class="button">OFF</button></center></td>
+								</tr>
+							</table>
 
-						<table>	
-							<tr>
-								<td><center><button class="button">Temperature</button></center></td>
-								<td><center><button class="button">Gears</button></center></td>
-							</tr>
-							<tr>
-								<td><center><button class="button">27.5 °C</button></center></td>		<!-- Misure SI -->
-								<td><center><button class="button">OFF</button></center></td>
-							</tr>
-						</table>
+						</td>
 
-					</td>
+						<td>
+							&emsp; &emsp;
+						</td>
 
-					<td>
-						&emsp; &emsp;
-					</td>
+						<!-- Schema interattivo -->
 
-					<!-- Schema interattivo -->
+						<td>
 
-					<td>
+							<img id="fan" src="resources/machine/fan-off.png" height="250" onclick="fan()">
+							<script>
+								function fan() {
+									// To be written: send a boolean i as true to Arduino for stating component startup
+									//
 
-						<img id="fan" src="resources/machine/fan-off.png" height="250" onclick="fan()">
-						<script>
-							function fan() {
-								// To be written: send a boolean i as true to Arduino for stating component startup
-								//
+									// Then, update the status image (when Arduino resends i = true) - Debugged
+									var i;
+									if(i) {document.getElementById("fan").src = "resources/machine/fan-on.png";}
+									else {document.getElementById("fan").src = "resources/machine/fan-off.png";}
+								}
+							</script>
 
-								// Then, update the status image (when Arduino resends i = true) - Debugged
-								var i;
-								if(i) {document.getElementById("fan").src = "resources/machine/fan-on.png";}
-								else {document.getElementById("fan").src = "resources/machine/fan-off.png";}
-							}
-						</script>
+						</td><td>
 
-					</td><td>
+							<img id="valve" src="resources/machine/valve-off.png" height="250" onclick="valve()">
+							<script>
+								function valve() {
+									// To be written: send a boolean i as true to Arduino for stating component startup
+									//
 
-						<img id="valve" src="resources/machine/valve-off.png" height="250" onclick="valve()">
-						<script>
-							function valve() {
-								// To be written: send a boolean i as true to Arduino for stating component startup
-								//
+									// Then, update the status image (when Arduino resends i = true) - Debugged
+									var i;
+									if(i) {document.getElementById("valve").src = "resources/machine/valve-on.png";}
+									else {document.getElementById("valve").src = "resources/machine/valve-off.png";}
+								}
+							</script>
 
-								// Then, update the status image (when Arduino resends i = true) - Debugged
-								var i;
-								if(i) {document.getElementById("valve").src = "resources/machine/valve-on.png";}
-								else {document.getElementById("valve").src = "resources/machine/valve-off.png";}
-							}
-						</script>
+						</td><td>
 
-					</td><td>
+							<img id="scr" src="resources/machine/scr-off.png" height="250" onclick="scr()">
+							<script>
+								function scr() {
+									// To be written: send a boolean i as true to Arduino for stating component startup
+									//
 
-						<img id="scr" src="resources/machine/scr-off.png" height="250" onclick="scr()">
-						<script>
-							function scr() {
-								// To be written: send a boolean i as true to Arduino for stating component startup
-								//
+									// Then, update the status image (when Arduino resends i = true) - Debugged
+									var i;
+									if(i) {document.getElementById("scr").src = "resources/machine/scr-on.png";}
+									else {document.getElementById("scr").src = "resources/machine/scr-off.png";}
+								}
+							</script>
 
-								// Then, update the status image (when Arduino resends i = true) - Debugged
-								var i;
-								if(i) {document.getElementById("scr").src = "resources/machine/scr-on.png";}
-								else {document.getElementById("scr").src = "resources/machine/scr-off.png";}
-							}
-						</script>
+						</td><td>
 
-					</td><td>
+							<img id="plume" src="resources/machine/plume-off.png" height="250" onclick="plume()">
+							<script>
+								function plume() {
+									// To be written: send a boolean i as true to Arduino for stating component startup
+									//
 
-						<img id="plume" src="resources/machine/plume-off.png" height="250" onclick="plume()">
-						<script>
-							function plume() {
-								// To be written: send a boolean i as true to Arduino for stating component startup
-								//
+									// Then, update the status image (when Arduino resends i = true) - Debugged
+									var i;
+									if(i) {document.getElementById("plume").src = "resources/machine/plume-on.png";}
+									else {document.getElementById("plume").src = "resources/machine/plume-off.png";}
+								}
+							</script>
 
-								// Then, update the status image (when Arduino resends i = true) - Debugged
-								var i;
-								if(i) {document.getElementById("plume").src = "resources/machine/plume-on.png";}
-								else {document.getElementById("plume").src = "resources/machine/plume-off.png";}
-							}
-						</script>
+						</td>
 
-					</td>
+						<td>
+							&emsp; &emsp;
+						</td>
 
-					<td>
-						&emsp; &emsp;
-					</td>
+						<!-- Dati a destra dello schema interattivo -->
 
-					<!-- Dati a destra dello schema interattivo -->
+						<td>
+							<table>
+								<tr>
+									<td><center><button class="button">&emsp; Altitude &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; Speed &emsp;</button></center></td>
+								</tr>
+								<tr>
+									<td><center><button class="button">0.52 M</button></center></td>			<!-- Misure nautiche -->
+									<td><center><button class="button">30.72 kts</button></center></td>			<!-- Misure nautiche -->
+								</tr>
+							</table>
+						</td>
 
-					<td>
+					</tr>
+				</table>
+
+				<br>
+				
+				<div id=h4a>
+					<br><strong>Navigation section</strong><br><br>
+				</div>
+
+				<!-- Barra dati di navigazione generici -->
+
+				<table>
+
+					<tr>
+
 						<table>
 							<tr>
-								<td><center><button class="button">&emsp; Altitude &emsp;</button></center></td>
-								<td><center><button class="button">&emsp; Speed &emsp;</button></center></td>
+								<td><center><button class="button">&emsp; &emsp; &emsp; &emsp; Position &emsp; &emsp; &emsp; &emsp;</button></center></td>
+								<td><center><button class="button">&emsp; &emsp; Time of Flight &emsp; &emsp;</button></center></td>
+								<td><center><button class="button">&emsp; &emsp; Stability of Flight &emsp; &emsp;</button></center></td>
+								<td><center><button class="button">&emsp; Remote Control &emsp;</button></center></td>
 							</tr>
 							<tr>
-								<td><center><button class="button">0.52 M</button></center></td>			<!-- Misure nautiche -->
-								<td><center><button class="button">30.72 kts</button></center></td>			<!-- Misure nautiche -->
+								<td><center><button class="button">45.185278° N - 9.150000° E</button></center></td>		<!-- Misure nautiche -->
+								<td><center><button class="button">T + 9.50 min</button></center></td>						<!-- Misure aerospaziali -->
+								<td><center><button class="button">OK</button></center></td>
+								<td><center><button class="button">OK</button></center></td>
 							</tr>
 						</table>
-					</td>
 
-				</tr>
-
-			</table></center>
-
-			<br>
-			
-			<div id=h4a>
-				<br><strong>Navigation section</strong><br><br>
-			</div>
-
-			<!-- Barra dati di navigazione generici -->
-
-			<center>
-				<table>
-					<tr>
-						<td><center><button class="button">&emsp; &emsp; &emsp; &emsp; Position &emsp; &emsp; &emsp; &emsp;</button></center></td>
-						<td><center><button class="button">&emsp; &emsp; Time of Flight &emsp; &emsp;</button></center></td>
-						<td><center><button class="button">&emsp; &emsp; Stability of Flight &emsp; &emsp;</button></center></td>
-						<td><center><button class="button">&emsp; Remote Control &emsp;</button></center></td>
 					</tr>
+
+					<tr> &emsp; &emsp; </tr>
+
 					<tr>
-						<td><center><button class="button">45.185278° N - 9.150000° E</button></center></td>		<!-- Misure nautiche -->
-						<td><center><button class="button">T + 9.50 min</button></center></td>						<!-- Misure aerospaziali -->
-						<td><center><button class="button">OK</button></center></td>
-						<td><center><button class="button">OK</button></center></td>
+
+						<table>
+							<tr>
+								<td>
+									<center>
+										<iframe width="400" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDk76P-xDJgdGSd6FqCrf_kpePo-aPBr6w&origin=Oslo+Norway&destination=Telemark+Norway"></iframe>
+									</center>
+								</td>
+
+								<td>&emsp; &emsp;</td>
+
+								<td>
+									<center>
+										<iframe width="400" height="250" src="https://www.youtube.com/embed/nHotDPmAxmw" title="Cockpit view saple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+									</center>
+								</td>
+
+								<td>&emsp; &emsp;</td>
+
+								<td>
+									<center>
+										<model-viewer src="https://nikitodos.github.io/resources/f117/scene.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="https://nikitodos.github.io/resources/f117/poster.webp" shadow-intensity="1" auto-rotate></model-viewer>
+									</center>
+								</td>
+							</tr>
+						</table>
+
 					</tr>
+					
 				</table>
-			</center>
-			
-			<br><br>
 
-			<!-- Trittico della mappa, della visuale interna (diretta su YouTube) e della visuale 3D (roll, pitch, yaw) -->
-
-			<center>
-				<table>
-					<tr>
-						<td>
-							<center>
-								<iframe width="400" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDk76P-xDJgdGSd6FqCrf_kpePo-aPBr6w&origin=Oslo+Norway&destination=Telemark+Norway"></iframe>
-							</center>
-						</td>
-
-						<td>&emsp; &emsp;</td>
-
-						<td>
-							<center>
-								<iframe width="400" height="250" src="https://www.youtube.com/embed/nHotDPmAxmw" title="Cockpit view saple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-							</center>
-						</td>
-
-						<td>&emsp; &emsp;</td>
-
-						<td>
-							<center>
-								<model-viewer src="https://nikitodos.github.io/resources/f117/scene.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="https://nikitodos.github.io/resources/f117/poster.webp" shadow-intensity="1" auto-rotate></model-viewer>
-							</center>
-						</td>
-					</tr>
-				</table>
 			</center>
 
 			<br><br>
