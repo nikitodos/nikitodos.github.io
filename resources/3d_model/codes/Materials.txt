@@ -1,0 +1,22 @@
+
+Arduino-based design:
+
+- 1x ESP32		- GPS/MPU/HC microcontroller		
+- 1x MPU-9250/6500	- Accelerometer, gyro, compass		
+- 1x GY-NEO6MV2		- Tracking				
+- 1x HC-204		- Altimetry				OK
+
+- 1x Arduino Uno	- Laserfans' main computer		OK
+- 2x Fans	 	- Laserfan part				OK
+- 4x SG90 		- Spike orientation			
+
+- 1x Arduino Nano	- Gears' main computer			OK
+- 4x SG90 		- Gears orientation			
+
+- LiPo battery 		- Low voltage electronics		OK
+- Solar panels		- High voltage electronics		
+- 2x switches		- Low/high voltage electronics		OK
+
+Raspberry Pi-based design:
+
+Much simpler, but to be made.
