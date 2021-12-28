@@ -397,31 +397,58 @@
 			<div id=h4a onclick="visualizza('h4'); return false">
 				<br><br><strong><u>Ikarus-Y Remote Control Panel</u></strong><br><br>
 			</div>
-			
+
 			<div id=h4a>
 				<br><strong>Engineering section</strong><br>
 			</div>
 			
+			<br>
+
 			<center>
 				
 				<table>
+
+					<!-- Dati di macchina (generali) -->
+
 					<tr>
-
-						<!-- Dati a sinistra dello schema interattivo -->
-
+						<td></td>
+						<td></td>
 						<td>
-
-							<table>	
+							<center><table>	
 								<tr>
 									<td><center><button class="button">Temperature</button></center></td>
-									<td><center><button class="button">Gears</button></center></td>
+									<td><center><button class="button">&emsp; Gears &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; Engines &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; Altitude &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; Speed &emsp;</button></center></td>
 								</tr>
 								<tr>
-									<td><center><button class="button">27.5 °C</button></center></td>		<!-- Misure SI -->
-									<td><center><button class="button">OFF</button></center></td>
+									<td><center><button class="button">27.5 °C</button></center></td>							<!-- Misure SI -->
+									<td><center><button class="button"><font color="red">OFF</font></button></center></td>		<!-- Cliccabile -->
+									<td><center><button class="button"><font color="green">ON</font></button></center></td>		<!-- Cliccabile (attiva entrambi i Laserfan) -->
+									<td><center><button class="button">0.52 M</button></center></td>							<!-- Misure nautiche -->
+									<td><center><button class="button">30.72 kts</button></center></td>
+								</tr>
+							</table></center>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<!-- Pannello Laserfan di dritta -->
+
+					<tr>
+						<td>
+							<table>
+								<tr>
+									<td><center><button class="button">&emsp; RPM &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; Air &emsp;</button></center></td>
+								</tr>
+								<tr>
+									<td><center><button class="button">500</button></center></td>
+									<td><center><button class="button">Flowing</button></center></td>
 								</tr>
 							</table>
-
 						</td>
 
 						<td>
@@ -445,8 +472,6 @@
 								}
 							</script>
 
-						</td><td>
-
 							<img id="valve" src="resources/machine/valve-off.png" height="250" onclick="valve()">
 							<script>
 								function valve() {
@@ -460,8 +485,6 @@
 								}
 							</script>
 
-						</td><td>
-
 							<img id="scr" src="resources/machine/scr-off.png" height="250" onclick="scr()">
 							<script>
 								function scr() {
@@ -474,8 +497,6 @@
 									else {document.getElementById("scr").src = "resources/machine/scr-off.png";}
 								}
 							</script>
-
-						</td><td>
 
 							<img id="plume" src="resources/machine/plume-off.png" height="250" onclick="plume()">
 							<script>
