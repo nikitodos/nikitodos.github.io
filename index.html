@@ -391,25 +391,30 @@
 		<!-- Pannello di controllo di Ikarus-Y -->
 		
 		<div id=h4 style="display:none; overflow-x:auto;">
-		
-			<br>
 
 			<div id=h4a onclick="visualizza('h4'); return false">
-				<br><br><strong><u>Ikarus-Y Remote Control Panel</u></strong><br><br>
+				<br><br><br><strong><u>Ikarus-Y Remote Control Panel</u></strong><br><br>
 			</div>
 
+			<!-- Sezione di macchina -->
+
 			<div id=h4a>
-				<br><strong>Engineering section</strong><br>
+				<br><strong>Engineering section</strong><br><br>
 			</div>
-			
-			<br>
 
 			<center>
 				
+				<br>
+
+				<!-- Dati di macchina (generali) -->
+
+				<font style="font-family: 'Source Sans Pro', sans-serif; text-align: center; text-decoration: none; font-style: normal; font-size: 1.10em;">
+					<u>General data</u>
+				</font>
+
+				<br>
+
 				<table>
-
-					<!-- Dati di macchina (generali) -->
-
 					<tr>
 						<td></td>
 						<td></td>
@@ -425,7 +430,7 @@
 								<tr>
 									<td><center><button class="button">27.5 °C</button></center></td>							<!-- Misure SI -->
 									<td><center><button class="button"><font color="red">OFF</font></button></center></td>		<!-- Cliccabile -->
-									<td><center><button class="button"><font color="green">ON</font></button></center></td>		<!-- Cliccabile (attiva entrambi i Laserfan) -->
+									<td><center><button class="button"><font color="green">ON</font></button></center></td>		<!-- Cliccabile -->
 									<td><center><button class="button">0.52 M</button></center></td>							<!-- Misure nautiche -->
 									<td><center><button class="button">30.72 kts</button></center></td>
 								</tr>
@@ -434,19 +439,37 @@
 						<td></td>
 						<td></td>
 					</tr>
+				</table>
 
-					<!-- Pannello Laserfan di dritta -->
+				<br>
 
+				<!-- Pannello Laserfan di dritta -->
+
+				<font style="font-family: 'Source Sans Pro', sans-serif; text-align: center; text-decoration: none; font-style: normal; font-size: 1.10em;">
+					<u>Starboard Laserfan</u>
+				</font>
+
+				<table>
 					<tr>
+
 						<td>
 							<table>
 								<tr>
 									<td><center><button class="button">&emsp; RPM &emsp;</button></center></td>
-									<td><center><button class="button">&emsp; Air &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; Health &emsp;</button></center></td>
 								</tr>
 								<tr>
-									<td><center><button class="button">500</button></center></td>
-									<td><center><button class="button">Flowing</button></center></td>
+									<td><center><button class="button">250</button></center></td>
+									<td><center><button class="button">OK</button></center></td>
+								</tr>
+								<tr>&emsp;</tr>
+								<tr>
+									<td><center><button class="button">&emsp; Pitch &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; Yaw &emsp;</button></center></td>
+								</tr>
+								<tr>
+									<td><center><button class="button">0.97°</button></center></td>
+									<td><center><button class="button">2.02°</button></center></td>
 								</tr>
 							</table>
 						</td>
@@ -455,81 +478,152 @@
 							&emsp; &emsp;
 						</td>
 
-						<!-- Schema interattivo -->
-
 						<td>
-
-							<img id="fan" src="resources/machine/fan-off.png" height="250" onclick="fan()">
+							<img id="fanA" src="resources/machine/fan-off.png" height="250" onclick="fanA()">
 							<script>
-								function fan() {
+								function fanA() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
 									//
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("fan").src = "resources/machine/fan-on.png";}
-									else {document.getElementById("fan").src = "resources/machine/fan-off.png";}
+									if(i) {document.getElementById("fanA").src = "resources/machine/fan-on.png";}
+									else {document.getElementById("fanA").src = "resources/machine/fan-off.png";}
 								}
 							</script>
 
-							<img id="valve" src="resources/machine/valve-off.png" height="250" onclick="valve()">
+							<img id="valveA" src="resources/machine/valve-off.png" height="250" onclick="valveA()">
 							<script>
-								function valve() {
+								function valveA() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
 									//
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("valve").src = "resources/machine/valve-on.png";}
-									else {document.getElementById("valve").src = "resources/machine/valve-off.png";}
+									if(i) {document.getElementById("valveA").src = "resources/machine/valve-on.png";}
+									else {document.getElementById("valveA").src = "resources/machine/valve-off.png";}
 								}
 							</script>
 
-							<img id="scr" src="resources/machine/scr-off.png" height="250" onclick="scr()">
+							<img id="scrA" src="resources/machine/scr-off.png" height="250" onclick="scrA()">
 							<script>
-								function scr() {
+								function scrA() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
 									//
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("scr").src = "resources/machine/scr-on.png";}
-									else {document.getElementById("scr").src = "resources/machine/scr-off.png";}
+									if(i) {document.getElementById("scrA").src = "resources/machine/scr-on.png";}
+									else {document.getElementById("scrA").src = "resources/machine/scr-off.png";}
 								}
 							</script>
 
-							<img id="plume" src="resources/machine/plume-off.png" height="250" onclick="plume()">
+							<img id="plumeA" src="resources/machine/plume-off.png" height="250" onclick="plumeA()">
 							<script>
-								function plume() {
+								function plumeA() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
 									//
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("plume").src = "resources/machine/plume-on.png";}
-									else {document.getElementById("plume").src = "resources/machine/plume-off.png";}
+									if(i) {document.getElementById("plumeA").src = "resources/machine/plume-on.png";}
+									else {document.getElementById("plumeA").src = "resources/machine/plume-off.png";}
 								}
 							</script>
-
 						</td>
 
-						<td>
-							&emsp; &emsp;
-						</td>
+					</tr>
+				</table>
 
-						<!-- Dati a destra dello schema interattivo -->
+				<br>
+
+				<!-- Pannello Laserfan di sinistra -->
+
+				<font style="font-family: 'Source Sans Pro', sans-serif; text-align: center; text-decoration: none; font-style: normal; font-size: 1.10em;">
+					<u>Port Laserfan</u>
+				</font>
+
+				<table>
+					<tr>
 
 						<td>
 							<table>
 								<tr>
-									<td><center><button class="button">&emsp; Altitude &emsp;</button></center></td>
-									<td><center><button class="button">&emsp; Speed &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; RPM &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; Health &emsp;</button></center></td>
 								</tr>
 								<tr>
-									<td><center><button class="button">0.52 M</button></center></td>			<!-- Misure nautiche -->
-									<td><center><button class="button">30.72 kts</button></center></td>			<!-- Misure nautiche -->
+									<td><center><button class="button">250</button></center></td>
+									<td><center><button class="button">OK</button></center></td>
+								</tr>
+								<tr>&emsp;</tr>
+								<tr>
+									<td><center><button class="button">&emsp; Pitch &emsp;</button></center></td>
+									<td><center><button class="button">&emsp; Yaw &emsp;</button></center></td>
+								</tr>
+								<tr>
+									<td><center><button class="button">0.97°</button></center></td>
+									<td><center><button class="button">2.02°</button></center></td>
 								</tr>
 							</table>
+						</td>
+
+						<td>
+							&emsp; &emsp;
+						</td>
+
+						<td>
+							<img id="fanB" src="resources/machine/fan-off.png" height="250" onclick="fanB()">
+							<script>
+								function fanB() {
+									// To be written: send a boolean i as true to Arduino for stating component startup
+									//
+
+									// Then, update the status image (when Arduino resends i = true) - Debugged
+									var i;
+									if(i) {document.getElementById("fanB").src = "resources/machine/fan-on.png";}
+									else {document.getElementById("fanB").src = "resources/machine/fan-off.png";}
+								}
+							</script>
+
+							<img id="valveB" src="resources/machine/valve-off.png" height="250" onclick="valveB()">
+							<script>
+								function valveB() {
+									// To be written: send a boolean i as true to Arduino for stating component startup
+									//
+
+									// Then, update the status image (when Arduino resends i = true) - Debugged
+									var i;
+									if(i) {document.getElementById("valveB").src = "resources/machine/valve-on.png";}
+									else {document.getElementById("valveB").src = "resources/machine/valve-off.png";}
+								}
+							</script>
+
+							<img id="scrB" src="resources/machine/scr-off.png" height="250" onclick="scrB()">
+							<script>
+								function scrB() {
+									// To be written: send a boolean i as true to Arduino for stating component startup
+									//
+
+									// Then, update the status image (when Arduino resends i = true) - Debugged
+									var i;
+									if(i) {document.getElementById("scrB").src = "resources/machine/scr-on.png";}
+									else {document.getElementById("scrB").src = "resources/machine/scr-off.png";}
+								}
+							</script>
+
+							<img id="plumeB" src="resources/machine/plume-off.png" height="250" onclick="plumeB()">
+							<script>
+								function plumeB() {
+									// To be written: send a boolean i as true to Arduino for stating component startup
+									//
+
+									// Then, update the status image (when Arduino resends i = true) - Debugged
+									var i;
+									if(i) {document.getElementById("plumeB").src = "resources/machine/plume-on.png";}
+									else {document.getElementById("plumeB").src = "resources/machine/plume-off.png";}
+								}
+							</script>
 						</td>
 
 					</tr>
@@ -540,6 +634,8 @@
 				<div id=h4a>
 					<br><strong>Navigation section</strong><br>
 				</div>
+
+				<br>
 
 				<table>
 
@@ -565,29 +661,24 @@
 
 						</td>
 					</tr>
-					<tr> &emsp; &emsp; </tr>
 					<tr>
 						<td>
 
 							<!-- Mappa, visuale e modello 3D -->
 
+							<br><br>
+
 							<table>
 								<tr>
 									<td>
 										<center>
-											<iframe width="400" height="250" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDk76P-xDJgdGSd6FqCrf_kpePo-aPBr6w&origin=Oslo+Norway&destination=Telemark+Norway" frameborder="0"></iframe>
+											<iframe width="500" height="350" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDk76P-xDJgdGSd6FqCrf_kpePo-aPBr6w&origin=Oslo+Norway&destination=Telemark+Norway" frameborder="0" scrolling="no"></iframe>
 										</center>
 									</td>
 									<td>&emsp;</td>
 									<td>
 										<center>
-											<iframe width="400" height="250" src="https://www.youtube.com/embed/nHotDPmAxmw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-										</center>
-									</td>
-									<td>&emsp;</td>
-									<td>
-										<center>
-											<iframe width="400" height="250" src="https://nikitodos.github.io/resources/3d_model/web-examples/auto-rotate.html" frameborder="0"></iframe>
+											<iframe width="500" height="350" src="https://nikitodos.github.io/resources/3d_model/web-examples/auto-rotate.html" frameborder="0" scrolling="no"></iframe>
 										</center>
 									</td>
 								</tr>
