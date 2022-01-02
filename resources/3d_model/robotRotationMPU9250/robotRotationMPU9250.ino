@@ -16,8 +16,8 @@ AsyncWebSocket ws("/ws");
 Preferences prefs;
 MPU9250 mpu;
 
-const char* ssid = "NSA";
-const char* password = "orange";
+const char* ssid = "Redmi di Giovanni";
+const char* password = "Froyo.2020";
 
 bool lightning_status = 0;
 long current_millis;
