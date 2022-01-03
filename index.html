@@ -42,10 +42,10 @@
 			
 		-->
 		
-		<title>NikitoDos Start Menu</title>
+		<title>NikitoDos Projects</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<meta charset="utf-8" />
-		<meta name="description" content="Accesso ai principali progetti di NikitoDos.">
+		<meta name="description" content="">
 		<meta name="author" content="Giovanni Nicola D'Aloisio">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<link rel="stylesheet" href="resources/animate.css">
@@ -370,7 +370,7 @@
 			</div>
 
 			<center>
-				<model-viewer id="starseeker" src="https://nikitodos.github.io/resources/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
+				<model-viewer id="starseeker" src="https://nikitodos.github.io/resources/starseeker/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
 			</center>
 		
 			<br><br>
@@ -474,7 +474,7 @@
 						</td>
 
 						<td>
-							<img id="fanA" src="resources/machine/fan-off.png" height="250" onclick="fanA()">
+							<img id="fanA" src="resources/ikarus_machine/fan-off.png" height="250" onclick="fanA()">
 							<script>
 								function fanA() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
@@ -482,13 +482,13 @@
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("fanA").src = "resources/machine/fan-on.png";}
-									else {document.getElementById("fanA").src = "resources/machine/fan-off.png";}
+									if(i) {document.getElementById("fanA").src = "resources/ikarus_machine/fan-on.png";}
+									else {document.getElementById("fanA").src = "resources/ikarus_machine/fan-off.png";}
 								}
 							</script>
 						</td>
 						<td>
-							<img id="valveA" src="resources/machine/valve-off.png" height="250" onclick="valveA()">
+							<img id="valveA" src="resources/ikarus_machine/valve-off.png" height="250" onclick="valveA()">
 							<script>
 								function valveA() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
@@ -496,13 +496,13 @@
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("valveA").src = "resources/machine/valve-on.png";}
-									else {document.getElementById("valveA").src = "resources/machine/valve-off.png";}
+									if(i) {document.getElementById("valveA").src = "resources/ikarus_machine/valve-on.png";}
+									else {document.getElementById("valveA").src = "resources/ikarus_machine/valve-off.png";}
 								}
 							</script>
 						</td>
 						<td>
-							<img id="scrA" src="resources/machine/scr-off.png" height="250" onclick="scrA()">
+							<img id="scrA" src="resources/ikarus_machine/scr-off.png" height="250" onclick="scrA()">
 							<script>
 								function scrA() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
@@ -510,13 +510,13 @@
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("scrA").src = "resources/machine/scr-on.png";}
-									else {document.getElementById("scrA").src = "resources/machine/scr-off.png";}
+									if(i) {document.getElementById("scrA").src = "resources/ikarus_machine/scr-on.png";}
+									else {document.getElementById("scrA").src = "resources/ikarus_machine/scr-off.png";}
 								}
 							</script>
 						</td>
 						<td>
-							<img id="plumeA" src="resources/machine/plume-off.png" height="250" onclick="plumeA()">
+							<img id="plumeA" src="resources/ikarus_machine/plume-off.png" height="250" onclick="plumeA()">
 							<script>
 								function plumeA() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
@@ -524,8 +524,8 @@
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("plumeA").src = "resources/machine/plume-on.png";}
-									else {document.getElementById("plumeA").src = "resources/machine/plume-off.png";}
+									if(i) {document.getElementById("plumeA").src = "resources/ikarus_machine/plume-on.png";}
+									else {document.getElementById("plumeA").src = "resources/ikarus_machine/plume-off.png";}
 								}
 							</script>
 						</td>
@@ -571,7 +571,7 @@
 						</td>
 
 						<td>
-							<img id="fanB" src="resources/machine/fan-off.png" height="250" onclick="fanB()">
+							<img id="fanB" src="resources/ikarus_machine/fan-off.png" height="250" onclick="fanB()">
 							<script>
 								function fanB() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
@@ -579,13 +579,13 @@
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("fanB").src = "resources/machine/fan-on.png";}
-									else {document.getElementById("fanB").src = "resources/machine/fan-off.png";}
+									if(i) {document.getElementById("fanB").src = "resources/ikarus_machine/fan-on.png";}
+									else {document.getElementById("fanB").src = "resources/ikarus_machine/fan-off.png";}
 								}
 							</script>
 						</td>
 						<td>
-							<img id="valveB" src="resources/machine/valve-off.png" height="250" onclick="valveB()">
+							<img id="valveB" src="resources/ikarus_machine/valve-off.png" height="250" onclick="valveB()">
 							<script>
 								function valveB() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
@@ -593,13 +593,13 @@
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("valveB").src = "resources/machine/valve-on.png";}
-									else {document.getElementById("valveB").src = "resources/machine/valve-off.png";}
+									if(i) {document.getElementById("valveB").src = "resources/ikarus_machine/valve-on.png";}
+									else {document.getElementById("valveB").src = "resources/ikarus_machine/valve-off.png";}
 								}
 							</script>
 						</td>
 						<td>
-							<img id="scrB" src="resources/machine/scr-off.png" height="250" onclick="scrB()">
+							<img id="scrB" src="resources/ikarus_machine/scr-off.png" height="250" onclick="scrB()">
 							<script>
 								function scrB() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
@@ -607,13 +607,13 @@
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("scrB").src = "resources/machine/scr-on.png";}
-									else {document.getElementById("scrB").src = "resources/machine/scr-off.png";}
+									if(i) {document.getElementById("scrB").src = "resources/ikarus_machine/scr-on.png";}
+									else {document.getElementById("scrB").src = "resources/ikarus_machine/scr-off.png";}
 								}
 							</script>
 						</td>
 						<td>
-							<img id="plumeB" src="resources/machine/plume-off.png" height="250" onclick="plumeB()">
+							<img id="plumeB" src="resources/ikarus_machine/plume-off.png" height="250" onclick="plumeB()">
 							<script>
 								function plumeB() {
 									// To be written: send a boolean i as true to Arduino for stating component startup
@@ -621,8 +621,8 @@
 
 									// Then, update the status image (when Arduino resends i = true) - Debugged
 									var i;
-									if(i) {document.getElementById("plumeB").src = "resources/machine/plume-on.png";}
-									else {document.getElementById("plumeB").src = "resources/machine/plume-off.png";}
+									if(i) {document.getElementById("plumeB").src = "resources/ikarus_machine/plume-on.png";}
+									else {document.getElementById("plumeB").src = "resources/ikarus_machine/plume-off.png";}
 								}
 							</script>
 						</td>
@@ -679,7 +679,7 @@
 									<td>&emsp;</td>
 									<td>
 										<center>
-											<iframe width="500" height="350" src="https://nikitodos.github.io/resources/3d_model/web-examples/auto-rotate.html" frameborder="0" scrolling="no"></iframe>
+											<iframe width="500" height="350" src="https://nikitodos.github.io/resources/ikarus_model/web-examples/auto-rotate.html" frameborder="0" scrolling="no"></iframe>
 										</center>
 									</td>
 								</tr>
