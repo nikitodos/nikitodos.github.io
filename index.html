@@ -45,12 +45,14 @@
 		<title>NikitoDos Start Menu</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<meta charset="utf-8" />
-		<meta name="description" content="Software di gestione volo da remoto per Ikarus-Y con Laserfan Mark III.">
+		<meta name="description" content=".">
 		<meta name="author" content="Giovanni Nicola D'Aloisio">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<link rel="stylesheet" href="resources/animate.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
+
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 		<!--
 		
@@ -93,7 +95,7 @@
 				#h1 {
 					position: fixed;
 					left: 0;
-					top: 40%;
+					top: 30%;
 					width: 100%;
 					padding: 0px 0;
 					transition-duration: 0.5s;
@@ -102,7 +104,7 @@
 				#h1:hover {
 					position: absolute;
 					left: 0;
-					top: 40%;
+					top: 30%;
 					width: 100%;
 					padding: 0px 0;
 					transition-duration: 0.5s;
@@ -321,15 +323,21 @@
 		<!-- Elemento centrale -->
 		
 		<div id=h1>
-			<center>
-				<a href="https://github.com/nikitodos/nikitodos.github.io" style="color:#FFFFFF" title="More details about NikitoDos">
-					<img src="resources/astrodynamics.png" class="responsive" style="width:200px;">
-				</a>
-			</center>
-			
 			<div id=h2 class="animated fadeIn">
-				<a href="#" onclick="visualizza('h4'); return false" style="color:#FFFFFF" title="Ikarus-Y Remote Control Panel">
+				<a href="resources/Astrodynamics_Space_Framework__Rev__3_.pdf" style="color:#FFFFFF" title="Astrodynamics Space Framework (Rev. 3)">
+					<img src="resources/astrodynamics.png" class="responsive" style="width:350px;">
+				</a>
+			</div>
+			<br>
+			<div id=h2 class="animated fadeIn">
+				<a href="#" onclick="visualizza('h4'); return false" style="color:#FFFFFF" title="Dummy Ikarus-Y Remote Control Panel">
 					<img src="resources/ikaruslogo.png" class="responsive" style="width:350px;">
+				</a>
+			</div>
+			<br>
+			<div id=h2 class="animated fadeIn">
+				<a href="#" onclick="visualizza('h5'); return false" style="color:#FFFFFF" title="Starseeker">
+					<img src="resources/starseeker.png" class="responsive" style="width:350px;">
 				</a>
 			</div>
 		</div>
@@ -339,32 +347,12 @@
 		<!-- Links & Copyright -->
 		
 		<h3 class="animated fadeIn">
-		
-			<br>
-			
-			<a href="#" onclick="visualizza('h5'); return false" style="color:#FFFFFF" title="Script Edge & Starseeker Resources">
-				<font style="font-size:0.8em;" color="#FFFFFF">
-					<u>Past works</u>
-				</font>
-			</a>
-
-			 - 
-
-			<a href="resources/Astrodynamics_Space_Framework__Rev__3_.pdf" style="color:#FFFFFF" title="Giovanni D'Aloisio's Astrodynamics Space Framework (Rev. 3)" target=”_blank”>
-				<font style="font-size:0.8em;" color="#FFFFFF">
-					<u>ASF Overview (Rev. 3)</u>
-				</font>
-			</a>
-
-			<br>
-
 			<font style="font-size:0.8em;" color="#FFFFFF">
-				Designed and engineered by <a href="https://github.com/nikitodos/" style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio">NikitoDos</a>
+				Designed and engineered by <a href="https://github.com/nikitodos/nikitodos.github.io" style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio">NikitoDos</a>
 			</font>
-			
 		</h3>
 
-		<!-- Menu di uWave e Starseeker -->
+		<!-- Starseeker -->
 
 		<div id=h5 style="display:none; overflow-x:auto;">
 		
@@ -373,31 +361,13 @@
 			</div>
 
 			<div id=h4a onclick="visualizza('h5'); return false">
-				<br><strong><u>Script Edge Resources</u></strong><br><br>
+				<br><strong><u>Starseeker Modular Telescope</u></strong><br><br>
 			</div>
-
-			<a href="https://nikitodos.github.io/uwave/Guida alla compressione audio digitale Lossless e Lossy.html" target="_blank">Guida alla compressione audio digitale Lossless e Lossy</a><br><br>
-
-			<a href="https://nikitodos.github.io/uwave/Guida alla compressione video digitale.html" target="_blank">Guida alla compressione video digitale</a><br><br>
-
-			<a href="https://nikitodos.github.io/uwave/Le Central Processing Units (CPUs).html" target="_blank">Le Central Processing Units (CPUs)</a><br><br>
-
-			<a href="https://nikitodos.github.io/uwave/Montare un PC.html" target="_blank">Montare un PC</a><br><br>
-
-			<a href="https://nikitodos.github.io/uwave/Principi di elettronica.html">Principi di elettronica</a><br><br>
-
-			<a href="https://nikitodos.github.io/uwave/Semiconduttori, diodi e transistor.html">Semiconduttori, diodi e transistor</a>
-			
-			<br>
-
-			<div id=h4a onclick="visualizza('h5'); return false">
-				<br><br><strong><u>Starseeker Modular Telescope</u></strong><br>
-			</div>
-
-			<br><br>
 
 			<center>
-				<iframe src="https://app.modelo.io/embedded/1474414575400644608?viewport=false&autoplay=false&autorotate=true&hideTools=false&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false" style="width:75%;height:300px;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe>
+				<div style="width: 75%; height: 500px;">
+					<model-viewer src="resources/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" camera-controls></model-viewer>
+				</div>
 			</center>
 		
 			<br><br>
