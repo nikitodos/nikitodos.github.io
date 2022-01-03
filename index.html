@@ -61,7 +61,7 @@
 			h2 = Pulsante centrale
 			h3 = Links & Copyright
 			h4 = Pannello di controllo di Ikaurs-Y
-			h5 = Pannello per uWave e Starseeker
+			h5 = Pannello per Starseeker
 			
 		-->
 		
@@ -92,7 +92,7 @@
 				}
 				model-viewer {
 					height: 500px;
-					width: 500px;
+					width: 75%;
 				}
 				p {
 					height: 100px;
@@ -100,7 +100,7 @@
 				#h1 {
 					position: fixed;
 					left: 0;
-					top: 25%;
+					top: 20%;
 					width: 100%;
 					padding: 0px 0;
 					transition-duration: 0.5s;
@@ -109,7 +109,7 @@
 				#h1:hover {
 					position: absolute;
 					left: 0;
-					top: 25%;
+					top: 20%;
 					width: 100%;
 					padding: 0px 0;
 					transition-duration: 0.5s;
@@ -267,9 +267,6 @@
 						top: 5%;
 						left: 5%;
 					}
-					model-viewer {
-						width:75%;
-					}
 					.responsive {
 						width: 90%;
 						max-width: 350px;
@@ -331,21 +328,22 @@
 		<!-- Elemento centrale -->
 		
 		<div id=h1>
+			<br>
 			<div id=h2 class="animated fadeIn">
 				<a href="resources/Astrodynamics_Space_Framework__Rev__3_.pdf" style="color:#FFFFFF" target=”_blank” title="Astrodynamics Space Framework (Rev. 3)">
-					<img src="resources/astrodynamics.png" class="responsive" style="width:350px;">
+					<img src="resources/astrodynamics.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
 			<br>
 			<div id=h2 class="animated fadeIn">
 				<a href="#" onclick="visualizza('h4'); return false" style="color:#FFFFFF" title="Dummy Ikarus-Y Remote Control Panel">
-					<img src="resources/ikaruslogo.png" class="responsive" style="width:350px;">
+					<img src="resources/ikaruslogo.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
 			<br>
 			<div id=h2 class="animated fadeIn">
-				<a href="#" onclick="visualizza('h5'); return false" style="color:#FFFFFF" title="Starseeker">
-					<img src="resources/starseeker.png" class="responsive" style="width:350px;">
+				<a href="#" onclick="visualizza('h5'); return false" style="color:#FFFFFF" title="Starseeker Modular Telescope">
+					<img src="resources/starseeker.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
 		</div>
@@ -389,7 +387,7 @@
 			</div>
 
 			<div id=h4a>
-				<br><strong><strong><u>Ikarus-Y Remote Control Panel (dummy)</u></strong></strong><br>
+				<br><strong><strong><u>Ikarus-Y Remote Control Panel</u></strong></strong><br>
 			</div>
 
 			<!-- Sezione di macchina -->
@@ -424,11 +422,11 @@
 									<td><center><button class="button">&emsp; Speed &emsp;</button></center></td>
 								</tr>
 								<tr>
-									<td><center><button class="button">27.5 °C</button></center></td>							<!-- Misure SI -->
-									<td><center><button class="button"><font color="red">OFF</font></button></center></td>		<!-- Cliccabile -->
-									<td><center><button class="button"><font color="green">ON</font></button></center></td>		<!-- Cliccabile -->
-									<td><center><button class="button">0.52 M</button></center></td>							<!-- Misure nautiche -->
-									<td><center><button class="button">30.72 kts</button></center></td>
+									<td><center><button class="button">ND °C</button></center></td>								<!-- Misure SI -->
+									<td><center><button class="button"><font color="red">ND</font></button></center></td>		<!-- Cliccabile -->
+									<td><center><button class="button"><font color="red">ND</font></button></center></td>		<!-- Cliccabile -->
+									<td><center><button class="button">ND M</button></center></td>								<!-- Misure nautiche -->
+									<td><center><button class="button">ND kts</button></center></td>
 								</tr>
 							</table></center>
 						</td>
@@ -455,8 +453,8 @@
 									<td><center><button class="button">&emsp; Health &emsp;</button></center></td>
 								</tr>
 								<tr>
-									<td><center><button class="button">250</button></center></td>
-									<td><center><button class="button">OK</button></center></td>
+									<td><center><button class="button">ND</button></center></td>
+									<td><center><button class="button">ND</button></center></td>
 								</tr>
 								<tr>&emsp;</tr>
 								<tr>
@@ -464,8 +462,8 @@
 									<td><center><button class="button">&emsp; Yaw &emsp;</button></center></td>
 								</tr>
 								<tr>
-									<td><center><button class="button">0.97°</button></center></td>
-									<td><center><button class="button">2.02°</button></center></td>
+									<td><center><button class="button">ND°</button></center></td>
+									<td><center><button class="button">ND°</button></center></td>
 								</tr>
 							</table>
 						</td>
@@ -552,8 +550,8 @@
 									<td><center><button class="button">&emsp; Health &emsp;</button></center></td>
 								</tr>
 								<tr>
-									<td><center><button class="button">250</button></center></td>
-									<td><center><button class="button">OK</button></center></td>
+									<td><center><button class="button">ND</button></center></td>
+									<td><center><button class="button">ND</button></center></td>
 								</tr>
 								<tr>&emsp;</tr>
 								<tr>
@@ -561,8 +559,8 @@
 									<td><center><button class="button">&emsp; Yaw &emsp;</button></center></td>
 								</tr>
 								<tr>
-									<td><center><button class="button">0.97°</button></center></td>
-									<td><center><button class="button">2.02°</button></center></td>
+									<td><center><button class="button">ND°</button></center></td>
+									<td><center><button class="button">ND°</button></center></td>
 								</tr>
 							</table>
 						</td>
@@ -654,10 +652,10 @@
 									<td><center><button class="button">&emsp; Remote Control &emsp;</button></center></td>
 								</tr>
 								<tr>
-									<td><center><button class="button">45.185278° N - 9.150000° E</button></center></td>		<!-- Misure nautiche -->
-									<td><center><button class="button">T + 9.50 min</button></center></td>						<!-- Misure aerospaziali -->
-									<td><center><button class="button">OK</button></center></td>
-									<td><center><button class="button">OK</button></center></td>
+									<td><center><button class="button">ND° ND - ND° ND</button></center></td>		<!-- Misure nautiche -->
+									<td><center><button class="button">T + ND min</button></center></td>			<!-- Misure aerospaziali -->
+									<td><center><button class="button">ND</button></center></td>
+									<td><center><button class="button">ND</button></center></td>
 								</tr>
 							</table></center>
 
@@ -674,7 +672,7 @@
 								<tr>
 									<td>
 										<center>
-											<iframe width="500" height="350" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDk76P-xDJgdGSd6FqCrf_kpePo-aPBr6w&origin=Oslo+Norway&destination=Telemark+Norway" frameborder="0" scrolling="no"></iframe>
+											<iframe width="490" height="340" src="https://www.google.com/maps/" frameborder="0" scrolling="no"></iframe>
 										</center>
 									</td>
 									<td>&emsp;</td>
