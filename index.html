@@ -53,6 +53,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
 
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 		<!--
 		
@@ -88,6 +89,10 @@
 				}
 				a {
 					text-decoration: none;
+				}
+				model-viewer {
+					height: 500px;
+					width: 500px;
 				}
 				p {
 					height: 100px;
@@ -365,9 +370,7 @@
 			</div>
 
 			<center>
-				<div style="width: 75%; height: 500px;">
-					<model-viewer src="resources/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" camera-controls></model-viewer>
-				</div>
+				<model-viewer id="starseeker" src="https://nikitodos.github.io/resources/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
 			</center>
 		
 			<br><br>

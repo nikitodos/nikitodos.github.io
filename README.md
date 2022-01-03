@@ -9,18 +9,3 @@
 + I'm quite expert in space technologies, in particular rocketry and spacecraft design, but also microelectronics, technical physics and thermodynamics, and engines.
 + I like playing the guitar, the electric bass and the piano, and I'm a Microsoft® Windows® and Linux user.
 + I don't mind about political or sexual orientations, I just try to live in the lightest and funniest way.
-
-> [...] it has often proved true that the dream of yesterday is the hope of today and the reality of tomorrow.
-
-                                                                                                   
-    0     0       0             0                      0 ----- 0                   0 --- 0           
-    |\    |       |             |                      |        \                 /       \          
-    | \   |   0   |     0   0   0 --- 0    0 --- 0     |         0    0 --- 0    0         0         
-    |  \  |       |    /        |         /       \    |        /    /       \   |                   
-    |   \ |   0   0 - 0     0   0        0         0   |       /    0         0  |                   
-    |    \|   |   |    \    |    \        \       /    |      /      \       /   |                   
-    0     0   0   0     0   0     0 - 0    0 --- 0     0 ----0        0 --- 0    0                   
-                                                                                                     
-    0 --------------------------------------------------------------------------------------- 0      
-      \                                                                                         0    
-        0 --------------------------------------------------------------------------------------- 0  
