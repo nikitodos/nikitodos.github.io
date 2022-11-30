@@ -1,8 +1,8 @@
-# nikitodos.github.io
+# NikitoDos' Short Summary
 
     printf("Hello World!")
 
-
+> I don't mind your thinking slowly; I mind your publishing faster than you think.
 
 + I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), [**ENTJ-T**](https://www.16personalities.com/free-personality-test/7e0486d1885db) personality (last update: 2022).
 + Actually working on *Kvant* spacecraft (Ikarus/Laserfan series), *Spektr* reactor, *Kristall* space stations.
