@@ -11,4 +11,5 @@
 + I've been cadet engineer on board [**Amerigo Vespucci**](https://en.wikipedia.org/wiki/Italian_training_ship_Amerigo_Vespucci) and technician in electrical powerplants.
 + I'm quite expert in space technologies, in particular rocketry and spacecraft design, microelectronics, and technical physics.
 + I like playing the guitar, the electric bass and the piano, and I'm a Microsoft® Windows® and Linux user.
-+ I don't mind about political or sexual orientations, I just try to live in the lightest and funniest way.
++ I think I'm quite expert in graphic design, as you can see from the works I've uploaded in my repositories.
++ I don’t care if you call me an insensitive b*****d, as long as I remain an efficient b*****d.
