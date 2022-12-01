@@ -4,7 +4,7 @@
 
 > I don't mind your thinking slowly; I mind your publishing faster than you think.
 
-+ I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), [**ENTJ-T**](https://www.16personalities.com/entj-personality) personality (last update: 2022).
++ I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), [**ENTJ-T**](https://www.16personalities.com/entj-personality) personality.
 + Actually a Physics student, interested in physics of matter, astrophysics and climate dynamics.
 + Actually working on *Kvant* spacecraft, *Spektr* reactor, *Kristall* space station.
 + I've created two introductory IT courses, about [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro), for an Universitary college in Pavia.
