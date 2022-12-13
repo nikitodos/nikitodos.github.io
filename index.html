@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	
+
 		<!--
-			
-				0 --------------------------------------------------------- 0
+
+				0 ========================================================= 0
 				|                                                           |\
 				|                                                           | \
-				|      --------------- 0 0 ------------------ 0 0 -----     |  \
+				|                      0 0                    0 0           |  \
 				|      |              / \ \                   | |     |     |   0
 				|      |             / / \ \                  | |     |     |   |
-				|      ------------ / / - \ \ --------------- | | -----     |   |
+				|      ------------ / / - \ \ --------------- | |     |     |   |
 				|      |           / /     \ \                | |     |     | \ |
 				|      |          / /       \ \               | |     |     |   |
-				|      --------- 0 --------- 0 \ ------ 0 0 - 0 | -----     |   |
+				|      --------- 0 --------- 0 \ ------ 0 0 - 0 |     |     |   |
 				|      |        / /           \ \      / /    | |     |     |   |
-				|      ------- / / ----------- \ \ -- 0 / --- | | -----     | \ |
+				|      ------- / / ----------- \ \ -- 0 / --- | |     |     | \ |
 				|      |      / /               \ \    \      | |     |     |   |
-				|      ----- 0 0 --------------- 0 0 -- 0 --- 0 0 -----     |   |
+				|      ----- 0 0 --------------- 0 0 -- 0 --- 0 0     |     |   |
 				|                                                           |   |
 				|     WRITTEN BY GIOVANNI N. D'ALOISIO, a.k.a. NikitoDos    | \ |
 				|                                                           |   |
@@ -39,9 +39,9 @@
 				  \     \     \     \     \     \     \     \     \     \     \ |
 				   \     \     \     \     \     \     \     \     \     \     \|
 				    0 --------------------------------------------------------- 0
-			
+
 		-->
-		
+
 		<title>NikitoDos Projects</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<meta charset="utf-8" />
@@ -56,22 +56,22 @@
 		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 		<!--
-		
+
 			h1 = Fascia centrale
 			h2 = Pulsante centrale
 			h3 = Links & Copyright
 			h4 = Pannello di controllo di Ikaurs-Y
 			h5 = Pannello per Starseeker
-			
+
 		-->
-		
+
 		<style>
 				body {
 					-webkit-touch-callout: none; /* iOS Safari */
-    				-webkit-user-select: none; /* Safari */
-   		    		-moz-user-select: none; /* Firefox */
-   			     	-ms-user-select: none; /* Edge */
-     			    user-select: none; /* Blink */
+    			-webkit-user-select: none; /* Safari */
+   		    -moz-user-select: none; /* Firefox */
+   			  -ms-user-select: none; /* Edge */
+     			user-select: none; /* Blink */
 					background-color: black;
 				}
 				#bg {
@@ -93,9 +93,6 @@
 				model-viewer {
 					height: 500px;
 					width: 75%;
-				}
-				p {
-					height: 100px;
 				}
 				#h1 {
 					position: fixed;
@@ -274,9 +271,9 @@
 					}
 				}
 		</style>
-		
+
 		<!-- Script per div a comparsa -->
-		
+
 		<script type="text/javascript" language="javascript">
 			function visualizza(id){
 			  if (document.getElementById){
@@ -290,11 +287,11 @@
 		</script>
 
 	</head>
-	
+
 	<body>
-	
+
 		<!-- Disattiva click destro, F12, combinazioni di salvataggio pagina -->
-	
+
 		<script language="JavaScript">
  			window.onload = function() {
  				document.addEventListener("contextmenu", function(e){e.preventDefault();}, false);
@@ -321,12 +318,12 @@
 		</script>
 
 		<!-- Sfondo -->
-		
+
 		<div id="bg"></div>
 		<p></p>
-		
+
 		<!-- Elemento centrale -->
-		
+
 		<div id=h1>
 			<div id=h2 class="animated fadeIn">
 				<a href="#" onclick="visualizza('h4'); return false" style="color:#FFFFFF" title="Kvant Test Article (KTA/Ikarus) Program">
@@ -348,9 +345,9 @@
 		</div>
 
 		<p></p>
-		
+
 		<!-- Links & Copyright -->
-		
+
 		<h3 class="animated fadeIn">
 			<font style="font-size:0.8em;" color="#FFFFFF">
 				Designed and engineered by <a href="https://github.com/nikitodos/nikitodos.github.io" style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio">NikitoDos</a>
@@ -360,7 +357,7 @@
 		<!-- Starseeker -->
 
 		<div id=h5 style="display:none; overflow-x:auto;">
-		
+
 			<div id=h4a onclick="visualizza('h5'); return false">
 				<br><br><i class="far fa-times-circle"></i>
 			</div>
@@ -372,13 +369,13 @@
 			<center>
 				<model-viewer id="starseeker" src="https://nikitodos.github.io/resources/starseeker/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
 			</center>
-		
+
 			<br><br>
 
 		</div>
 
 		<!-- Div dedicato ai KTA -->
-		
+
 		<div id=h4 style="display:none; overflow-x:auto;">
 
 			<div id=h4a onclick="visualizza('h4'); return false">
@@ -624,7 +621,7 @@
 				</table>
 
 				<br>
-				
+
 				<div id=h4a>
 					<br><strong>Navigation section</strong><br>
 				</div>
@@ -663,7 +660,7 @@
 										<td></td>
 										<td></td>
 										<td>
-											<center><table>	
+											<center><table>
 												<tr>
 													<td><center><button class="button">&emsp; Temperature &emsp;</button></center></td>
 													<td><center><button class="button">&emsp; Gears &emsp;</button></center></td>
@@ -725,7 +722,7 @@
 			<br><br>
 
 		</div>
-		
+
 	</body>
-	
+
 </html>
