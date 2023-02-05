@@ -126,6 +126,14 @@ footer {
 	opacity: 1;
 }
 
+#3dModel_title {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1.25em;
+}
+
 .button {
 	background-color: #FFFFFF;
 	border-color: #2B292E;

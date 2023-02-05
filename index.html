@@ -101,17 +101,21 @@
 		<!-- Slideshow -->
 
 		<div id=slideshow>
+		
 			<div id=img_button class="animated fadeIn">
-				<a href="#" onclick="divshow('kvant'); return false" style="color:#FFFFFF" title="Kvant Test Article (KTA/Ikarus) Program">
+				<a href="#" onclick="divshow('kvant'); return false" style="color:#FFFFFF" title="KTA Program">
 					<img src="resources/logos/ikaruslogo.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
+			
 			<br>
+			
 			<div id=img_button class="animated fadeIn">
 				<a href="#" onclick="divshow('3dModel'); return false" style="color:#FFFFFF" title="Starseeker Modular Telescope">
 					<img src="resources/logos/starseeker.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
+			
 		</div>
 
 		<p></p>
@@ -121,7 +125,6 @@
 		<footer class="animated fadeIn">
 			<font style="font-size:0.8em;" color="#FFFFFF">
 				Designed and engineered by <a href="https://github.com/nikitodos/nikitodos.github.io" style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio">NikitoDos</a>
-				<br>
 			</font>
 		</footer>
 
@@ -129,16 +132,22 @@
 
 		<div id=3dModel style="display:none; overflow-x:auto;">
 
-			<div id=kvant_title onclick="divshow('3dModel'); return false">
-				<br><br><i class="far fa-times-circle"></i>
-			</div>
+			<br><br>
 
-			<div id=kvant_title onclick="divshow('3dModel'); return false">
-				<br><strong><u>Starseeker Modular Telescope</u></strong><br><br>
+			<div id=3dModel_title onclick="divshow('3dModel'); return false">
+				<i class="far fa-times-circle"></i>
 			</div>
+			
+			<br><br>
+
+			<div id=3dModel_title>
+				<strong><u>Starseeker Modular Telescope</u></strong>
+			</div>
+			
+			<br><br>
 
 			<center>
-				<model-viewer id="3dModel" src="https://nikitodos.github.io/resources/starseeker/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
+				<model-viewer src="https://nikitodos.github.io/resources/starseeker/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
 			</center>
 
 			<br><br>
@@ -149,26 +158,32 @@
 
 		<div id=kvant style="display:none; overflow-x:auto;">
 
+			<br><br>
+
 			<div id=kvant_title onclick="divshow('kvant'); return false">
-				<br><br><i class="far fa-times-circle"></i><br>
+				<i class="far fa-times-circle"></i>
 			</div>
+
+			<br><br>
 
 			<div id=kvant_title>
-				<br><strong><strong><u>Ikarus-X Development Report</u></strong></strong><br>
+				<strong><strong><u>Ikarus-X Development Report</u></strong></strong>
 			</div>
 
-			<br>
+			<br><br>
 
 			<a href="https://nikitodos.github.io/resources/Ikarus_X_Final.pdf" style="color:black" target=”_blank” title="Sviluppo e costruzione di Ikarus-X">PDF - Italian</a>
 
-			<br>
+			<br><br>
 
 			<div id=kvant_title onclick="divshow('3dModel'); return false">
-				<br><strong><u>Ikarus-Y Development Model</u></strong><br><br>
+				<strong><u>Ikarus-Y Development Model</u></strong>
 			</div>
 
+			<br><br>
+
 			<center>
-				<model-viewer id="3dModel" src="https://github.com/nikitodos/nikitodos.github.io/raw/main/resources/IKARUS-Y_TEST.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
+				<model-viewer src="https://github.com/nikitodos/nikitodos.github.io/raw/main/resources/IKARUS-Y_TEST.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
 			</center>
 
 		</div>
