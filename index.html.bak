@@ -60,7 +60,7 @@
 
 		<!-- Importa foglio di stili -->
 
-		<link href="resources/styles.css" rel="stylesheet" type="text/css">
+		<link href="stile.css" rel="stylesheet" type="text/css">
 
 	</head>
 
