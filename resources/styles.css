@@ -12,7 +12,7 @@ body {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(resources/bg.jpg) no-repeat center top;
+	background: url(bg.jpg) no-repeat center top;
 	background-position: center;
 	background-size: cover;
 	z-index: -1;
@@ -72,7 +72,7 @@ footer {
 	color:#FFFFFF
 }
 
-#ikarus_y {
+#kvant {
 	position: absolute;
 	margin: 0 auto;
 	width: 90%;
@@ -92,7 +92,7 @@ footer {
 	transition-duration: 0.5s;
 }
 
-#ikarus_y:hover {
+#kvant:hover {
 	opacity: 1;
 }
 
@@ -151,12 +151,12 @@ footer {
 		width: 90%;
 	}
 	#img_button:hover {}
-		#ikarus_y {
+		#kvant {
 		width: 90%;
 		top: 5%;
 		left: 5%;
 	}
-	#ikarus_y:hover {}
+	#kvant:hover {}
 		.responsive {
 		width: 90%;
 		max-width: 350px;

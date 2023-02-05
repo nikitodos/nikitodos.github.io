@@ -102,7 +102,7 @@
 
 		<div id=slideshow>
 			<div id=img_button class="animated fadeIn">
-				<a href="#" onclick="divshow('ikarus_y'); return false" style="color:#FFFFFF" title="Kvant Test Article (KTA/Ikarus) Program">
+				<a href="#" onclick="divshow('kvant'); return false" style="color:#FFFFFF" title="Kvant Test Article (KTA/Ikarus) Program">
 					<img src="resources/logos/ikaruslogo.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
@@ -146,9 +146,9 @@
 
 		<!-- Div dedicato ai KTA -->
 
-		<div id=ikarus_y style="display:none; overflow-x:auto;">
+		<div id=kvant style="display:none; overflow-x:auto;">
 
-			<div id=ikarus_ya onclick="divshow('ikarus_y'); return false">
+			<div id=ikarus_ya onclick="divshow('kvant'); return false">
 				<br><br><i class="far fa-times-circle"></i><br>
 			</div>
 
@@ -160,7 +160,15 @@
 
 			<a href="https://nikitodos.github.io/resources/Ikarus_X_Final.pdf" style="color:black" target=”_blank” title="Sviluppo e costruzione di Ikarus-X">Click here to access this resource</a>
 
-			<br><br>
+			<br>
+
+			<div id=ikarus_ya onclick="divshow('starseeker'); return false">
+				<br><strong><u>Ikarus-Y Development Model</u></strong><br><br>
+			</div>
+
+			<center>
+				<model-viewer id="starseeker" src="resources/IKARUS-Y_TEST.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
+			</center>
 
 		</div>
 
