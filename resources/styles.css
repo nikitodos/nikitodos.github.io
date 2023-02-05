@@ -104,7 +104,7 @@ footer {
 	font-size: 1.25em;
 }
 
-#starseeker {
+#3dModel {
 	position: absolute;
 	margin: 0 auto;
 	width: 90%;
@@ -124,7 +124,7 @@ footer {
 	transition-duration: 0.5s;
 }
 
-#starseeker:hover {
+#3dModel:hover {
 	opacity: 1;
 }
 
