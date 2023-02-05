@@ -2,286 +2,52 @@
 <html>
 	<head>
 
-		<!--
-
-				0 ========================================================= 0
+		<!--	0 ========================================================= 0
 				|                                                           |\
 				|                                                           | \
-				|                      0 0                    0 0           |  \
-				|      |              / \ \                   | |     |     |   0
-				|      |             / / \ \                  | |     |     |   |
-				|      ------------ / / - \ \ --------------- | |     |     |   |
-				|      |           / /     \ \                | |     |     | \ |
-				|      |          / /       \ \               | |     |     |   |
-				|      --------- 0 --------- 0 \ ------ 0 0 - 0 |     |     |   |
-				|      |        / /           \ \      / /    | |     |     |   |
-				|      ------- / / ----------- \ \ -- 0 / --- | |     |     | \ |
-				|      |      / /               \ \    \      | |     |     |   |
-				|      ----- 0 0 --------------- 0 0 -- 0 --- 0 0     |     |   |
+				|                                                           |  \
+				|             WRITTEN BY @NIKITODOS, GITHUB USER            |   0
+				|         ALL THE CONTENT IS A PRODUCT OF  @NIKITODOS       |   |
 				|                                                           |   |
-				|     WRITTEN BY GIOVANNI N. D'ALOISIO, a.k.a. NikitoDos    | \ |
 				|                                                           |   |
-				|                 =========================                 |   |
+				|                 =========================                 | \ |
 				|                                                           |   |
-				|    YOU ARE NOT ALLOWED TO REDISTRIBUTE, COPY OR MODIFY    | \ |
-				|  THIS CODE WITHOUT EXPLICIT PERMISSION OF THE WEBMASTER.  |   |
 				|                                                           |   |
-				|                 =========================                 |   |
-				|                                                           | \ |
+				|    YOU ARE NOT ALLOWED TO REDISTRIBUTE, COPY OR MODIFY    |   |
+				|            THIS CODE WITHOUT EXPLICIT PERMISSION.         | \ |
+				|                  WEBMASTER: @NIKITODOS, GITHUB.           |   |
+                |                                                           |   |
+                |                                                           |   |
+				|                 =========================                 | \ |
+				|                                                           |   |
 				|   Theory is when you know everything but nothing works,   |   |
 				| practice is when everything works but you don't know why. |   |
 				|                                                           |   |
 				|           Here theory and pratice are combined,           | \ |
-				|        because nothing works and we don't know why.       |   |
+				|       because nothing works and you don't know why.       |   |
 				|                                                           |   |
 				0 --------------------------------------------------------- 0   |
 				 \     \     \     \     \     \     \     \     \     \     \  |
 				  \     \     \     \     \     \     \     \     \     \     \ |
 				   \     \     \     \     \     \     \     \     \     \     \|
-				    0 --------------------------------------------------------- 0
+				    0 --------------------------------------------------------- 0    -->
 
-		-->
-
-		<title>NikitoDos Projects</title>
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<title>NikitoDos' Acme Corporation</title>
+		
 		<meta charset="utf-8" />
-		<meta name="description" content="NikitoDos Projects">
-		<meta name="author" content="Giovanni Nicola D'Aloisio">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="resources/animate.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
-		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
-
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<meta name="description" content="NikitoDos' Acme Corporation">
+		<meta name="author" content="Giovanni Nicola D'Aloisio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-
-		<!--
-
-			h1 = Fascia centrale
-			>> slideshow
-			h2 = Pulsante centrale
-			>> img_button
-			h3 = Links & Copyright
-			>> footer
-			h4 = Pannello per Ikaurs-Y
-			>> ikarus_y
-			h5 = Pannello per Starseeker
-			>> starseeker
-			>> spektr = Pannello per spektr
-
-		-->
-
-		<style>
-				body {
-					-webkit-touch-callout: none; /* iOS Safari */
-    			-webkit-user-select: none; /* Safari */
-   		    -moz-user-select: none; /* Firefox */
-   			  -ms-user-select: none; /* Edge */
-     			user-select: none; /* Blink */
-					background-color: black;
-				}
-				#bg {
-					position: fixed;
-					width: 100%;
-					height: 100%;
-					top: 0;
-					left: 0;
-					background: url(resources/bg.jpg) no-repeat center top;
-					background-position: center;
-					background-size: cover;
-					z-index: -1;
-					opacity: 0.75;
-					filter: blur(5px);
-				}
-				a {
-					text-decoration: none;
-				}
-				model-viewer {
-					height: 500px;
-					width: 75%;
-				}
-				#h1 {
-					position: fixed;
-					left: 0;
-					top: 30%;
-					width: 100%;
-					padding: 0px 0;
-					transition-duration: 0.5s;
-					text-shadow: 1px 1px 1px black;
-				}
-				#h1:hover {
-					position: absolute;
-					left: 0;
-					top: 30%;
-					width: 100%;
-					padding: 0px 0;
-					transition-duration: 0.5s;
-					text-shadow: 1px 1px 1px black;
-				}
-				#h2 {
-					position: relative;
-					margin: 0 auto;
-					width: 75%;
-					text-align: center;
-					text-decoration: none;
-					text-shadow: 1px 1px 1px black;
-					animation: fadeIn 1s;
-					transition-duration: 0.5s;
-				}
-				#h2:hover {
-					position: relative;
-					margin: 0 auto;
-					width: 75%;
-					text-align: center;
-					text-decoration: none;
-					text-shadow: 1px 1px 1px black;
-					animation: pulse 1s;
-					transition-duration: 0.5s;
-    			}
-				h3 {
-					position: fixed;
-					bottom: 0em;
-					left: 0;
-					width: 100%;
-					font-family: "Source Sans Pro", Source Sans Pro, serif;
-					text-align: center;
-					text-decoration: none;
-					font-style: normal;
-					font-size: 1.25em;
-					text-shadow: 1px 1px 1px black;
-					color:#FFFFFF
-				}
-				#h4 {
-					position: absolute;
-					margin: 0 auto;
-					width: 90%;
-					top: 5%;
-					left: 5%;
-					margin-bottom: 10%;
-					background-color: #FFFFFF;
-					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-					border-radius: 10px 10px 10px 10px;
-					font-family: "Source Sans Pro", Source Sans Pro, sans-serif;
-					text-align: center;
-					text-decoration: none;
-					font-style: normal;
-					font-size: 0.9em;
-					opacity: 0.9;
-					animation: fadeIn 1s;
-					transition-duration: 0.5s;
-				}
-				#h4:hover {
-					position: absolute;
-					margin:0 auto;
-					width: 90%;
-					top: 5%;
-					left: 5%;
-					margin-bottom: 10%;
-					background-color: #FFFFFF;
-					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-					border-radius: 10px 10px 10px 10px;
-					font-family: "Source Sans Pro", Source Sans Pro, sans-serif;
-					text-align: center;
-					text-decoration: none;
-					font-style: normal;
-					font-size: 0.9em;
-					opacity: 1;
-					animation: fadeIn 1s;
-					transition-duration: 0.5s;
-				}
-				#h4a {
-					font-family: 'Source Sans Pro', sans-serif;
-					text-align: center;
-					text-decoration: none;
-					font-style: normal;
-					font-size: 1.25em;
-				}
-				#h5 {
-					position: absolute;
-					margin: 0 auto;
-					width: 90%;
-					top: 5%;
-					left: 5%;
-					margin-bottom: 10%;
-					background-color: #FFFFFF;
-					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-					border-radius: 10px 10px 10px 10px;
-					font-family: "Source Sans Pro", Source Sans Pro, sans-serif;
-					text-align: center;
-					text-decoration: none;
-					font-style: normal;
-					font-size: 0.9em;
-					opacity: 0.9;
-					animation: fadeIn 1s;
-					transition-duration: 0.5s;
-				}
-				#h5:hover {
-					position: absolute;
-					margin:0 auto;
-					width: 90%;
-					top: 5%;
-					left: 5%;
-					margin-bottom: 10%;
-					background-color: #FFFFFF;
-					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-					border-radius: 10px 10px 10px 10px;
-					font-family: "Source Sans Pro", Source Sans Pro, sans-serif;
-					text-align: center;
-					text-decoration: none;
-					font-style: normal;
-					font-size: 0.9em;
-					opacity: 1;
-					animation: fadeIn 1s;
-					transition-duration: 0.5s;
-				}
-				.button {
-					background-color: #FFFFFF;
-					border-color: #2B292E;
-					border-width: 1 px;
-					color: black;
-					padding: 5px 10px;
-					text-align: center;
-					text-decoration: none;
-					display: inline-block;
-					font-size: 16px;
-					margin: 2px 2px;
-					cursor: pointer;
-				}
-				@media only screen and (max-width: 768px) {
-					#h1 {
-						top: 30%;
-					}
-					#h1:hover {
-						top: 30%;
-					}
-					#h2 {
-						width: 90%;
-					}
-					#h2:hover {
-						width: 90%;
-					}
-					#h4 {
-						width: 90%;
-						top: 5%;
-						left: 5%;
-					}
-					#h4:hover {
-						width: 90%;
-						top: 5%;
-						left: 5%;
-					}
-					.responsive {
-						width: 90%;
-						max-width: 350px;
-						height: auto;
-					}
-				}
-		</style>
-
+		
 		<!-- Script per div a comparsa -->
 
 		<script type="text/javascript" language="javascript">
-			function visualizza(id){
+			function divshow(id){
 			  if (document.getElementById){
 				if(document.getElementById(id).style.display == 'none'){
 				  document.getElementById(id).style.display = 'block';
@@ -291,6 +57,10 @@
 			  }
 			}
 		</script>
+
+		<!-- Importa foglio di stili -->
+
+		<link href="stile.css" rel="stylesheet" type="text/css">
 
 	</head>
 
@@ -330,21 +100,15 @@
 
 		<!-- Elemento centrale -->
 
-		<div id=h1>
-			<div id=h2 class="animated fadeIn">
-				<a href="#" onclick="visualizza('h4'); return false" style="color:#FFFFFF" title="Kvant Test Article (KTA/Ikarus) Program">
+		<div id=slideshow>
+			<div id=img_button class="animated fadeIn">
+				<a href="#" onclick="divshow('ikarus_y'); return false" style="color:#FFFFFF" title="Kvant Test Article (KTA/Ikarus) Program">
 					<img src="resources/logos/ikaruslogo.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
 			<br>
-			<div id=h2 class="animated fadeIn">
-				<a href="resources/Astrodynamics_Space_Framework__Rev__3_.pdf" style="color:#FFFFFF" target=”_blank” title="Astrodynamics Space Framework (Rev. 3)">
-					<img src="resources/logos/astrodynamics.png" class="responsive" style="width:400px;">
-				</a>
-			</div>
-			<br>
-			<div id=h2 class="animated fadeIn">
-				<a href="#" onclick="visualizza('h5'); return false" style="color:#FFFFFF" title="Starseeker Modular Telescope">
+			<div id=img_button class="animated fadeIn">
+				<a href="#" onclick="divshow('starseeker'); return false" style="color:#FFFFFF" title="Starseeker Modular Telescope">
 					<img src="resources/logos/starseeker.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
@@ -354,21 +118,21 @@
 
 		<!-- Links & Copyright -->
 
-		<h3 class="animated fadeIn">
+		<footer class="animated fadeIn">
 			<font style="font-size:0.8em;" color="#FFFFFF">
 				Designed and engineered by <a href="https://github.com/nikitodos/nikitodos.github.io" style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio">NikitoDos</a>
 			</font>
-		</h3>
+		</footer>
 
 		<!-- Starseeker -->
 
-		<div id=h5 style="display:none; overflow-x:auto;">
+		<div id=starseeker style="display:none; overflow-x:auto;">
 
-			<div id=h4a onclick="visualizza('h5'); return false">
+			<div id=ikarus_ya onclick="divshow('starseeker'); return false">
 				<br><br><i class="far fa-times-circle"></i>
 			</div>
 
-			<div id=h4a onclick="visualizza('h5'); return false">
+			<div id=ikarus_ya onclick="divshow('starseeker'); return false">
 				<br><strong><u>Starseeker Modular Telescope</u></strong><br><br>
 			</div>
 
@@ -382,13 +146,13 @@
 
 		<!-- Div dedicato ai KTA -->
 
-		<div id=h4 style="display:none; overflow-x:auto;">
+		<div id=ikarus_y style="display:none; overflow-x:auto;">
 
-			<div id=h4a onclick="visualizza('h4'); return false">
+			<div id=ikarus_ya onclick="divshow('ikarus_y'); return false">
 				<br><br><i class="far fa-times-circle"></i><br>
 			</div>
 
-			<div id=h4a>
+			<div id=ikarus_ya>
 				<br><strong><strong><u>Ikarus-X Final Report</u></strong></strong><br>
 			</div>
 
@@ -396,336 +160,13 @@
 
 			<a href="https://nikitodos.github.io/resources/Ikarus_X_Final.pdf" style="color:black" target=”_blank” title="Sviluppo e costruzione di Ikarus-X">Click here to access this resource</a>
 
-			<div id=h4a onclick="visualizza('h5'); return false">
+			<div id=ikarus_ya onclick="divshow('starseeker'); return false">
 				<br><strong><u>Ikarus-Y 3D Model</u></strong><br><br>
 			</div>
 
 			<center>
 				<model-viewer id="starseeker" src="https://nikitodos.github.io/resources/IKARUS-Y_TEST.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
 			</center>
-
-			<div id=h4a>
-				<br><strong><strong><u>Ikarus-Y Remote Control Panel</u></strong></strong><br>
-			</div>
-
-			<br>
-
-			<label for="file">Low-Tension Battery Level &emsp;</label>
-			<progress id="file" value="10" max="100"> 10% </progress>
-
-			<!-- Sezione di macchina -->
-
-			<div id=h4a>
-				<br><strong>Engineering section</strong><br><br>
-			</div>
-
-			<label for="file">High-Tension Battery Level &emsp;</label>
-			<progress id="file" value="10" max="100"> 10% </progress>
-
-			<br><br>
-
-			<center>
-
-				<!-- Pannello Laserfan di dritta -->
-
-				<font style="font-family: 'Source Sans Pro', sans-serif; text-align: center; text-decoration: none; font-style: normal; font-size: 1.10em;">
-					<u>Starboard Laserfan</u>
-				</font>
-
-				<table>
-					<tr>
-
-						<td>
-							<table>
-								<tr>
-									<td><center><button class="button">&emsp; RPM &emsp;</button></center></td>
-									<td><center><button class="button">&emsp; Health &emsp;</button></center></td>
-								</tr>
-								<tr>
-									<td><center><button class="button">ND</button></center></td>
-									<td><center><button class="button">ND</button></center></td>
-								</tr>
-							</table>
-						</td>
-
-						<td>
-							&emsp; &emsp;
-						</td>
-
-						<td>
-							<img id="fanA" src="resources/ikarus_machine/fan-off.png" height="150" onclick="fanA()">
-							<script>
-								function fanA() {
-									// To be written: send a boolean i as true to Arduino for stating component startup
-									//
-
-									// Then, update the status image (when Arduino resends i = true) - Debugged
-									var i;
-									if(i) {document.getElementById("fanA").src = "resources/ikarus_machine/fan-on.png";}
-									else {document.getElementById("fanA").src = "resources/ikarus_machine/fan-off.png";}
-								}
-							</script>
-						</td>
-						<td>
-							<img id="valveA" src="resources/ikarus_machine/valve-off.png" height="150" onclick="valveA()">
-							<script>
-								function valveA() {
-									// To be written: send a boolean i as true to Arduino for stating component startup
-									//
-
-									// Then, update the status image (when Arduino resends i = true) - Debugged
-									var i;
-									if(i) {document.getElementById("valveA").src = "resources/ikarus_machine/valve-on.png";}
-									else {document.getElementById("valveA").src = "resources/ikarus_machine/valve-off.png";}
-								}
-							</script>
-						</td>
-						<td>
-							<img id="scrA" src="resources/ikarus_machine/scr-off.png" height="150" onclick="scrA()">
-							<script>
-								function scrA() {
-									// To be written: send a boolean i as true to Arduino for stating component startup
-									//
-
-									// Then, update the status image (when Arduino resends i = true) - Debugged
-									var i;
-									if(i) {document.getElementById("scrA").src = "resources/ikarus_machine/scr-on.png";}
-									else {document.getElementById("scrA").src = "resources/ikarus_machine/scr-off.png";}
-								}
-							</script>
-						</td>
-						<td>
-							<img id="plumeA" src="resources/ikarus_machine/plume-off.png" height="150" onclick="plumeA()">
-							<script>
-								function plumeA() {
-									// To be written: send a boolean i as true to Arduino for stating component startup
-									//
-
-									// Then, update the status image (when Arduino resends i = true) - Debugged
-									var i;
-									if(i) {document.getElementById("plumeA").src = "resources/ikarus_machine/plume-on.png";}
-									else {document.getElementById("plumeA").src = "resources/ikarus_machine/plume-off.png";}
-								}
-							</script>
-						</td>
-
-						<td>
-							<table>
-								<tr>
-									<td><center><button class="button">&emsp; Pitch &emsp;</button></center></td>
-									<td><center><button class="button">&emsp; Yaw &emsp;</button></center></td>
-								</tr>
-								<tr>
-									<td><center><button class="button">ND°</button></center></td>
-									<td><center><button class="button">ND°</button></center></td>
-								</tr>
-							</table>
-						</td>
-
-					</tr>
-				</table>
-
-				<br>
-
-				<!-- Pannello Laserfan di sinistra -->
-
-				<font style="font-family: 'Source Sans Pro', sans-serif; text-align: center; text-decoration: none; font-style: normal; font-size: 1.10em;">
-					<u>Port Laserfan</u>
-				</font>
-
-				<table>
-					<tr>
-
-						<td>
-							<table>
-								<tr>
-									<td><center><button class="button">&emsp; RPM &emsp;</button></center></td>
-									<td><center><button class="button">&emsp; Health &emsp;</button></center></td>
-								</tr>
-								<tr>
-									<td><center><button class="button">ND</button></center></td>
-									<td><center><button class="button">ND</button></center></td>
-								</tr>
-							</table>
-						</td>
-
-						<td>
-							&emsp; &emsp;
-						</td>
-
-						<td>
-							<img id="fanB" src="resources/ikarus_machine/fan-off.png" height="150" onclick="fanB()">
-							<script>
-								function fanB() {
-									// To be written: send a boolean i as true to Arduino for stating component startup
-									//
-
-									// Then, update the status image (when Arduino resends i = true) - Debugged
-									var i;
-									if(i) {document.getElementById("fanB").src = "resources/ikarus_machine/fan-on.png";}
-									else {document.getElementById("fanB").src = "resources/ikarus_machine/fan-off.png";}
-								}
-							</script>
-						</td>
-						<td>
-							<img id="valveB" src="resources/ikarus_machine/valve-off.png" height="150" onclick="valveB()">
-							<script>
-								function valveB() {
-									// To be written: send a boolean i as true to Arduino for stating component startup
-									//
-
-									// Then, update the status image (when Arduino resends i = true) - Debugged
-									var i;
-									if(i) {document.getElementById("valveB").src = "resources/ikarus_machine/valve-on.png";}
-									else {document.getElementById("valveB").src = "resources/ikarus_machine/valve-off.png";}
-								}
-							</script>
-						</td>
-						<td>
-							<img id="scrB" src="resources/ikarus_machine/scr-off.png" height="150" onclick="scrB()">
-							<script>
-								function scrB() {
-									// To be written: send a boolean i as true to Arduino for stating component startup
-									//
-
-									// Then, update the status image (when Arduino resends i = true) - Debugged
-									var i;
-									if(i) {document.getElementById("scrB").src = "resources/ikarus_machine/scr-on.png";}
-									else {document.getElementById("scrB").src = "resources/ikarus_machine/scr-off.png";}
-								}
-							</script>
-						</td>
-						<td>
-							<img id="plumeB" src="resources/ikarus_machine/plume-off.png" height="150" onclick="plumeB()">
-							<script>
-								function plumeB() {
-									// To be written: send a boolean i as true to Arduino for stating component startup
-									//
-
-									// Then, update the status image (when Arduino resends i = true) - Debugged
-									var i;
-									if(i) {document.getElementById("plumeB").src = "resources/ikarus_machine/plume-on.png";}
-									else {document.getElementById("plumeB").src = "resources/ikarus_machine/plume-off.png";}
-								}
-							</script>
-						</td>
-
-						<td>
-							<table>
-								<tr>
-									<td><center><button class="button">&emsp; Pitch &emsp;</button></center></td>
-									<td><center><button class="button">&emsp; Yaw &emsp;</button></center></td>
-								</tr>
-								<tr>
-									<td><center><button class="button">ND°</button></center></td>
-									<td><center><button class="button">ND°</button></center></td>
-								</tr>
-							</table>
-						</td>
-
-					</tr>
-				</table>
-
-				<br>
-
-				<div id=h4a>
-					<br><strong>Navigation section</strong><br>
-				</div>
-
-				<br>
-
-				<table>
-
-					<tr>
-						<td>
-
-							<!-- Barra dati di navigazione generici -->
-
-							<!-- Se ND allora non c'è connessione, se telemetria visualizzata allora operatività corretta -->
-
-							<center>
-								<table>
-									<tr>
-										<td><center><button class="button">&emsp; &emsp; &emsp; &emsp; Position &emsp; &emsp; &emsp; &emsp;</button></center></td>
-										<td><center><button class="button">&emsp; &emsp; Time of Flight &emsp; &emsp;</button></center></td>
-										<td><center><button class="button">&emsp; &emsp; Stability of Flight &emsp; &emsp;</button></center></td>
-										<td><center><button class="button">&emsp; Remote Control &emsp;</button></center></td>
-										<td><center><button class="button">&emsp; High-Tension Source &emsp;</button></center></td>
-									</tr>
-									<tr>
-										<td><center><button class="button">ND° ND - ND° ND</button></center></td>		<!-- Misure nautiche -->
-										<td><center><button class="button">T + ND min</button></center></td>			<!-- Misure aerospaziali -->
-										<td><center><button class="button">ND</button></center></td>
-										<td><center><button class="button">ND</button></center></td>
-										<td><center><button class="button">Sun</button></center></td>
-									</tr>
-								</table>
-								<br>
-								<table>
-									<tr>
-										<td></td>
-										<td></td>
-										<td>
-											<center><table>
-												<tr>
-													<td><center><button class="button">&emsp; Temperature &emsp;</button></center></td>
-													<td><center><button class="button">&emsp; Gears &emsp;</button></center></td>
-													<td><center><button class="button">&emsp; Parachute &emsp;</button></center></td>
-													<td><center><button class="button">&emsp; Engines &emsp;</button></center></td>
-													<td><center><button class="button">&emsp; Altitude &emsp;</button></center></td>
-													<td><center><button class="button">&emsp; Speed &emsp;</button></center></td>
-													<td><center><button class="button">&emsp; &emsp; Sensitivity &emsp; &emsp;</button></center></td>
-												</tr>
-												<tr>
-													<td><center><button class="button">ND °C</button></center></td>								<!-- Misure SI -->
-													<td><center><button class="button"><font color="red">ND</font></button></center></td>		<!-- Cliccabile -->
-													<td><center><button class="button"><font color="red">ND</font></button></center></td>		<!-- Cliccabile -->
-													<td><center><button class="button"><font color="red">ND</font></button></center></td>		<!-- Cliccabile -->
-													<td><center><button class="button">ND M</button></center></td>								<!-- Misure nautiche -->
-													<td><center><button class="button">ND kts</button></center></td>
-													<td><center><input type="range" min="1" max="100" value="10"></center></td>
-												</tr>
-											</table></center>
-										</td>
-										<td></td>
-										<td></td>
-									</tr>
-								</table>
-							</center>
-
-						</td>
-					</tr>
-					<tr>
-						<td>
-
-							<!-- Mappa, visuale e modello 3D -->
-
-							<br>
-
-							<table>
-								<tr>
-									<td>
-										<center>
-											<iframe width="490" height="340" src="https://www.google.com/maps/" frameborder="0" scrolling="no"></iframe>
-										</center>
-									</td>
-									<td>&emsp;</td>
-									<td>
-										<!-- Visualizza modello in rotazione se contatto perso, visualizza modello con relativa inclinazione altrimenti -->
-										<center>
-											<iframe width="500" height="350" src="https://nikitodos.github.io/resources/ikarus_model/web-examples/auto-rotate.html" frameborder="0" scrolling="no"></iframe>
-										</center>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-
-				</table>
-
-			</center>
-
-			<br><br>
 
 		</div>
 
