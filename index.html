@@ -128,47 +128,21 @@
 			</font>
 		</footer>
 
-		<!-- Starseeker -->
-
-		<div id=3dModel style="display:none; overflow-x:auto;">
-
-			<br><br>
-
-			<div id=3dModel_title onclick="divshow('3dModel'); return false">
-				<i class="far fa-times-circle"></i>
-			</div>
-			
-			<br><br>
-
-			<div id=3dModel_title>
-				<strong><u>Starseeker Modular Telescope</u></strong>
-			</div>
-			
-			<br><br>
-
-			<center>
-				<model-viewer src="https://nikitodos.github.io/resources/starseeker/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
-			</center>
-
-			<br><br>
-
-		</div>
-
 		<!-- Kvant Test Articles -->
 
-		<div id=kvant style="display:none; overflow-x:auto;">
+		<card id=kvant style="display:none; overflow-x:auto;">
 
-			<br><br>
+			<br>
 
-			<div id=kvant_title onclick="divshow('kvant'); return false">
+			<card_title onclick="divshow('kvant'); return false">
 				<i class="far fa-times-circle"></i>
-			</div>
+			</card_title>
 
-			<br><br>
+			<br>
 
-			<div id=kvant_title>
+			<card_title id=kvant_title>
 				<strong><strong><u>Ikarus-X Development Report</u></strong></strong>
-			</div>
+			</card_title>
 
 			<br><br>
 
@@ -176,17 +150,37 @@
 
 			<br><br>
 
-			<div id=kvant_title onclick="divshow('3dModel'); return false">
+			<card_title onclick="divshow('3dModel'); return false">
 				<strong><u>Ikarus-Y Development Model</u></strong>
-			</div>
+			</card_title>
 
 			<br><br>
 
-			<center>
-				<model-viewer src="https://github.com/nikitodos/nikitodos.github.io/raw/main/resources/IKARUS-Y_TEST.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer>
-			</center>
+			<center><model-viewer src="https://github.com/nikitodos/nikitodos.github.io/raw/main/resources/IKARUS-Y_TEST.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer></center>
 
-		</div>
+		</card>
+		
+		<!-- Starseeker -->
+
+		<card id=3dModel style="display:none; overflow-x:auto;">
+
+			<br>
+
+			<card_title onclick="divshow('3dModel'); return false">
+				<i class="far fa-times-circle"></i>
+			</card_title>
+			
+			<br>
+
+			<card_title>
+				<strong><u>Starseeker Modular Telescope</u></strong>
+			</card_title>
+			
+			<br><br>
+
+			<center><model-viewer src="https://nikitodos.github.io/resources/starseeker/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" auto-rotate camera-controls></model-viewer></center>
+
+		</card>
 
 	</body>
 
