@@ -58,7 +58,7 @@ model-viewer {
 
 footer {
 	position: fixed;
-	bottom: 0em;
+	bottom: 0.5em;
 	left: 0;
 	width: 100%;
 	font-family: "Source Sans Pro", Source Sans Pro, serif;
