@@ -119,13 +119,13 @@ card_title {
 
 @media only screen and (max-width: 768px) {
 	#slideshow {
-		top: 30%;
+		top: 35%;
 	}
 	#img_button {
 		width: 90%;
 	}
 	.responsive_card_img{
-		width: 70%;
+		width: 300px;
 	}
 	card {
 		width: 70%;
