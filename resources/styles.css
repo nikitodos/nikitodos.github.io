@@ -30,7 +30,7 @@ model-viewer {
 #slideshow {
 	position: fixed;
 	left: 0;
-	top: 30%;
+	top: 40%;
 	width: 100%;
 	padding: 0px 0;
 	ransition-duration: 0.5s;
@@ -73,11 +73,11 @@ footer {
 card {
 	position: absolute;
 	margin: 0 auto;
-	width: 90%;
-	top: 5%;
-	left: 5%;
-	margin-bottom: 10%;
-	padding-bottom: 2em;
+	width: 80%;
+	top: 3em;
+	left: 5em;
+	right: 5em;
+	padding: 2em;
 	background-color: #FFFFFF;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 10px 10px 10px 10px;
