@@ -30,7 +30,7 @@ model-viewer {
 #slideshow {
 	position: fixed;
 	left: 0;
-	top: 45%;
+	top: 50%;
 	width: 100%;
 	padding: 0px 0;
 	ransition-duration: 0.5s;
@@ -121,7 +121,6 @@ card_title {
 	#slideshow {
 		top: 30%;
 	}
-	#slideshow:hover {}
 	#img_button {
 		width: 90%;
 	}
@@ -131,10 +130,9 @@ card_title {
 		top: 5%;
 		left: 5%;
 	}
-	#kvant:hover {}
-		.responsive {
-		width: 90%;
+	.responsive {
+		width: 80%;
 		max-width: 350px;
-	height: auto;
+		height: auto;
 	}
 }
