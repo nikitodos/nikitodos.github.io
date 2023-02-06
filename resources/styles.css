@@ -134,4 +134,9 @@ card_title {
 		max-width: 350px;
 		height: auto;
 	}
+	.responsive_incard {
+		width: 70%;
+		max-width: 250px;
+		height: auto;
+	}
 }
