@@ -30,7 +30,7 @@ model-viewer {
 #slideshow {
 	position: fixed;
 	left: 0;
-	top: 60%;
+	top: 40%;
 	width: 100%;
 	padding: 0px 0;
 	ransition-duration: 0.5s;
@@ -125,12 +125,12 @@ card_title {
 		width: 90%;
 	}
 	card {
-		width: 90%;
+		width: 70%;
 		top: 5%;
 		left: 5%;
 	}
 	.responsive {
-		width: 80%;
+		width: 90%;
 		max-width: 350px;
 		height: auto;
 	}
