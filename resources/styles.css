@@ -30,7 +30,7 @@ model-viewer {
 #slideshow {
 	position: fixed;
 	left: 0;
-	top: 50%;
+	top: 60%;
 	width: 100%;
 	padding: 0px 0;
 	ransition-duration: 0.5s;
@@ -119,13 +119,12 @@ card_title {
 
 @media only screen and (max-width: 768px) {
 	#slideshow {
-		top: 30%;
+		top: 40%;
 	}
 	#img_button {
 		width: 90%;
 	}
-	#img_button:hover {}
-		#kvant {
+	card {
 		width: 90%;
 		top: 5%;
 		left: 5%;
