@@ -30,7 +30,7 @@ model-viewer {
 #slideshow {
 	position: fixed;
 	left: 0;
-	top: 40%;
+	top: 45%;
 	width: 100%;
 	padding: 0px 0;
 	ransition-duration: 0.5s;
