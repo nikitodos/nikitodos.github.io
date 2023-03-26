@@ -2,7 +2,7 @@
 
 > Sometimes my genius... It generates gravity.
 
-+ I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), Southerner, [**ENTJ-T**](https://www.16personalities.com/entj-personality).
++ I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), [Southerner](https://en.wikipedia.org/wiki/South_Italy), [**ENTJ-T**](https://www.16personalities.com/entj-personality).
 + Actually a merit Physics student interested in astrophysics and planetary sciences, and singer in a Rock band based in Northern Italy.
 + Actually working on my *Endurance Space Framework*, inside the *Unipv Rocket Team* that I founded in 2023.
 + Formerly IT teacher (see my [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro) courses at [University of Pavia](https://web-en.unipv.it/)).
