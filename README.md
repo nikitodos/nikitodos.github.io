@@ -1,13 +1,11 @@
 # NikitoDos' Short Datasheet
 
-> Sometimes my genius... It generates gravity.
+> Sometimes my genius... It's almost frightening.
 
-+ I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), [*southerner*](https://en.wikipedia.org/wiki/South_Italy), [**ENTJ-T**](https://www.16personalities.com/entj-personality).
-+ Actually a merit Physics student interested in astrophysics and planetary sciences.
-+ I'm singer in a Rock band based in Northern Italy.
-+ Actually working on my *Endurance Space Framework*, inside the *Unipv Rocket Team* that I founded in 2023.
-+ Full Performance member inside [Unipv Sailing Team](https://unipv-sailing-team-9a6ed.netlify.app/).
-+ Formerly IT teacher (see my [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro) courses at [University of Pavia](https://web-en.unipv.it/)).
++ I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), and I'm an ([**ENTJ-T**](https://www.16personalities.com/entj-personality)) studying [**Physics**](https://fisica.dip.unipv.it/en) at the University.
++ I'm specializing in astrophysics and planetary sciences at [**IUSS**](https://www.iusspavia.it/en), but I'm already quite expert in space and electronic engineering.
++ I'm a full Performance analyst inside the [UniPV Sailing Team](https://unipv-sailing-team-9a6ed.netlify.app/).
++ I'm actually working on my *Endurance Space Framework*, inside the *Unipv Rocket Team* that I founded in 2023.
++ I've teached IT several times in my career (see my [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro) courses at UniPV).
 + I've been cadet on board [**Amerigo Vespucci**](https://en.wikipedia.org/wiki/Italian_training_ship_Amerigo_Vespucci) and technician in electrical powerplants.
 + I've worked on my [*Starseeker*](https://github.com/nikitodos/starseeker) telescope concept, several [Internet communities](https://github.com/nikitodos/FirstNotes) and [scaled models](https://github.com/nikitodos/3D_Collection) of spacecrafts.
-+ I'm quite expert in space and electronic engineering, and I enjoy spending my time doing some [graphical stuff](https://raw.githubusercontent.com/nikitodos/nikitodos.github.io/main/resources/logos/EnduranceSmall.png).
