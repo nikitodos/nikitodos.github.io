@@ -4,5 +4,5 @@
 + I'm specializing in astrophysics and planetary sciences at [**IUSS**](https://www.iusspavia.it/en), but I'm keen on space and electronic engineering.
 + I'm a full Performance analyst inside the [UniPV Sailing Team](http://www.sailingteamunipv.it/) since March 2023.
 + I've teached IT several times (see my [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro) courses at UniPV).
-+ I've been cadet on board [**Amerigo Vespucci**](https://en.wikipedia.org/wiki/Italian_training_ship_Amerigo_Vespucci) in Autumn 2022 and technician in electrical powerplants in Summer 2019.
++ I've been cadet on board [**Amerigo Vespucci**](https://en.wikipedia.org/wiki/Italian_training_ship_Amerigo_Vespucci) in 2022 and technician in electrical powerplants in 2019.
 + In high school I worked on my [*Starseeker*](https://github.com/nikitodos/starseeker) telescope concept, several [Internet communities](https://github.com/nikitodos/FirstNotes) and [scaled models](https://github.com/nikitodos/3D_Collection) of spacecrafts.
