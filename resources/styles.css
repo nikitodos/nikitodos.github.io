@@ -47,10 +47,6 @@ model-viewer {
 	text-shadow: 1px 1px 1px black;
 }
 
-#slideshow:hover {
-	position: absolute;
-}
-
 #img_button {
 	position: relative;
 	margin: 0 auto;
