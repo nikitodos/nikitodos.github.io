@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<!--            0 ========================================================= 0
+		<!--    0 ========================================================= 0
 				|                                                           |\
 				|                                                           | \
 				|                                                           |  \
@@ -16,7 +16,7 @@
 				|    YOU ARE NOT ALLOWED TO REDISTRIBUTE, COPY OR MODIFY    |   |
 				|            THIS CODE WITHOUT EXPLICIT PERMISSION.         | \ |
 				|                  WEBMASTER: @NIKITODOS, GITHUB.           |   |
-                                |                                                           |   |
+                |                                                           |   |
 				|                                                           |   |
 				|                 =========================                 | \ |
 				|                                                           |   |
@@ -32,7 +32,7 @@
 				   \     \     \     \     \     \     \     \     \     \     \|
 				    0 --------------------------------------------------------- 0    -->
 
-		<title>Nikito Industries</title>
+		<title>Nikito Technologies</title>
 
 		<meta charset="utf-8" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -101,7 +101,7 @@
 		<p>
 			<br>
 			<center>
-				<img src="resources/logos/title.png" class="responsive" style="width:400px;">
+				<img src="resources/logos/title.png" class="responsive" style="width:500px;">
 			</center>
 		</p>
 
@@ -120,30 +120,61 @@
 
 		<div id=slideshow>
 
-			<div id=img_button class="animated fadeIn">
+			<div id=img_button class="mySlides animated fadeIn">
 				<a href="#" onclick="divshow('kvant'); return false" style="color:#FFFFFF" title="KTA Program">
-					<img src="resources/logos/ikaruslogo.png" class="responsive" style="width:400px;">
+					<img src="resources/logos/kvant_logo.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
 
-			<br>
+			<div id=img_button class="mySlides animated fadeIn">
+				<a href="resources/DAloisio_Framework_Rev2_Draft.pdf" target=”_blank” style="color:#FFFFFF" title="Draft - A concept of space framework">
+					<img src="resources/logos/framework_logo.png" class="responsive" style="width:400px;">
+				</a>
+			</div>
 
-			<div id=img_button class="animated fadeIn">
+			<div id=img_button class="mySlides animated fadeIn">
 				<a href="#" onclick="divshow('3dModel'); return false" style="color:#FFFFFF" title="Starseeker Modular Telescope">
 					<img src="resources/logos/starseeker.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
+			
+			<!-- Dots for slideshow -->
+			
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
 
 		</div>
+		
+		<script>
+			let slideIndex = 0;
+			showSlides();
 
-		<p></p>
+			function showSlides() {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+		</script>
 
 		<!-- Links & Copyright -->
 
 		<footer class="animated fadeIn">
 			<font style="font-size:0.8em;" color="#FFFFFF">
-				I don't really own a company, I lack funding.<br>
-				© 2023 <a href="https://github.com/nikitodos/nikitodos.github.io" style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio">NikitoDos</a>.
+				© 2023 <a href="https://github.com/nikitodos/nikitodos.github.io" style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio">Nikito</a> <a href="https://twitter.com/nikitodoss style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio"><i class="fa-brands fa-twitter"></i></a>
 			</font>
 		</footer>
 
@@ -186,7 +217,7 @@
 			I started coding, sketching and writing scripts, things and notes, during my classes, in the evenings, while playing the guitar. That concept of an hybrid space propulsion: "What if I combined electric propulsion with chemical propulsion?". It was <i>Ikarus-X</i>, and in just two months of work it had seen the light.
 			<br>What follows is a report that constains the main details about the project.<br><br>
 
-			<a href="resources/Ikarus_X_Final.pdf" style="color:black" target=”_blank” title="Sviluppo e costruzione di Ikarus-X">PDF - Italian</a>
+			<a href="resources/DAloisio_Ikarus_X_Final.pdf" style="color:black" target=”_blank” title="Sviluppo e costruzione di Ikarus-X">PDF - Italian</a>
 
 			<br><br>
 
