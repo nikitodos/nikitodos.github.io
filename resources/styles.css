@@ -40,10 +40,10 @@ model-viewer {
 #slideshow {
 	position: fixed;
 	left: 0;
-	top: 40%;
+	top: 30%;
 	width: 100%;
 	padding: 0px 0;
-	ransition-duration: 0.5s;
+	transition-duration: 0.5s;
 	text-shadow: 1px 1px 1px black;
 }
 
@@ -56,6 +56,10 @@ model-viewer {
 	text-shadow: 1px 1px 1px black;
 	animation: fadeIn 1s;
 	transition-duration: 0.5s;
+}
+
+#img_button:hover {
+	animation:pulse 1s;
 }
 
 footer {
