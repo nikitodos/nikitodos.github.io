@@ -1,7 +1,6 @@
 # Nikito's Short Datasheet
 
-+ I'm **Nikito**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), and I'm an ([**ENTJ-T**](https://www.16personalities.com/entj-personality)) [**physics**](https://fisica.dip.unipv.it/en) universitary student.
-+ I'm specializing in space science and technology at [**IUSS**](https://www.iusspavia.it/en).
++ I'm **Nikito**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), and I'm an ([**ENTJ-T**](https://www.16personalities.com/entj-personality)) student of [**physics**](https://fisica.dip.unipv.it/en).
 + I'm an intern at [BSRC](https://seti.berkeley.edu/Internship.html), at Sardinia Radio Telescope in Cagliari, Sardinia, Italy.
 + I'm a full Performance analyst inside the [UniPV Sailing Team](http://www.sailingteamunipv.it/) since March 2023.
 + I've teached IT several times (see my [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro) courses at UniPV).
