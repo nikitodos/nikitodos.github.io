@@ -1,8 +1,7 @@
-# Nikito's Short Datasheet
+# NikitoDos Short Datasheet
 
-+ I'm **Nikito**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), and I'm an ([**ENTJ-T**](https://www.16personalities.com/entj-personality)) student of [**physics**](https://fisica.dip.unipv.it/en).
-+ I'm a [BSRC](https://seti.berkeley.edu/Internship.html) intern, at Sardinia Radio Telescope in Cagliari, Sardinia, Italy.
-+ I'm a full Performance analyst inside the [UniPV Sailing Team](http://www.sailingteamunipv.it/) since March 2023.
-+ I've teached IT several times (see my [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro) courses at UniPV).
-+ I've been cadet on board [**Amerigo Vespucci**](https://en.wikipedia.org/wiki/Italian_training_ship_Amerigo_Vespucci) in 2022 and technician in electrical powerplants in 2019.
-+ In high school I designed a [telescope](https://github.com/nikitodos/starseeker) and [scaled models](https://github.com/nikitodos/3D_Collection) of spacecrafts.
+> Fiery the angels fell; deep thunder rolled around their shores; burning with the fires of Orc.
+
+I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), [**ENTJ-T**](https://www.16personalities.com/entj-personality) personality. I'm a Physics student interested in Space and Naval Architecture, member of [UniPV Sailing Team](http://www.sailingteamunipv.it/) since March 2023 as performance analyst and designer, and [BSRC](https://seti.berkeley.edu/Internship.html) intern, at Sardinia Radio Telescope in Cagliari, Italy, since June 2023, as an "alien hunter".
+In the past I've been cadet engineer on board [**Amerigo Vespucci**](https://en.wikipedia.org/wiki/Italian_training_ship_Amerigo_Vespucci) and technician in electrical powerplants; also, I've created two introductory IT courses, about [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro), for an Universitary college in Pavia.
+Beyond these official assignments, I'm working on a new kind of air/spacecraft, a new concept of inertial nuclear reactor and a different approach to space exploration. Thanks to the technical skills I acquired in high school, I also designed a [telescope](https://github.com/nikitodos/starseeker) and [scaled models](https://github.com/nikitodos/3D_Collection) of famous spacecrafts.
