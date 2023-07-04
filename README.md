@@ -8,6 +8,10 @@ I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/
 
 In the past I've been cadet engineer on board [**Amerigo Vespucci**](https://en.wikipedia.org/wiki/Italian_training_ship_Amerigo_Vespucci) and technician in electrical powerplants; also, I've created two introductory IT courses, about [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro), for an Universitary college in Pavia.
 
+Beyond these official assignments, I'm working on a new kind of air/spacecraft, a new concept of inertial nuclear reactor and a different approach to space exploration. Thanks to the technical skills I acquired in high school, I also designed a [telescope](https://github.com/nikitodos/starseeker) and [scaled models](https://github.com/nikitodos/3D_Collection) of famous spacecrafts.
+
+In my free time I enjoy writing music and lyrics, and playing covers with my band in Northern Italy, which is called _Concrete Lake_. I won't put in this profile any recordings or lyrics of mine, but I'd like to share this from Walt Whitman:
+
 > When I heard the learn’d astronomer,\
 When the proofs, the figures, were ranged in columns before me,\
 When I was shown the charts and diagrams, to add, divide, and measure them,\
@@ -16,5 +20,3 @@ How soon unaccountable I became tired and sick,\
 Till rising and gliding out I wander’d off by myself,\
 In the mystical moist night-air, and from time to time,\
 Look’d up in perfect silence at the stars.
-
-Beyond these official assignments, I'm working on a new kind of air/spacecraft, a new concept of inertial nuclear reactor and a different approach to space exploration. Thanks to the technical skills I acquired in high school, I also designed a [telescope](https://github.com/nikitodos/starseeker) and [scaled models](https://github.com/nikitodos/3D_Collection) of famous spacecrafts.
