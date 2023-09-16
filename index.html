@@ -67,6 +67,25 @@
 			}
 		</script>
 
+		<!-- Slideshow function -->
+
+		<script>
+			var myIndex = 0;
+			carousel();
+			
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+		</script>
+
 		<!-- Stylesheet -->
 
 		<link href="resources/styles.css" rel="stylesheet" type="text/css">
@@ -119,7 +138,7 @@
 
 			<div id=img_button class="mySlides animated fadeIn">
 				<a href="resources/reports/DAloisio_Framework_Rev2_Draft.pdf" target=”_blank” style="color:#FFFFFF" title="Draft - A concept of space framework">
-					<img src="resources/logos/framework_logo.png" class="responsive" style="width:400px;">
+					<img zsrc="resources/logos/framework_logo.png" class="responsive" style="width:400px;">
 				</a>
 			</div>
 			
