@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!--    0 ========================================================= 0
+				|                                                           |\
+				|                                                           | \
+				|                                                           |  \
+				|             WRITTEN BY @NIKITODOS, GITHUB USER            |   0
+				|         ALL THE CONTENT IS A PRODUCT OF @NIKITODOS        |   |
+				|                                                           |   |
+				|                                                           |   |
+				|                 =========================                 | \ |
+				|                                                           |   |
+				|                                                           |   |
+				|    YOU ARE NOT ALLOWED TO REDISTRIBUTE, COPY OR MODIFY    |   |
+				|            THIS CODE WITHOUT EXPLICIT PERMISSION.         | \ |
+				|                  WEBMASTER: @NIKITODOS, GITHUB.           |   |
+                |                                                           |   |
+				|                                                           |   |
+				|                 =========================                 | \ |
+				|                                                           |   |
+				|   Theory is when you know everything but nothing works,   |   |
+				| practice is when everything works but you don't know why. |   |
+				|                                                           |   |
+				|           Here theory and pratice are combined,           | \ |
+				|       because nothing works and you don't know why.       |   |
+				|                                                           |   |
+				0 --------------------------------------------------------- 0   |
+				 \     \     \     \     \     \     \     \     \     \     \  |
+				  \     \     \     \     \     \     \     \     \     \     \ |
+				   \     \     \     \     \     \     \     \     \     \     \|
+				    0 --------------------------------------------------------- 0    
+					
+				When I heard the learn’d astronomer,
+				When the proofs, the figures, were ranged in columns before me,
+				When I was shown the charts and diagrams, to add, divide, and measure them,
+				When I sitting heard the astronomer where he lectured with much applause in the lecture-room,
+				How soon unaccountable I became tired and sick,
+				Till rising and gliding out I wander’d off by myself,
+				In the mystical moist night-air, and from time to time,
+				Look’d up in perfect silence at the stars.															-->
+
+		<title>Nikito Technologies</title>
+
+		<meta charset="utf-8" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="resources/animate.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
+		<meta name="description" content="Nikito Technologies">
+		<meta name="author" content="Giovanni Nicola D'Aloisio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+		<!-- Show div function -->
+
+		<script type="text/javascript" language="javascript">
+			function divshow(id){
+			  if (document.getElementById){
+				if(document.getElementById(id).style.display == 'none'){
+				  document.getElementById(id).style.display = 'block';
+				}else{
+				  document.getElementById(id).style.display = 'none';
+				}
+			  }
+			}
+		</script>
+
+		<!-- Slideshow function -->
+
+		<script>
+			var myIndex = 0;
+			carousel();
+			
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+		</script>
+
+		<!-- Stylesheet -->
+
+		<link href="resources/styles.css" rel="stylesheet" type="text/css">
+
+	</head>
+
+	<body>
+
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+		<!-- Right click, F12, page saving -->
+
+		<script language="JavaScript">
+ 			window.onload = function() {
+ 				document.addEventListener("contextmenu", function(e){e.preventDefault();}, false);
+  				document.addEventListener("keydown", function(e) {
+					//document.onkeydown = function(e) {
+					// "I" key
+					if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {disabledEvent(e);}
+					// "J" key
+					if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {disabledEvent(e);}
+					// "S" key + macOS
+					if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {disabledEvent(e);}
+					// "U" key
+					if (e.ctrlKey && e.keyCode == 85) {disabledEvent(e);}
+					// "F12" key
+					if (event.keyCode == 123) {disabledEvent(e);}
+  			  	}, false);
+  			  	function disabledEvent(e){
+					if (e.stopPropagation){e.stopPropagation();}
+					else if (window.event){window.event.cancelBubble = true;}
+  			   		e.preventDefault();
+     				return false;
+    			}
+  			};
+		</script>
+
+		<!-- Background -->
+
+		<div id="bg"></div>
+		<p>
+			<center>
+				<img src="resources/logos/signature.png" class="responsive" style="width:550px;">
+			</center>
+		</p>
+
+		<!-- Slideshow -->
+
+		<div id=slideshow>
+
+			<div id=img_button class="mySlides animated fadeIn">
+				<a href="resources/reports/DAloisio_Framework_Rev2_Draft.pdf" target=”_blank” style="color:#FFFFFF" title="Draft - A concept of space framework">
+					<img zsrc="resources/logos/framework_logo.png" class="responsive" style="width:400px;">
+				</a>
+			</div>
+			
+			<div id=img_button class="mySlides animated fadeIn">
+				<a href="#" onclick="divshow('kvant'); return false" style="color:#FFFFFF" title="KTA Program">
+					<img src="resources/logos/kvant_logo.png" class="responsive" style="width:400px;">
+				</a>
+			</div>
+
+			<div id=img_button class="mySlides animated fadeIn">
+				<a href="#" onclick="divshow('3dModel'); return false" style="color:#FFFFFF" title="Starseeker Modular Telescope">
+					<img src="resources/logos/starseeker.png" class="responsive" style="width:400px;">
+				</a>
+			</div>
+
+		</div>
+
+		<!-- Links & Copyright -->
+
+		<footer class="animated fadeIn">
+			<font style="font-size:0.8em;" color="#FFFFFF">
+				© 2023 <a href="https://github.com/nikitodos/nikitodos.github.io" style="color:#FFFFFF" target=”_blank” title="Giovanni Nicola D'Aloisio">Nikito</a>.
+			</font>
+		</footer>
+
+		<!-- Kvant Test Articles -->
+
+		<card id=kvant style="display:none; overflow-x:auto;">
+
+			<br>
+
+			<card_title onclick="divshow('kvant'); return false">
+				<i class="far fa-times-circle"></i>
+			</card_title>
+
+			<br><br>
+
+			<card_title onclick="divshow('3dModel'); return false">
+				<strong><u>Kvant Test Article (KTA) Project</u></strong>
+			</card_title>
+
+			<br><br>
+
+			This is the story of something started in November 2017.
+			What if the future of space exploration was an upgraded version of the iconic Space Shuttle?<br>
+			The solution I'm developing on my own is called Kvant.<br><br>
+
+			<br><br>
+
+			<card_title>
+				<strong><strong><u>Ikarus-X Development</u></strong></strong>
+			</card_title>
+
+			<br><br>
+
+			I started coding, sketching and writing scripts, things and notes, during my classes, in the evenings, while playing the guitar. That concept of an hybrid space propulsion: "What if I combined electric propulsion with chemical propulsion?". It was <i>Ikarus-X</i>, and in just two months of work it had seen the light.
+			<br>What follows is a report that constains the main details about the project.<br><br>
+
+			<a href="resources/reports/DAloisio_Ikarus_X_Final.pdf" style="color:black" target=”_blank” title="Sviluppo e costruzione di Ikarus-X">PDF - Italian</a>
+
+			<br><br>
+
+			<card_title>
+				<strong><u>Ikarus-Y Development</u></strong>
+			</card_title>
+
+			<br><br>
+
+			This is something quite more complex, my first attempt to embrace the concept of <a style="color:black" href="https://en.wikipedia.org/wiki/Single-stage-to-orbit" target=”_blank” >SSTO</a> spacecraft. The first idea was to keep the original Ikarus-X design, removing the BLDC propellers and putting something like <a href="https://reactionengines.co.uk/advanced-propulsion/sabre/" style="color:black" target=”_blank” >this stuff</a>, but this way it wouldn't have been original and I'd have burnt some fossil fuel, which is certainly not good for the environment. At that stage I started working on a kind of rocket engine, that I use to call <i>Stilo</i>, which requires a lot of electric energy. This is why I left the project unfinished - I needed some kind of energy source that, perhaps, didn't even exist at that stage.<br><br>
+
+			<center>
+				<model-viewer src="resources/3d_objects/ikarus-y.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls seamless-poster shadow-intensity="1" camera-orbit="-28.53deg 60.26deg 2.557m" field-of-view="30deg" auto-rotate>
+			</center>
+
+			<br><br>
+
+			<card_title>
+				<strong><strong><u>nKvant Development</u></strong></strong>
+			</card_title>
+
+			<br><br>
+
+			This is where the fun begins. Icarus had to fall before reaching the Sun.<br><br>
+
+			<a href="https://upload.wikimedia.org/wikipedia/it/4/4f/T-65_X-Wing_Starfighter.jpg" style="color:black" target=”_blank” title="Ikarus-Z Development Report">More details coming soon :)</a>
+
+		</card>
+
+		<!-- Starseeker -->
+
+		<card id=3dModel style="display:none; overflow-x:auto;">
+
+			<br>
+
+			<card_title onclick="divshow('3dModel'); return false">
+				<i class="far fa-times-circle"></i>
+			</card_title>
+
+			<br><br>
+
+			<card_title>
+				<strong><u>Starseeker Modular Telescope</u></strong>
+			</card_title>
+
+			<br><br>
+
+			When I was 15, I was member of an astrophile enthusiasts group.
+			Inspired by our passion, and frustrated by the quality of the telescopes at school, I decided to design a telescope on my own.
+			A friend of mine, who was a shipowner, would have realised all the optics, using his heaps of aluminum.
+			Unfortunately he had an accident, so I finished the work on the basis of <a href="https://en.wikipedia.org/wiki/James_Webb_Space_Telescope">JWST</a>.
+			Here is a model of what I had done.<br><br>
+
+			<center>
+				<model-viewer src="resources/3d_objects/starseeker.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls seamless-poster shadow-intensity="1" camera-orbit="-28.53deg 60.26deg 12m" field-of-view="30deg" auto-rotate></model-viewer>
+			</center>
+
+		</card>
+
+	</body>
+
+</html>
