@@ -11,7 +11,10 @@ body {
     background-repeat: repeat;
     color: #000000;
 }
+
 model-viewer {
+	max-width: 45%;
+	max-height: 400px;
 	height: 500px;
 	width: 75%;
 }
@@ -102,11 +105,6 @@ footer {
 	max-width: 50%;
 }
 
-model-viewer {
-	max-width: 45%;
-	max-height: 400px;
-}
-
 .containerForFramework {
 	position: relative;
 	width: 400px;
@@ -149,29 +147,9 @@ model-viewer {
 		flex-direction: column;
 	}
 
-	#slideshow {
-		top: 35%;
-	}
-
-	#img_button {
-		width: 90%;
-	}
-
-	card {
-		width: 70%;
-		top: 5%;
-		left: 5%;
-	}
-
 	.responsive {
 		width: 90%;
 		max-width: 350px;
-		height: auto;
-	}
-
-	.responsive_incard {
-		width: 70%;
-		max-width: 250px;
 		height: auto;
 	}
 
