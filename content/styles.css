@@ -1,0 +1,195 @@
+
+/* General properties */
+body {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+   	-moz-user-select: none;
+    user-select: none;
+	background-image: url('lightTheme.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    color: #000000;
+}
+model-viewer {
+	height: 500px;
+	width: 75%;
+}
+
+/* Header */
+.header {
+	z-index: 1;
+    color: white;
+	font-family: 'DotGothic16', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1.25em;
+}
+.header:hover {
+    color: black;
+}
+
+/* Navigation bar */
+.navbar {
+	z-index: 1;
+	position: fixed;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 20%;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    text-align:center;
+    background-color: black;
+}
+  
+/* Navigation bar links */
+.navbar a {
+    color: white;
+	box-sizing: border-box;
+    padding: 20px 40px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Footer */
+footer {
+	font-family: "Libre Franklin", Libre Franklin, sans-serif;
+	text-align: center;
+	font-style: normal;
+	font-size: 1em;
+	padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Main content */
+.main {
+	position: absolute;
+	margin: 0 auto;
+	width: 80%;
+	top: 25%;
+	left: 5em;
+	right: 5em;
+	padding: 2em;
+	font-family: "Questrial", Questrial, sans-serif;
+	text-align: justify;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	/*background: url(greyNoise.png) no-repeat center top;
+	background-position: center;
+	background-size: cover;*/
+}
+
+.container {
+	flex-direction: row;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+.text-content {
+	max-width: 50%;
+}
+
+model-viewer {
+	max-width: 45%;
+	max-height: 400px;
+}
+
+.containerForFramework {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.frameworkDefault, .frameworkAppearing {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.frameworkAppearing {
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+}
+
+.containerForFramework:hover .frameworkDefault {
+	opacity: 0;
+}
+
+.containerForFramework:hover .frameworkAppearing {
+	opacity: 1;
+}
+
+/* Responsive layout - when the screen is less than 768px wide,
+   make the two columns stack on top of each other  */
+
+@media only screen and (max-width: 768px) {
+
+	.row, .navbar {   
+		flex-direction: column;
+	}
+
+	#slideshow {
+		top: 35%;
+	}
+
+	#img_button {
+		width: 90%;
+	}
+
+	card {
+		width: 70%;
+		top: 5%;
+		left: 5%;
+	}
+
+	.responsive {
+		width: 90%;
+		max-width: 350px;
+		height: auto;
+	}
+
+	.responsive_incard {
+		width: 70%;
+		max-width: 250px;
+		height: auto;
+	}
+
+	container {
+		flex-direction: column;
+	}
+
+}
+
+/* Responsive layout - When the users preferes dark theme
+   turn everything dark */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url('darkTheme.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: repeat;
+        color: #ffffff;
+    }
+}
