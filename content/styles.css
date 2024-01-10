@@ -5,7 +5,7 @@ body {
     -webkit-user-select: none;
    	-moz-user-select: none;
     user-select: none;
-	background-image: url('lightTheme.png');
+	background-image: url('lightTheme.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -249,7 +249,7 @@ footer {
 /* Responsive layout - When the users preferes dark theme turn everything dark */
 @media (prefers-color-scheme: dark) {
     body {
-        background-image: url('darkTheme.png');
+        background-image: url('darkTheme.jpg');
 		background-size: cover;
 		background-position: center;
 		background-repeat: repeat;
