@@ -1,0 +1,9 @@
+# NikitoDos Short Datasheet
+
+> Fiery the angels fell; deep thunder rolled around their shores; burning with the fires of Orc.
+
+I'm **NikitoDos**, on Wikimedia Project [**Dnepr740**](https://it.wikipedia.org/wiki/Utente:Dnepr740) (last update: 2019), [**ENTJ-T**](https://www.16personalities.com/entj-personality) personality. I'm a physicist, and a student in Space Communication and Sensing. I'm interested in Space and Naval Architecture and since September 2023 I'm the Team Leader of [UniPV Sailing Team](http://www.sailingteamunipv.it/), after being performance analyst and designer for the same. I've also been a [BSRC](https://seti.berkeley.edu/Internship.html) intern, at Sardinia Radio Telescope in Cagliari, Italy, since June 2023, as an "alien hunter". Actually, I'm working on new developments of that project.
+
+In the past I've been cadet engineer on board [**Amerigo Vespucci**](https://en.wikipedia.org/wiki/Italian_training_ship_Amerigo_Vespucci) and intern in an [electrical powerplant]([https://www.gruppohera.it/gruppo/chi-siamo/le-societa-del-gruppo-hera/tamarete-energia-spa](https://www.tamareteenergia.it/)). Moreover, I am the lecturer for two introductory courses in [ LᴬTᴇX ](https://github.com/nikitodos/latex) and [web design](https://github.com/nikitodos/webdesign_intro) since 2022.
+
+Beyond these official assignments, I'm working on a new kind of spacecraft, a new concept of inertial nuclear reactor and a brand new approach to space exploration. Thanks to the technical skills I acquired in high school, I also designed a [telescope](https://github.com/nikitodos/starseeker) and [scaled models](https://github.com/nikitodos/3D_Collection) of famous spacecrafts, that you can see on [my website](https://nikitodos.github.io/). In my free time I enjoy writing music and lyrics.

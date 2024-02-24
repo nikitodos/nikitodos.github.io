@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!--    0 ========================================================= 0
+				|                                                           |\
+				|                                                           | \
+				|         =  WRITTEN BY GIOVANNI NICOLA D'ALOISIO  =        |  \
+				|         ALL THE CONTENT IS A PRODUCT OF @NIKITODOS        |   0
+				|                                                           |   |
+				|                                                           |   |
+				|                 https://github.com/nikitodos              |   |
+				|                                                           | \ |
+				|                                                           |   |
+				|    YOU ARE NOT ALLOWED TO REDISTRIBUTE, COPY OR MODIFY    |   |
+                |       =    THIS CODE WITHOUT EXPLICIT PERMISSION   =      |   |
+				|                                                           |   |
+				|                                                           |   |
+				0 --------------------------------------------------------- 0   |
+				 \     \     \     \     \     \     \     \     \     \     \  |
+				  \     \     \     \     \     \     \     \     \     \     \ |
+				   \     \     \     \     \     \     \     \     \     \     \|
+				    0 --------------------------------------------------------- 0    														-->
+
+		<!-- Metadata -->
+		<title>UniPV Sailing Team</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />		<!-- Meta -->
+		<meta name="description" content="The official sailing team of the University of Pavia">
+		<meta name="author" content="Giovanni Nicola D'Aloisio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- Libraries -->
+		<link rel="stylesheet" href="content/animate.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<link href="content/styles.css" rel="stylesheet" type="text/css">
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Libre+Franklin' rel='stylesheet'>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=DotGothic16' rel='stylesheet'>
+
+		<!-- Function: Show div -->
+
+		<script type="text/javascript" language="javascript">
+			function divshow(id){
+			  if (document.getElementById){
+				if(document.getElementById(id).style.display == 'none'){
+				  document.getElementById(id).style.display = 'block';
+				}else{
+				  document.getElementById(id).style.display = 'none';
+				}
+			  }
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<!-- Functions: 1. Model Viewer by Google; 2. deny right click, F12, page saving -->
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script language="JavaScript">
+ 			window.onload = function() {
+ 				document.addEventListener("contextmenu", function(e){e.preventDefault();}, false);
+  				document.addEventListener("keydown", function(e) {
+					//document.onkeydown = function(e) {
+					// "I" key
+					if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {disabledEvent(e);}
+					// "J" key
+					if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {disabledEvent(e);}
+					// "S" key + macOS
+					if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {disabledEvent(e);}
+					// "U" key
+					if (e.ctrlKey && e.keyCode == 85) {disabledEvent(e);}
+					// "F12" key
+					if (event.keyCode == 123) {disabledEvent(e);}
+  			  	}, false);
+  			  	function disabledEvent(e){
+					if (e.stopPropagation){e.stopPropagation();}
+					else if (window.event){window.event.cancelBubble = true;}
+  			   		e.preventDefault();
+     				return false;
+    			}
+  			};
+		</script>
+
+		<!-- Title and Navigation Bar -->
+		<div class="navbar" id="myNavbar">
+			<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+				&#9776;
+			</a>
+			<a href="#" id="explore" style="font-family:Libre Franklin;">People</a>
+			<a href="#" id="ideas" style="font-family:Libre Franklin;">Sponsors</a>
+			<a href="index.html" class="header-link">
+				<div class="header">
+					<img style="height: 5em;" src="content/logoBlue.png">
+				</div>
+			</a>
+			<a href="#" id="media" style="font-family:Libre Franklin;">Insights</a>
+			<a href="#" id="contacts" style="font-family:Libre Franklin;">Contacts</a>
+		</div>
+
+
+		<!-- Function: show and hide navbar/hamburger menu for responsiveness -->
+		<script>
+			function toggleNavbar() {
+				var x = document.getElementById("myNavbar");
+				if (x.className === "navbar") {
+					x.className += " responsive";
+				} else {
+					x.className = "navbar";
+				}
+			}
+		</script>
+
+		<!-- Homepage content -->
+		<div>
+			<div id="content" class="main">
+
+				<div style="background-image: url('content/gifSuMoth.gif'); background-size: cover; background-position: center; background-repeat: repeat; color: white; padding: 20px; padding-top: 150px; padding-bottom: 150px; width: 100%; top: 0; left: 0;">
+					
+					<h2 style="text-align: center; color:white; font-size: large;">Learn, Train, Fly</h2>
+
+					<p style="text-align: center;">
+						Design, build and test parts of a Moth sailing boat to develop your engineering capabilities, manage social networks, draw up a business plan to master your economic and legal skills. Put into practice your theoretical notions by building flying boats!<br><br>
+
+						With the goal of partecipating to the SuMoth Challenge, a new boat is presented every two years. New designs and eco-sustainable ideas compete with the ideas of students coming from all over the world.
+					</p>
+
+				</div>
+
+				<div style="background-image: url('content/IMG_1896.jpeg'); background-size: cover; background-position: center; background-repeat: repeat; color: white; padding: 20px; padding-top: 150px; padding-bottom: 150px; width: 100%; top: 0; left: 0; margin: 0 auto;">
+
+					<h2 style="text-align: center; color: white; ">Our Sponsors.</h2>
+
+					<p style="text-align: center; color: white; ">
+						To design, build and test our models we need the financial, technical and instrumental help of specialists coming from the industry.<br><br>
+
+						Even if our boats have to be built in dedicated industrial laboratories, our collaboration with RAMS Lab allows us to make minor maintenance and updates to the structures.<br><br>
+
+						If you like our Team, make a donation and become a Sponsor! 
+					</p>
+
+				</div>
+				
+				<div style="background-image: url('content/velaSuMoth.jpg'); background-size: cover; background-position: center; background-repeat: repeat; color: white; padding: 20px; padding-top: 150px; padding-bottom: 150px; width: 100%; top: 0; left: 0;">
+
+					<h2 style="text-align: center; color: white; ">SuMoth in few words</h2>
+
+					<p style="text-align: center; color: white; "> 
+						The Foiling SuMoth Challenge is a student competition with the ultimate objective to design, manufacture and sail the most sustainable and efficient foiling international moths. To accomplish this, we create a community framework where the future professionals have the chance to try and validate new innovative ideas before getting into the industry.<br><br>
+
+						This is linked to the Goals for Sustainable Development (GSD) with a focus on the world of sailing and the marine environment.  Climate action, Quality Education and Gender equality, are some of the goals from the GSD that we focus on. Promoting the “3R” principle of REduce, REuse, REcycle, the open access to all information, results and masterclasses In 2022, the SuMoth fleet was 100% skipped by females.
+					</p>
+
+				</div>
+
+				<div class="container">
+
+					<div class="text-content">
+
+					<h2 style="text-align: center; color: white; ">Give your contribution now!</h2>
+					
+					<p style="text-align: center; color: white; ">
+						Universitiamo® is the crowdfunding platform of the University of Pavia. UniPV is one of the first in the world to open up with its own tool to the innovative formula of crowdfunding to support cutting-edge scientific research, capable of improving the lives of all of us. A far-sighted University, a close-knit team, a creative community: this has made Universitiamo® possible, the exclusive platform that allows you, with your donation, to create social value, enter the future and become part of engaging scientific and cultural projects. ring designer community to share knowledge with..
+					</p>
+
+					</div>
+					
+					<img class="indexImage" src="content/definitionOfCreativity.jpg" alt="An artwork based on the very first works of Giovanni Nicola D'Aloisio.">
+					
+				</div>
+					
+				<hr>
+
+				<!-- Footer and Copyright terms -->
+
+				<footer>
+
+					<p>
+						<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+							<img src="content/CC_BY-NC-ND.png" width="100px" alt="CC BY-NC-ND 4.0">   
+						</a>
+					</p>
+
+					<p>
+						A Giovanni D'Aloisio production<br>
+						NikitoDos © 2023
+					</p>
+
+				</footer>
+			
+			</div>
+		</div>
+
+		<script src="loadContent.js"></script>
+
+	</body>
+
+</html>
