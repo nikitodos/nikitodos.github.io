@@ -1,9 +1,8 @@
-# NikitoDos Short Datasheet
+# My Short Datasheet
 
-> Follow the path of the unsafe, independent thinker. Expose your ideas to the dangers of controversy. Speak your mind and fear less the label of 'crackpot' than the stigma of conformity. And on issues that seem important to you, stand up and be counted at any cost. 
+> *""Follow the path of the unsafe, independent thinker. Expose your ideas to the dangers of controversy. Speak your mind and fear less the label of 'crackpot' than the stigma of conformity. And on issues that seem important to you, stand up and be counted at any cost."*  
 
-> *"The great accomplishments of man have resulted from the transmission of ideas and enthusiasm. The thinker risks the uncertain journey of innovation, challenging the familiar for the sake of the unknown."*  
-> — John B. Watson  
+> — Thomas J. Watson
 
 According to [16 Personalities](https://www.16personalities.com/entj-personality), I identify as an **ENTJ-T**. I'm a Physicist pursuing studies in Space Engineering at Politecnico di Milano, driven by a passion for space exploration, naval architecture, and innovation. I've always dreamed big about my future, which is probably why I don't think I could ever truly settle. Innovation inspires me the most, constantly driving me to push the boundaries of knowledge.  
 
