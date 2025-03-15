@@ -90,22 +90,19 @@
 
 		<!-- Title and Navigation Bar -->
 		<div class="navbar" id="myNavbar">
-			<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
-				&#9776;
-			</a>
-			<a href="#" id="explore" style="font-family:Libre Franklin;">Explore</a>
-			<a href="#" id="ideas" style="font-family:Libre Franklin;">Ideas</a>
-			<a href="index.html" class="header-link">
+			<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+			<a href="#" id="explore" style="font-family:Libre Franklin;" onclick="closeNavbarOnClick()">Explore</a>
+			<a href="#" id="ideas" style="font-family:Libre Franklin;" onclick="closeNavbarOnClick()">Ideas</a>
+			<a href="index.html" class="header-link" onclick="closeNavbarOnClick()">
 				<div class="header">
 					<div style="text-align:left;font-family:Libre Franklin;font-size: 0.8em;">Built on</div>
 					<div style="text-align:right;font-size: 2em;">NikitoDos</div>
 					<div style="text-align:right;font-family:Libre Franklin;font-size: 0.8em;">Technology</div>
 				</div>
 			</a>
-			<a href="#" id="media" style="font-family:Libre Franklin;">Media</a>
-			<a href="#" id="contacts" style="font-family:Libre Franklin;">Contacts</a>
+			<a href="#" id="media" style="font-family:Libre Franklin;" onclick="closeNavbarOnClick()">Media</a>
+			<a href="#" id="contacts" style="font-family:Libre Franklin;" onclick="closeNavbarOnClick()">Contacts</a>
 		</div>
-
 
 		<!-- Function: show and hide navbar/hamburger menu for responsiveness -->
 		<script>
@@ -115,6 +112,14 @@
 					x.className += " responsive";
 				} else {
 					x.className = "navbar";
+				}
+			}
+
+			// Chiude la navbar quando un link viene cliccato
+			function closeNavbarOnClick() {
+				var x = document.getElementById("myNavbar");
+				if (x.className.includes("responsive")) {
+					x.className = "navbar"; // Torna alla classe originale
 				}
 			}
 		</script>
