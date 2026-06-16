@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!--      0 ========================================================= 0
+			 	  |                                                           |\
+			 	  |                                                           | \
+				  |         =  WRITTEN BY GIOVANNI NICOLA D'ALOISIO  =        |  \
+				  |         ALL THE CONTENT IS A PRODUCT OF @NIKITODOS        |   0
+				  |                                                           |   |
+				  |                                                           |   |
+				  |                 https://github.com/nikitodos              |   |
+				  |                                                           | \ |
+				  |                                                           |   |
+				  |    YOU ARE NOT ALLOWED TO REDISTRIBUTE, COPY OR MODIFY    |   |
+                  |       =    THIS CODE WITHOUT EXPLICIT PERMISSION   =      |   |
+				  |                                                           |   |
+				  |                                                           |   |
+				  0 --------------------------------------------------------- 0   |
+				   \     \     \     \     \     \     \     \     \     \     \  |
+				    \     \     \     \     \     \     \     \     \     \     \ |
+				     \     \     \     \     \     \     \     \     \     \     \|
+				      0 --------------------------------------------------------- 0         -->
+
+		<!-- Metadata -->
+		<title>Built on NikitoDos Technology</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />		<!-- Meta -->
+		<meta name="description" content="Developed with NikitoDos Technology">
+		<meta name="author" content="Giovanni Nicola D'Aloisio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- Libraries -->
+		<link rel="stylesheet" href="content/animate.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<link href="content/styles.css" rel="stylesheet" type="text/css">
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Libre+Franklin' rel='stylesheet'>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=DotGothic16' rel='stylesheet'>
+
+		<!-- Function: Show div -->
+
+		<script type="text/javascript" language="javascript">
+			function divshow(id){
+			  if (document.getElementById){
+				if(document.getElementById(id).style.display == 'none'){
+				  document.getElementById(id).style.display = 'block';
+				}else{
+				  document.getElementById(id).style.display = 'none';
+				}
+			  }
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<!-- Functions: 1. Model Viewer by Google; 2. deny right click, F12, page saving -->
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script language="JavaScript">
+ 			window.onload = function() {
+ 				document.addEventListener("contextmenu", function(e){e.preventDefault();}, false);
+  				document.addEventListener("keydown", function(e) {
+					//document.onkeydown = function(e) {
+					// "I" key
+					if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {disabledEvent(e);}
+					// "J" key
+					if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {disabledEvent(e);}
+					// "S" key + macOS
+					if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {disabledEvent(e);}
+					// "U" key
+					if (e.ctrlKey && e.keyCode == 85) {disabledEvent(e);}
+					// "F12" key
+					if (event.keyCode == 123) {disabledEvent(e);}
+  			  	}, false);
+  			  	function disabledEvent(e){
+					if (e.stopPropagation){e.stopPropagation();}
+					else if (window.event){window.event.cancelBubble = true;}
+  			   		e.preventDefault();
+     				return false;
+    			}
+  			};
+		</script>
+
+		<!-- Title and Navigation Bar -->
+		<div class="navbar" id="myNavbar">
+			<a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+			<a href="#" id="explore" style="font-family:Libre Franklin;" onclick="closeNavbarOnClick()">Explore</a>
+			<a href="#" id="ideas" style="font-family:Libre Franklin;" onclick="closeNavbarOnClick()">Ideas</a>
+			<a href="index.html" class="header-link" onclick="closeNavbarOnClick()">
+				<div class="header">
+					<div style="text-align:left;font-family:Libre Franklin;font-size: 0.8em;">Built on</div>
+					<div style="text-align:right;font-size: 2em;">NikitoDos</div>
+					<div style="text-align:right;font-family:Libre Franklin;font-size: 0.8em;">Technology</div>
+				</div>
+			</a>
+			<a href="#" id="media" style="font-family:Libre Franklin;" onclick="closeNavbarOnClick()">Media</a>
+			<a href="#" id="contacts" style="font-family:Libre Franklin;" onclick="closeNavbarOnClick()">Contacts</a>
+		</div>
+
+		<!-- Function: show and hide navbar/hamburger menu for responsiveness -->
+		<script>
+			function toggleNavbar() {
+				var x = document.getElementById("myNavbar");
+				if (x.className === "navbar") {
+					x.className += " responsive";
+				} else {
+					x.className = "navbar";
+				}
+			}
+
+			// Chiude la navbar quando un link viene cliccato
+			function closeNavbarOnClick() {
+				var x = document.getElementById("myNavbar");
+				if (x.className.includes("responsive")) {
+					x.className = "navbar"; // Torna alla classe originale
+				}
+			}
+		</script>
+
+		<!-- Homepage content -->
+		<div>
+			<div id="content" class="main">
+
+				<div class="container">
+
+					<div class="text-content">
+				
+					<h2>Intuitive improvisation is the secret of genius.</h2>
+					
+					<p>Imagine the marvel of crafting a device capable of soaring through the atmosphere, perhaps even journeying to Mars. Explore the myriad of methods through which such feats can be achieved right here. Discover the possibilities of aerospace technology at your fingertips. Don't tell me that humanity doesn't belong out there. We belong wherever we set our sights — and we'll excel once we arrive.</p>
+						
+					<p>For those curious, the name of this website draws inspiration from the official Windows 2000 slogan crafted by Microsoft during its launch. If you find value in this content and wish to support it, consider fueling with a cup of coffee <a style="color: inherit;text-decoration: none;color: #0099cc;" href="https://www.paypal.com/paypalme/giovannidaloisio" target="_blank">here</a>.</p>
+
+				</div>
+					
+					<img class="indexImage" src="content/definitionOfCreativity.jpg" alt="An artwork based on the very first works of Giovanni Nicola D'Aloisio.">
+					
+				</div>
+					
+				<hr>
+
+				<!-- Footer and Copyright terms -->
+
+				<footer>
+
+					<p>
+						<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+							<img src="content/CC_BY-NC-ND.png" width="100px" alt="CC BY-NC-ND 4.0">   
+						</a>
+					</p>
+
+					<p>
+						A Giovanni D'Aloisio production © 2025
+					</p>
+
+				</footer>
+			
+			</div>
+		</div>
+
+		<script src="loadContent.js"></script>
+
+	</body>
+
+</html>
