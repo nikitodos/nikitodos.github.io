@@ -345,6 +345,7 @@
   .pub-abstract {
     font-family: var(--serif); font-size: .9rem;
     color: var(--mid); line-height: 1.65; max-width: 68ch;
+      text-align: justify;
   }
   .pub-tags {
     display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .75rem;
@@ -1104,7 +1105,7 @@
 <header>
   <div class="header-left">
     <a class="header-logo" href="#">
-      <img class="header-logo-svg" src="content/Logo_Skyraker.png" alt="Skyraker logo">
+      <img class="header-logo-svg" src="content/Logo_GND.png" alt="Skyraker logo">
       <div>
         <span class="header-logo-name">G. N. D'Aloisio</span>
         <!-- <span class="header-logo-sub">Skyraker · Space Framework</span> -->
@@ -1131,11 +1132,10 @@
     </h1>
     <div class="affil-row">
       <div class="affil-item on">Politecnico di Milano — M.Sc. Space Engineering</div>
-      <div class="affil-item">Università degli Studi di Napoli "Federico II"</div>
-      <div class="affil-item">OAC · Osservatorio Astronomico di Cagliari</div>
-      <div class="affil-item">BSRC · University of California, Berkeley</div>
-      <div class="affil-item">Università degli Studi di Pavia</div>
-      <div class="affil-item">UniPV &amp; PoliMi Sailing Teams</div>
+      <div class="affil-item on">PoliMi Sailing Team — FEA/CFD Analyst</div>
+      <div class="affil-item">University of Napoli "Federico II"</div>
+      <div class="affil-item">Breakthrough Listen · Osservatorio Astronomico di Cagliari · BSRC · University of California, Berkeley</div>
+      <div class="affil-item">University of Pavia & UniPV Sailing Team</div>
     </div>
   </div>
 
@@ -1148,6 +1148,7 @@
       <span class="pill hi">Space Systems</span>
       <span class="pill hi">Astrophysics</span>
       <span class="pill hi">Space Architecture</span>
+      <span class="pill hi">Montecarlo Simulation</span>
       <span class="pill">Astrodynamics</span>
       <span class="pill">Propulsion</span>
       <span class="pill">Computational Fluid Dynamics</span>
@@ -1174,7 +1175,7 @@
 
     <a class="pub-item" href="#">
       <div class="pub-year">2026</div>
-      <div class="pub-img"><img width="100" src="content/Logo_Skyraker.png" alt="Skyraker" /></div>
+      <div class="pub-img"><img width="100" src="content/Logo_Skyraker.png" alt="Skyraker Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">Development Roadmap · Skyraker Programme</p>
         <h3 class="pub-title">Skyraker Development Roadmap: From Scratch to TRL 4.5 in 9 Months</h3>
@@ -1189,9 +1190,44 @@
       <div class="pub-arrow">↗</div>
     </a>
 
+    <a class="pub-item" href="content/Report_DAloisio_Ikarus_X_Rev1.pdf">
+      <div class="pub-year">2019</div>
+      <div class="pub-img"><img width="100" src="content/Logo_Ikarus_X.png" alt="Ikarus-X Logo" /></div>
+      <div class="pub-body">
+        <p class="pub-type">Technical Report · Project Ikarus</p>
+        <h3 class="pub-title">Ikarus-X: Development and Construction of a Hybrid Propulsion Vehicle</h3>
+        <p class="pub-venue">Independent research</p>
+        <p class="pub-abstract">Design and construction report for Ikarus-X, first vehicle in the Project Ikarus SSTO series. Explores hybrid electric/chemical propulsion as a testbed concept. Development began November 2017; series continued through Ikarus-Y (SABRE-class SSTO) and Ikarus-Z (Skyraker engine, X-shaped configuration, stratospheric flight to 30 km+ without rocket propellant).</p>
+        <p class="pub-updated">First issued: 2019</p>
+        <div class="pub-tags">
+          <span class="ptag">SSTO</span><span class="ptag">Hybrid propulsion</span>
+          <span class="ptag">Ion propulsion</span><span class="ptag">Hall thruster</span>
+        </div>
+      </div>
+      <div class="pub-arrow">↗</div>
+    </a>
+
+
+    <a class="pub-item" href="content/Report_DAloisio_Framework_Rev4.pdf">
+      <div class="pub-year">2022 - On going</div>
+      <div class="pub-img"><img width="100" src="content/Logo_SpaceFramework.png" alt="Space Framework Logo" /></div>
+      <div class="pub-body">
+        <p class="pub-type">Concept Paper · Rev. 4</p>
+        <h3 class="pub-title">The Space Framework: A Model for an Interplanetary Economy</h3>
+        <p class="pub-venue">Independent research — nikitodos.github.io</p>
+        <p class="pub-abstract">Long-range architecture for integrating Solar System resources into the terrestrial economy. REDSTAR stations (~6,400 m³, 8× ISS), Spectre multipurpose spacecraft (8 crew + 150 t payload), Skyraker propulsion, and X-RAYJAR fusion reactor based on X-ray-induced fusion in LiD crystals (Belyaev et al., Phys. Rev. C 93, 034622, 2016). Includes critical assessment of post-OST space law and a European-led governance proposal.</p>
+        <p class="pub-updated">Last updated: Rev. 4, 2024</p>
+        <div class="pub-tags">
+          <span class="ptag">Space Architecture</span><span class="ptag">Fusion energy</span>
+          <span class="ptag">Space law</span><span class="ptag">ISRU</span><span class="ptag">OST 1967</span>
+        </div>
+      </div>
+      <div class="pub-arrow">↗</div>
+    </a>
+
     <a class="pub-item" href="#">
       <div class="pub-year">2026</div>
-      <div class="pub-img"><div class="pub-img-box"><span class="pub-img-icon">[ photo ]<br>XSLR D+</span></div></div>
+      <div class="pub-img"><img width="100" src="content/Logo_Skyraker.png" alt="Skyraker Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">Confidential Design Study · Propulsion Architecture</p>
         <h3 class="pub-title">XSLR 022kN Hybrid Electric Expander Cycle for a Dual-Loop Linear Aerospike Engine (Config. D+)</h3>
@@ -1208,7 +1244,7 @@
 
     <a class="pub-item" href="content/Report_DAloisio_et_al_HyperLander_Rev1.pdf">
       <div class="pub-year">2026</div>
-      <div class="pub-img"><img width="100" src="content/Logo_HyperLander_StarTrekWithAstronautArrow.png" alt="HyperLander" /></div>
+      <div class="pub-img"><img width="100" src="content/Logo_HyperLander.png" alt="HyperLander Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">Technical Report · Launch Systems</p>
         <h3 class="pub-title">HyperLander: An Air-Launched Suborbital Transportation System</h3>
@@ -1225,7 +1261,7 @@
 
     <a class="pub-item" href="#">
       <div class="pub-year">2023-2025</div>
-      <div class="pub-img"><div class="pub-img-box"><span class="pub-img-icon">[ photo ]<br>KLT / SETI</span></div></div>
+      <div class="pub-img"><img width="100" src="content/Logo_unina.png" alt="UniNa Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">B.Sc. Thesis · Università degli Studi di Napoli Federico II</p>
         <h3 class="pub-title">Applicazione della trasformata di Karhunen–Loève per la ricerca di segnali telemetrici extraterrestri</h3>
@@ -1235,40 +1271,6 @@
         <div class="pub-tags">
           <span class="ptag">KLT</span><span class="ptag">SETI</span><span class="ptag">Breakthrough Listen</span>
           <span class="ptag">Sardinia Radio Telescope</span><span class="ptag">TOI-1422 b</span><span class="ptag">Voyager 1</span><span class="ptag">turboSETI</span>
-        </div>
-      </div>
-      <div class="pub-arrow">↗</div>
-    </a>
-
-    <a class="pub-item" href="content/Report_DAloisio_Framework_Rev4.pdf">
-      <div class="pub-year">2022 - On going</div>
-      <div class="pub-img"><img width="100" src="content/Logo_SpaceFramework.png" alt="Space Framework" /></div>
-      <div class="pub-body">
-        <p class="pub-type">Concept Paper · Rev. 4</p>
-        <h3 class="pub-title">The Space Framework: A Model for an Interplanetary Economy</h3>
-        <p class="pub-venue">Independent research — nikitodos.github.io</p>
-        <p class="pub-abstract">Long-range architecture for integrating Solar System resources into the terrestrial economy. REDSTAR stations (~6,400 m³, 8× ISS), Spectre multipurpose spacecraft (8 crew + 150 t payload), Skyraker propulsion, and X-RAYJAR fusion reactor based on X-ray-induced fusion in LiD crystals (Belyaev et al., Phys. Rev. C 93, 034622, 2016). Includes critical assessment of post-OST space law and a European-led governance proposal.</p>
-        <p class="pub-updated">Last updated: Rev. 4, 2024</p>
-        <div class="pub-tags">
-          <span class="ptag">Space Architecture</span><span class="ptag">Fusion energy</span>
-          <span class="ptag">Space law</span><span class="ptag">ISRU</span><span class="ptag">OST 1967</span>
-        </div>
-      </div>
-      <div class="pub-arrow">↗</div>
-    </a>
-
-    <a class="pub-item" href="content/Report_DAloisio_Ikarus_X_Rev1.pdf">
-      <div class="pub-year">2019</div>
-      <div class="pub-img"><div class="pub-img-box"><span class="pub-img-icon">[ photo ]<br>Ikarus-X</span></div></div>
-      <div class="pub-body">
-        <p class="pub-type">Technical Report · Project Ikarus</p>
-        <h3 class="pub-title">Ikarus-X: Development and Construction of a Hybrid Propulsion Vehicle</h3>
-        <p class="pub-venue">Independent research</p>
-        <p class="pub-abstract">Design and construction report for Ikarus-X, first vehicle in the Project Ikarus SSTO series. Explores hybrid electric/chemical propulsion as a testbed concept. Development began November 2017; series continued through Ikarus-Y (SABRE-class SSTO) and Ikarus-Z (Skyraker engine, X-shaped configuration, stratospheric flight to 30 km+ without rocket propellant).</p>
-        <p class="pub-updated">First issued: 2019</p>
-        <div class="pub-tags">
-          <span class="ptag">SSTO</span><span class="ptag">Hybrid propulsion</span>
-          <span class="ptag">Ion propulsion</span><span class="ptag">Hall thruster</span>
         </div>
       </div>
       <div class="pub-arrow">↗</div>
