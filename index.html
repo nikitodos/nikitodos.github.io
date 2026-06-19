@@ -329,7 +329,7 @@
   }
 
   .pub-type {
-    font-family: var(--mono); font-size: 0.54rem;
+    font-family: var(--mono); font-size: 0.65rem;
     color: var(--accent); letter-spacing: .2em;
     text-transform: uppercase; margin-bottom: .4rem;
   }
@@ -406,6 +406,7 @@
   .pc-desc {
     font-family: var(--serif); font-size: .93rem;
     color: var(--mid); line-height: 1.7; flex: 1;
+    text-align: justify;
   }
   .pc-specs {
     margin-top: 1.5rem; display: flex;
@@ -464,6 +465,7 @@
   .collab-desc {
     font-family: var(--serif); font-size: .88rem;
     color: var(--mid); line-height: 1.65; flex: 1;
+    text-align: justify;
   }
   .collab-period {
     font-family: var(--mono); font-size: .54rem;
@@ -479,6 +481,7 @@
     font-family: var(--serif); font-size: 1.05rem;
     font-weight: 400; line-height: 1.8;
     color: #afc8e8; margin-bottom: 1.5rem; max-width: 58ch;
+    text-align: justify;
   }
   .fw-text p strong { color: #e8f0f8; font-weight: 500; }
   .fw-text p em { color: #7a9abf; font-style: italic; }
@@ -488,8 +491,8 @@
   }
   .fw-block { margin-bottom: 2.2rem; }
   .fw-label {
-    font-family: var(--mono); font-size: .56rem;
-    color: #3a6a9a; letter-spacing: .25em;
+    font-family: var(--mono); font-size: .75rem;
+    color: #91A3B0; letter-spacing: .25em;
     text-transform: uppercase; margin-bottom: .4rem;
   }
   .fw-value {
@@ -497,13 +500,13 @@
     color: #e8f0f8; font-weight: 400;
   }
   .fw-note {
-    font-family: var(--mono); font-size: .56rem;
-    color: #2a4a7a; margin-top: .2rem; line-height: 1.5;
+    font-family: var(--mono); font-size: .75rem;
+    color: #91A3B0; margin-top: .2rem; line-height: 1.5;
   }
 
   .fw-btn {
     display: inline-flex; align-items: center; gap: .75rem;
-    font-family: var(--mono); font-size: .62rem;
+    font-family: var(--mono); font-size: .75rem;
     letter-spacing: .18em; text-transform: uppercase;
     color: #e8f0f8; border: 1px solid var(--grid);
     padding: .85rem 1.8rem; text-decoration: none;
@@ -522,6 +525,7 @@
     font-size: clamp(1.15rem, 2vw, 1.5rem);
     font-weight: 400; line-height: 1.65;
     color: var(--ink); max-width: 38ch;
+    text-align: justify;
   }
   .contact-statement em { font-style: italic; color: var(--mid); }
 
@@ -645,11 +649,11 @@
     margin-top: .15rem;
   }
   .pub-updated {
-    font-family: var(--mono); font-size: .52rem;
+    font-family: var(--mono); font-size: .75rem;
     color: var(--muted); letter-spacing: .1em;
     margin-top: .5rem; display: flex; align-items: center; gap: .4rem;
   }
-  .pub-updated::before { content: '↻'; font-size: .6rem; color: var(--accent); }
+  .pub-updated::before { content: '↻'; font-size: .75rem; color: var(--accent); }
 
   /* ── ANIMATIONS ── */
   @keyframes up {
@@ -1177,14 +1181,31 @@
       <div class="pub-year">2026</div>
       <div class="pub-img"><img width="100" src="content/Logo_Skyraker.png" alt="Skyraker Logo" /></div>
       <div class="pub-body">
-        <p class="pub-type">Development Roadmap · Skyraker Programme</p>
+        <p class="pub-type">Technical Report</p>
         <h3 class="pub-title">Skyraker Development Roadmap: From Scratch to TRL 4.5 in 9 Months</h3>
         <p class="pub-venue">Independent research — Space Framework programme · March 2026</p>
         <p class="pub-abstract">Five-phase development roadmap for the Skyraker ISRU-enabled hybrid propulsion subsystem, targeting TRL 4.5 in 9 months with a budget under €500. Architecture: flash desalination → PEM electrolysis → expander-cycle aerospike (XSLR) + microwave air plasma thruster (ICER). Water sourced in-situ from oceans, Mars ice, or icy moon plumes. Heritage benchmarks: SABRE (Reaction Engines), ATREX (JAXA), NSTAR (NASA/JPL), ESA ABEP. Companion reports: WTP, SEA, XSLR, ICER.</p>
-        <p class="pub-updated">Version 2.0 · March 10, 2026</p>
+        <p class="pub-updated">Issued on: March 10, 2026. Last updated: June 15, 2026</p>
         <div class="pub-tags">
           <span class="ptag">ISRU</span><span class="ptag">Aerospike</span><span class="ptag">Expander cycle</span>
           <span class="ptag">Microwave plasma</span><span class="ptag">Electrolysis</span><span class="ptag">TRL 4.5</span><span class="ptag">Skyraker</span>
+        </div>
+      </div>
+      <div class="pub-arrow">↗</div>
+    </a>
+
+    <a class="pub-item" href="#">
+      <div class="pub-year">2019</div>
+      <div class="pub-img"><img width="100" src="content/Logo_Ikarus_Y.png" alt="Ikarus-Y Logo" /></div>
+      <div class="pub-body">
+        <p class="pub-type">Technical Report</p>
+        <h3 class="pub-title">Ikarus-Y: Development and Construction of a Hybrid Propulsion Vehicle</h3>
+        <p class="pub-venue">Independent research</p>
+        <p class="pub-abstract">Design and construction report for Ikarus-Y, second vehicle in the Project Ikarus SSTO series. Goes beyond the Ikarus-X concept to explore hybrid electric/chemical propulsion surpassing the concept of traditional drones with simple solid rocket propulsion transient. Designed to test Skyraker technology on atmospheric flight.</p>
+        <p class="pub-updated">First issued: 2019. Last updated: 2025 (translation to English only)</p>
+        <div class="pub-tags">
+          <span class="ptag">SSTO</span><span class="ptag">Hybrid propulsion</span>
+          <span class="ptag">Ion propulsion</span><span class="ptag">Microwave thruster</span><span class="ptag">Arduino</span>
         </div>
       </div>
       <div class="pub-arrow">↗</div>
@@ -1194,14 +1215,14 @@
       <div class="pub-year">2019</div>
       <div class="pub-img"><img width="100" src="content/Logo_Ikarus_X.png" alt="Ikarus-X Logo" /></div>
       <div class="pub-body">
-        <p class="pub-type">Technical Report · Project Ikarus</p>
+        <p class="pub-type">Technical Report</p>
         <h3 class="pub-title">Ikarus-X: Development and Construction of a Hybrid Propulsion Vehicle</h3>
         <p class="pub-venue">Independent research</p>
-        <p class="pub-abstract">Design and construction report for Ikarus-X, first vehicle in the Project Ikarus SSTO series. Explores hybrid electric/chemical propulsion as a testbed concept. Development began November 2017; series continued through Ikarus-Y (SABRE-class SSTO) and Ikarus-Z (Skyraker engine, X-shaped configuration, stratospheric flight to 30 km+ without rocket propellant).</p>
-        <p class="pub-updated">First issued: 2019</p>
+        <p class="pub-abstract">Design and construction report for Ikarus-X, first vehicle in the Project Ikarus SSTO series. Explores hybrid electric/chemical propulsion as a testbed concept. Development began November 2017; series continued through Ikarus-Y and Ikarus-Z.</p>
+        <p class="pub-updated">First issued: 2019. Last updated: 2025 (translation to English only)</p>
         <div class="pub-tags">
           <span class="ptag">SSTO</span><span class="ptag">Hybrid propulsion</span>
-          <span class="ptag">Ion propulsion</span><span class="ptag">Hall thruster</span>
+          <span class="ptag">Solid Rocket Motor</span><span class="ptag">Drone</span><span class="ptag">Arduino</span>
         </div>
       </div>
       <div class="pub-arrow">↗</div>
@@ -1212,11 +1233,11 @@
       <div class="pub-year">2022 - On going</div>
       <div class="pub-img"><img width="100" src="content/Logo_SpaceFramework.png" alt="Space Framework Logo" /></div>
       <div class="pub-body">
-        <p class="pub-type">Concept Paper · Rev. 4</p>
+        <p class="pub-type">Conceptual Study</p>
         <h3 class="pub-title">The Space Framework: A Model for an Interplanetary Economy</h3>
         <p class="pub-venue">Independent research — nikitodos.github.io</p>
         <p class="pub-abstract">Long-range architecture for integrating Solar System resources into the terrestrial economy. REDSTAR stations (~6,400 m³, 8× ISS), Spectre multipurpose spacecraft (8 crew + 150 t payload), Skyraker propulsion, and X-RAYJAR fusion reactor based on X-ray-induced fusion in LiD crystals (Belyaev et al., Phys. Rev. C 93, 034622, 2016). Includes critical assessment of post-OST space law and a European-led governance proposal.</p>
-        <p class="pub-updated">Last updated: Rev. 4, 2024</p>
+        <p class="pub-updated">Last updated: Rev. 4, March 2024</p>
         <div class="pub-tags">
           <span class="ptag">Space Architecture</span><span class="ptag">Fusion energy</span>
           <span class="ptag">Space law</span><span class="ptag">ISRU</span><span class="ptag">OST 1967</span>
@@ -1229,11 +1250,11 @@
       <div class="pub-year">2026</div>
       <div class="pub-img"><img width="100" src="content/Logo_Skyraker.png" alt="Skyraker Logo" /></div>
       <div class="pub-body">
-        <p class="pub-type">Confidential Design Study · Propulsion Architecture</p>
+        <p class="pub-type">Technical Report</p>
         <h3 class="pub-title">XSLR 022kN Hybrid Electric Expander Cycle for a Dual-Loop Linear Aerospike Engine (Config. D+)</h3>
-        <p class="pub-venue">Independent research — Space Framework programme · March 2026</p>
+        <p class="pub-venue">Independent research — Space Framework programme · March - June 2026</p>
         <p class="pub-abstract">Extension of the dual-loop full-expander aerospike architecture (Config. D) incorporating the electric expander cycle (EEC) principle of Liang et al. (2021, Acta Astronautica). Spike-loop LH₂ pump replaced by BLDC motor-driven electric pump; nozzle-loop turbine drives LOX pump exclusively. Achieves 5:1 throttle range (vs. ~2:1 for pure expander), Isp,vac = 465 s, Tturb ≤ 700 K, battery mass ~36 kg/engine. Config. D+ scores 0.760 in the HTHL weighted trade matrix vs. 0.671 for Config. D. Vehicle class: GTOW ≳ 15,000 kg, LOX/LH₂, HTHL SSTO.</p>
-        <p class="pub-updated">March 2026 · Confidential design study</p>
+        <p class="pub-updated">Last updated: June 2026</p>
         <div class="pub-tags">
           <span class="ptag">Aerospike</span><span class="ptag">EEC</span><span class="ptag">LOX/LH₂</span>
           <span class="ptag">HTHL SSTO</span><span class="ptag">Expander cycle</span><span class="ptag">Electric pump</span><span class="ptag">Throttle 5:1</span>
@@ -1246,11 +1267,11 @@
       <div class="pub-year">2026</div>
       <div class="pub-img"><img width="100" src="content/Logo_HyperLander.png" alt="HyperLander Logo" /></div>
       <div class="pub-body">
-        <p class="pub-type">Technical Report · Launch Systems</p>
+        <p class="pub-type">Technical Report</p>
         <h3 class="pub-title">HyperLander: An Air-Launched Suborbital Transportation System</h3>
         <p class="pub-venue">Politecnico di Milano — Launch Systems Course</p>
         <p class="pub-abstract">Design of a hypersonic point-to-point transportation system for 6 passengers across ~20,000 km via ballistic arc, with ±20 km landing accuracy. Carrier: Stratolaunch "Roc". Propulsion: LOX/LCH₄ engines scaled from SpaceX Raptor 2 (TRL&nbsp;&gt;&nbsp;6). Crew capsule "Sirius" derived from NASA 2005 ESAS Orion, with Launch Abort System and triple-parachute recovery. Co-led multidisciplinary team; responsible for propulsion, structural analysis, capsule integration, mass distribution.</p>
-        <p class="pub-updated">Last updated: Post-exam revision, 2026</p>
+        <p class="pub-updated">Last updated: January 2026</p>
         <div class="pub-tags">
           <span class="ptag">Hypersonic</span><span class="ptag">LOX/LCH₄</span><span class="ptag">Raptor 2</span>
           <span class="ptag">ESAS Orion</span><span class="ptag">Stratolaunch Roc</span><span class="ptag">Ballistic arc</span>
@@ -1259,12 +1280,12 @@
       <div class="pub-arrow">↗</div>
     </a>
 
-    <a class="pub-item" href="#">
+    <a class="pub-item" href="content/Slides_DAloisio_KLT_Thesis.pdf">
       <div class="pub-year">2023-2025</div>
-      <div class="pub-img"><img width="100" src="content/Logo_unina.png" alt="UniNa Logo" /></div>
+      <div class="pub-img"><img width="100" src="content/Logo_BL.png" alt="UniNa Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">B.Sc. Thesis · Università degli Studi di Napoli Federico II</p>
-        <h3 class="pub-title">Applicazione della trasformata di Karhunen–Loève per la ricerca di segnali telemetrici extraterrestri</h3>
+        <h3 class="pub-title">Application of the Karhunen-Loève Transform to the Search for Extraterrestrial Telemetry Signals</h3>
         <p class="pub-venue">Supervisors: Prof. Giovanni Covone, Dott. Matteo Trudu, Dott. Andrea Melis · 16 maggio 2025</p>
         <p class="pub-abstract">B.Sc. thesis in Physics. Applied the Karhunen–Loève Transform (KLT) to datasets from the Sardinia Radio Telescope within the Breakthrough Listen programme. Validated the pipeline on Voyager 1 as a known artificial source; applied to TOI-1422 b, a Neptune-mass exoplanet in the habitable zone of a solar-type star. Results show significant RFI reduction and improved detection of weak technosignatures, following the theoretical framework of Claudio Maccone.</p>
         <p class="pub-updated">Defended: 16 maggio 2025</p>
@@ -1289,23 +1310,9 @@
   </div>
 
   <div class="proj-grid">
-    <a class="proj-card pc-wide" href="content/Report_DAloisio_et_al_HyperLander_Rev1.pdf">
-      <div class="pc-idx">PRJ-001 / LAUNCH SYSTEMS · POLITECNICO DI MILANO</div>
-      <h3 class="pc-title">HyperLander</h3>
-      <p class="pc-sub">Air-launched hypersonic suborbital transport</p>
-      <p class="pc-desc">Malaga to Auckland in 55 minutes. Air-launched system for 6 passengers over ~20,000 km ballistic arc. Carrier: Stratolaunch "Roc". LOX/LCH₄ propulsion scaled from Raptor 2. Crew capsule "Sirius" from NASA ESAS Orion 2005, with Launch Abort System, triple-parachute recovery, ±20 km landing accuracy.</p>
-      <div class="pc-specs">
-        <div class="spec-row"><span>Range</span><span>~20,000 km</span></div>
-        <div class="spec-row"><span>Transit</span><span>55 min</span></div>
-        <div class="spec-row"><span>Propellant</span><span>LOX / LCH₄</span></div>
-        <div class="spec-row"><span>Carrier</span><span>Stratolaunch "Roc"</span></div>
-        <div class="spec-row"><span>Accuracy</span><span>±20 km</span></div>
-      </div>
-      <span class="pc-link">Full technical report (PDF)</span>
-    </a>
 
-    <a class="proj-card pc-med" href="content/Report_DAloisio_Framework_Rev4.pdf">
-      <div class="pc-idx">PRJ-002 / SPACE ARCHITECTURE</div>
+    <a class="proj-card pc-third" href="content/Report_DAloisio_Framework_Rev4.pdf">
+      <div class="pc-idx">PRJ-003 / SPACE ARCHITECTURE</div>
       <h3 class="pc-title">The Space Framework</h3>
       <p class="pc-sub">REDSTAR · Spectre · Skyraker · X-RAYJAR</p>
       <p class="pc-desc">Complete architecture for an interplanetary economy: REDSTAR modular stations (6,400 m³, 8× ISS), Spectre spacecraft (8 crew + 150 t), Skyraker propulsion, X-RAYJAR fusion reactor. European-led post-OST governance framework.</p>
@@ -1318,7 +1325,7 @@
     </a>
 
     <a class="proj-card pc-third" href="content/Report_DAloisio_Ikarus_X_Rev1.pdf">
-      <div class="pc-idx">PRJ-003 / SSTO · 2017–PRESENT</div>
+      <div class="pc-idx">PRJ-002 / SSTO · 2017–PRESENT</div>
       <h3 class="pc-title">Project Ikarus</h3>
       <p class="pc-sub">Hybrid propulsion SSTO series</p>
       <p class="pc-desc">Ikarus-X (hybrid electric/chemical) → Ikarus-Y (SABRE-class SSTO) → Ikarus-Z (Skyraker, X-shaped, 30 km+ without rocket propellant). Ion grid + Hall thruster for orbital ops.</p>
@@ -1329,33 +1336,8 @@
       <span class="pc-link">Ikarus-X report</span>
     </a>
 
-    <a class="proj-card pc-third" href="http://www.sailingteamunipv.it/">
-      <div class="pc-idx">PRJ-004 / NAVAL · UNIPV SAILING TEAM</div>
-      <h3 class="pc-title">Lazarus</h3>
-      <p class="pc-sub">Foiling moth · Salone Nautico Venezia 2025</p>
-      <p class="pc-desc">Chief Designer of a next-generation foiling moth published in the MUVE Academy Book, Salone Nautico di Venezia 2025. Frame inspired by NASA X-38 CRV; six-panel glassfiber wing on aluminum grid; electronic flight control system; modular construction for transport and rigging.</p>
-      <div class="pc-specs">
-        <div class="spec-row"><span>Reference</span><span>NASA X-38 CRV</span></div>
-        <div class="spec-row"><span>Material</span><span>Glassfiber / Flax / GFRP</span></div>
-        <div class="spec-row"><span>Published</span><span>MUVE Academy Book 2025</span></div>
-      </div>
-      <span class="pc-link">UniPV Sailing Team</span>
-    </a>
-
-    <a class="proj-card pc-third" href="https://nikitodos.github.io/explore">
-      <div class="pc-idx">PRJ-005 / OPTICS · 2017</div>
-      <h3 class="pc-title">Starseeker</h3>
-      <p class="pc-sub">Modular amateur telescope</p>
-      <p class="pc-desc">Built at 15, on a restored 30-cm Celestron from the 1980s. Optics designed with aerospace-derived techniques, inspired by JWST architecture.</p>
-      <div class="pc-specs">
-        <div class="spec-row"><span>Aperture</span><span>30 cm</span></div>
-        <div class="spec-row"><span>Inspiration</span><span>JWST architecture</span></div>
-      </div>
-      <span class="pc-link">Explore</span>
-    </a>
-
     <a class="proj-card pc-wide" href="#">
-      <div class="pc-idx">PRJ-006 / PROPULSION · 2026 · ACTIVE</div>
+      <div class="pc-idx">PRJ-004 / PROPULSION · 2026 · ACTIVE</div>
       <h3 class="pc-title">Skyraker</h3>
       <p class="pc-sub">ISRU-enabled hybrid propulsion subsystem · Space Framework programme</p>
       <p class="pc-desc">
@@ -1370,6 +1352,47 @@
       </div>
       <span class="pc-link">Roadmap (PDF)</span>
     </a>
+
+    <a class="proj-card pc-med" href="content/Report_DAloisio_et_al_HyperLander_Rev1.pdf">
+      <div class="pc-idx">PRJ-006 / LAUNCH SYSTEMS · POLITECNICO DI MILANO</div>
+      <h3 class="pc-title">HyperLander</h3>
+      <p class="pc-sub">Air-launched hypersonic suborbital transport</p>
+      <p class="pc-desc">Malaga to Auckland in 55 minutes. Air-launched system for 6 passengers over ~20,000 km ballistic arc. Carrier: Stratolaunch "Roc". LOX/LCH₄ propulsion scaled from Raptor 2. Crew capsule "Sirius" from NASA ESAS Orion 2005, with Launch Abort System, triple-parachute recovery, ±20 km landing accuracy.</p>
+      <div class="pc-specs">
+        <div class="spec-row"><span>Range</span><span>~20,000 km</span></div>
+        <div class="spec-row"><span>Transit</span><span>55 min</span></div>
+        <div class="spec-row"><span>Propellant</span><span>LOX / LCH₄</span></div>
+        <div class="spec-row"><span>Carrier</span><span>Stratolaunch "Roc"</span></div>
+        <div class="spec-row"><span>Accuracy</span><span>±20 km</span></div>
+      </div>
+      <span class="pc-link">Full technical report (PDF) ⤓</span>
+    </a>
+
+    <a class="proj-card pc-third" href="http://www.sailingteamunipv.it/">
+      <div class="pc-idx">PRJ-005 / NAVAL · UNIPV SAILING TEAM</div>
+      <h3 class="pc-title">Lazarus</h3>
+      <p class="pc-sub">Foiling moth · Salone Nautico Venezia 2025</p>
+      <p class="pc-desc">Chief Designer of a next-generation foiling moth published in the MUVE Academy Book, Salone Nautico di Venezia 2025. Frame inspired by NASA X-38 CRV; six-panel glassfiber wing on aluminum grid; electronic flight control system; modular construction for transport and rigging.</p>
+      <div class="pc-specs">
+        <div class="spec-row"><span>Reference</span><span>NASA X-38 CRV</span></div>
+        <div class="spec-row"><span>Material</span><span>Glassfiber / Flax / GFRP</span></div>
+        <div class="spec-row"><span>Published</span><span>MUVE Academy Book 2025</span></div>
+      </div>
+      <span class="pc-link">UniPV Sailing Team</span>
+    </a>
+
+    <a class="proj-card pc-third" href="https://nikitodos.github.io/explore">
+      <div class="pc-idx">PRJ-001 / OPTICS · 2017</div>
+      <h3 class="pc-title">Starseeker</h3>
+      <p class="pc-sub">Modular amateur telescope</p>
+      <p class="pc-desc">Built at 15, on a restored 30-cm Celestron from the 1980s. Optics designed with aerospace-derived techniques, inspired by JWST architecture.</p>
+      <div class="pc-specs">
+        <div class="spec-row"><span>Aperture</span><span>30 cm</span></div>
+        <div class="spec-row"><span>Inspiration</span><span>JWST architecture</span></div>
+      </div>
+      <span class="pc-link">Explore</span>
+    </a>
+
   </div>
 </section>
 
@@ -1386,7 +1409,7 @@
       <p>Three pillars: <strong>REDSTAR</strong> modular stations (6,400 m³ — 8× ISS), the <strong>Spectre</strong> multipurpose spacecraft (8 crew + 150 t payload, autonomous interplanetary flight), and in-situ resource utilization across Solar System bodies.</p>
       <p>The <strong>X-RAYJAR</strong> fusion reactor exploits X-ray-induced fusion in lithium deuteride crystals — following <em>Belyaev et al. (2016, Phys. Rev. C 93, 034622)</em> — as the energy backbone for deep-space operations.</p>
       <p>The legal dimension is confronted directly: the Outer Space Treaty of 1967 cannot govern kinetic weapons, resource extraction, or the Spacepower doctrine now codified by the U.S. Space Force. The Framework proposes a European-led architecture for what comes next.</p>
-      <a class="fw-btn" href="content/Report_DAloisio_Framework_Rev4.pdf">Read the full document ↓</a>
+      <a class="fw-btn" href="content/Report_DAloisio_Framework_Rev4.pdf">Read the full document ⤓</a>
     </div>
     <div class="fw-aside">
       <div class="fw-block">
@@ -1396,12 +1419,12 @@
       </div>
       <div class="fw-block">
         <p class="fw-label">Habitable volume</p>
-        <p class="fw-value">~6,400 m³ / station</p>
+        <p class="fw-value">~6400 m³ / station</p>
         <p class="fw-note">8× ISS · TransHab-derived modules</p>
       </div>
       <div class="fw-block">
         <p class="fw-label">Propulsion</p>
-        <p class="fw-value">SEP + Hall + Skyraker</p>
+        <p class="fw-value"><em>Skyraker</em>-powered Solar Electric Propulsion (SEP)</p>
         <p class="fw-note">Zero-emission atmospheric phase</p>
       </div>
       <div class="fw-block">
@@ -1418,11 +1441,11 @@
   </div>
 </section>
 
-<!-- COLLABORATIONS -->
+<!-- COLLABORATIONS (AEROSPACE-RELATED ONLY) -->
 <section class="sec tinted" id="collaborations">
   <div class="sec-head">
     <span class="sec-num">03 —</span>
-    <h2 class="sec-title">Collaborations &amp; Experience</h2>
+    <h2 class="sec-title">Relevant Collaborations &amp; Experience</h2>
     <div class="sec-rule"></div>
   </div>
   <div class="collab-grid">
@@ -1487,7 +1510,7 @@
   </div>
   <div class="contact-layout">
     <p class="contact-statement">
-      Available for research collaborations, aerospace engineering projects, high-performance design work, and <em>conversations about the future of space exploration.</em>
+      Wanna collaborate on research projects, aerospace engineering initiatives, high-performance design work, and <em>conversations about the future of space exploration</em>?
     </p>
     <div class="clinks">
       <a class="clink" href="https://github.com/nikitodos/">
