@@ -474,8 +474,20 @@
 
   /* ── FRAMEWORK DARK BAND ── */
   .fw-body {
-    display: grid; grid-template-columns: 3fr 2fr;
-    gap: 5rem; align-items: start;
+    display: grid; grid-template-columns: 3fr 500px 2fr; /* ← cambia 220px a piacere */
+    gap: 3rem; align-items: center;
+  }
+  .fw-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fw-logo img {
+    width: 100%;        /* occupa tutta la colonna definita sopra */
+    max-width: 100%;
+    height: auto;
+    opacity: 1;      /* opzionale: si integra col dark background */
+    filter: brightness(0) invert(1); /* opzionale: rende il logo bianco su sfondo scuro */
   }
   .fw-text p {
     font-family: var(--serif); font-size: 1.05rem;
@@ -1172,7 +1184,7 @@
     <span class="sec-num">01 —</span>
     <h2 class="sec-title">Research &amp; Reports</h2>
     <div class="sec-rule"></div>
-    <span class="sec-count">8 documents</span>
+    <span class="sec-count">7 documents</span>
   </div>
 
   <div class="pub-list">
@@ -1182,10 +1194,10 @@
       <div class="pub-img"><img width="100" src="content/Logo_Ikarus_Z.png" alt="Ikarus-Z Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">Technical Report</p>
-        <h3 class="pub-title">Ikarus-Z: Development and Construction of a Hybrid Propulsion Vehicle</h3>
+        <h3 class="pub-title">Ikarus-Z&trade;: Development and Construction of a Hybrid Propulsion Vehicle</h3>
         <p class="pub-venue">Independent research — Part of the Space Framework · March 2024 - June 2026</p>
-        <p class="pub-abstract">Design and construction report for Ikarus-Z, the last vehicle in the Project Ikarus SSTO series. Goes beyond the Ikarus-X concept to explore hybrid electric/chemical propulsion surpassing the concept of traditional drones with simple solid rocket propulsion transient. Designed to test Skyraker technology on atmospheric flight.</p>
-        <p class="pub-updated">Issued on: July 30th, 2026 (estimated).</p>
+        <p class="pub-abstract">Design and construction report for Ikarus-Z&trade;, the last vehicle in the Project Ikarus&trade; SSTO series. Goes beyond the Ikarus-Y&trade; concept, implementing complete combustion processes inside the Skyraker&trade; propulsion system for in-air testing prior to suborbital flight of more advanced vehicles. First flight test scheduled no earlier than late 2027.</p>
+        <p class="pub-updated">Issued on: August 1st, 2026 (estimated).</p>
         <div class="pub-tags">
           <span class="ptag">SSTO</span><span class="ptag">Hybrid propulsion</span>
           <span class="ptag">Ion propulsion</span><span class="ptag">Microwave thruster</span><span class="ptag">Arduino</span>
@@ -1199,9 +1211,9 @@
       <div class="pub-img"><img width="100" src="content/Logo_Skyraker.png" alt="Skyraker Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">Technical Report</p>
-        <h3 class="pub-title">Skyraker Development Roadmap: From Scratch to TRL 4.5 in 9 Months</h3>
+        <h3 class="pub-title">Skyraker&trade; Development Roadmap: From Scratch to TRL 4.5 in 9 Months</h3>
         <p class="pub-venue">Independent research — Space Framework programme · March 2026</p>
-        <p class="pub-abstract">Five-phase development roadmap for the Skyraker ISRU-enabled hybrid propulsion subsystem, targeting TRL 4.5 in 9 months with a budget under €500. Architecture: flash desalination → PEM electrolysis → expander-cycle aerospike (XSLR) + microwave air plasma thruster (ICER). Water sourced in-situ from oceans, Mars ice, or icy moon plumes. Heritage benchmarks: SABRE (Reaction Engines), ATREX (JAXA), NSTAR (NASA/JPL), ESA ABEP. Companion reports: WTP, SEA, XSLR, ICER.</p>
+        <p class="pub-abstract">Five-phase development roadmap for the Skyraker&trade; ISRU-enabled hybrid propulsion subsystem, targeting TRL 4.5 in 9 months with a budget under €500. Architecture: flash desalination → PEM electrolysis → expander-cycle aerospike (XSLR&trade;) + microwave air plasma thruster (ICER&trade;). Water sourced in-situ from oceans, Mars ice, or icy moon plumes. Heritage benchmarks: SABRE (Reaction Engines), ATREX (JAXA), ESA ABEP. Companion reports: WTP, SEA, XSLR, ICER.</p>
         <p class="pub-updated">Issued on: March 10, 2026. Last updated: June 15, 2026</p>
         <div class="pub-tags">
           <span class="ptag">ISRU</span><span class="ptag">Aerospike</span><span class="ptag">Expander cycle</span>
@@ -1216,10 +1228,10 @@
       <div class="pub-img"><img width="100" src="content/Logo_Skyraker.png" alt="Skyraker Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">Technical Report</p>
-        <h3 class="pub-title">XSLR: Architecture, Thermodynamic Analysis, and Scaling of a Dual-Loop Hybrid Electric Expander Cycle Linear Aerospike Engine for Multi-Mission Propulsion</h3>
+        <h3 class="pub-title">XSLR&trade;: Architecture, Thermodynamic Analysis, and Scaling of a Dual-Loop Hybrid Electric Expander Cycle Linear Aerospike Engine for Multi-Mission Propulsion</h3>
         <p class="pub-venue">Independent research — Part of the Space Framework · March - June 2026</p>
         <p class="pub-abstract">
-          Consolidated thermodynamic and architectural study of the eXperimental aeroSpike Liquid Rocket (XSLR), the chemical propulsion subsystem of the Skyraker hybrid propulsion system. Starting from a structured trade study of four dual-loop cooling configurations for a linear aerospike engine derived from the Rocketdyne XRS-2200, the analysis selects a parallel full-expander architecture augmented by a hybrid electric expander cycle (EEC) as the recommended baseline across all thrust classes from 22 to 250\,kN. This replaces the spike-loop LH$_2$ turbopump with a BLDC motor-driven centrifugal pump, enabling 5:1 throttle without combustion instability, combined cell shutdown and cold-start without pyrotechnic igniters.
+          Consolidated thermodynamic and architectural study of the eXperimental aeroSpike Liquid Rocket (XSLR&trade;), the chemical propulsion subsystem of the Skyraker&trade; hybrid propulsion system, the main subsystem of Project Ikarus&trade;. Starting from a structured trade study of four dual-loop cooling configurations for a linear aerospike engine derived from the Rocketdyne XRS-2200, the analysis selects a parallel full-expander architecture augmented by a hybrid Electric Expander Cycle (EEC) as the recommended baseline across all thrust classes from 22 to 250\,kN. This replaces the spike-loop LH$_2$ turbopump with a BLDC motor-driven centrifugal pump, enabling 5:1 throttle without combustion instability, combined cell shutdown and cold-start without pyrotechnic igniters.
         </p>
         <p class="pub-updated">Last updated: June 2026</p>
         <div class="pub-tags">
@@ -1235,9 +1247,9 @@
       <div class="pub-img"><img width="100" src="content/Logo_Ikarus_Y.png" alt="Ikarus-Y Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">Technical Report</p>
-        <h3 class="pub-title">Ikarus-Y: Development and Construction of a Hybrid Propulsion Vehicle</h3>
+        <h3 class="pub-title">Ikarus-Y&trade;: Development and Construction of a Hybrid Propulsion Vehicle</h3>
         <p class="pub-venue">Independent research — Part of the Space Framework · March 2024 - June 2026</p>
-        <p class="pub-abstract">Design and construction report for Ikarus-Y, second vehicle in the Project Ikarus SSTO series. Goes beyond the Ikarus-X concept to explore hybrid electric/chemical propulsion surpassing the concept of traditional drones with simple solid rocket propulsion transient. Designed to test Skyraker technology on atmospheric flight.</p>
+        <p class="pub-abstract">Design and construction report for Ikarus-Y&trade;, second vehicle in the Project Ikarus&trade; SSTO series. Goes beyond the Ikarus-X&trade; concept to explore hybrid electric/chemical propulsion surpassing the concept of traditional drones with simple solid rocket propulsion transient. Designed to test  TRL 4.5 Skyraker&trade; on atmospheric flight.</p>
         <p class="pub-updated">First issued: 2019. Last updated: 2025 (translation to English only)</p>
         <div class="pub-tags">
           <span class="ptag">SSTO</span><span class="ptag">Hybrid propulsion</span>
@@ -1252,9 +1264,9 @@
       <div class="pub-img"><img width="100" src="content/Logo_Ikarus_X.png" alt="Ikarus-X Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">Technical Report</p>
-        <h3 class="pub-title">Ikarus-X: Development and Construction of a Hybrid Propulsion Vehicle</h3>
+        <h3 class="pub-title">Ikarus-X&trade;: Development and Construction of a Hybrid Propulsion Vehicle</h3>
         <p class="pub-venue">Independent research — Part of the Space Framework · 2019</p>
-        <p class="pub-abstract">Design and construction report for Ikarus-X, first vehicle in the Project Ikarus SSTO series. Explores hybrid electric/chemical propulsion as a testbed concept. Development began November 2017; series continued through Ikarus-Y and Ikarus-Z.</p>
+        <p class="pub-abstract">Design and construction report for Ikarus-X&trade;, first vehicle in the Project Ikarus&trade; SSTO series. Explores hybrid electric/chemical propulsion as a testbed concept. Development began November 2017; series continued through Ikarus-Y&trade; and Ikarus-Z&trade;.</p>
         <p class="pub-updated">First issued: 2019. Last updated: 2025 (translation to English only)</p>
         <div class="pub-tags">
           <span class="ptag">SSTO</span><span class="ptag">Hybrid propulsion</span>
@@ -1264,13 +1276,13 @@
       <div class="pub-arrow">↗</div>
     </a>
 
-
+    <!-- 
     <a class="pub-item" href="content/Report_DAloisio_Framework_Rev4.pdf">
       <div class="pub-year">2022 - On going</div>
       <div class="pub-img"><img width="100" src="content/Logo_SpaceFramework.png" alt="Space Framework Logo" /></div>
       <div class="pub-body">
         <p class="pub-type">Conceptual Study</p>
-        <h3 class="pub-title">The Space Framework: A Model for an Interplanetary Economy</h3>
+        <h3 class="pub-title">The Space Framework&trade;: A Model for an Interplanetary Economy</h3>
         <p class="pub-venue">Independent research · 2019 - on going</p>
         <p class="pub-abstract">Long-range architecture for integrating Solar System resources into the terrestrial economy. REDSTAR stations (~6,400 m³, 8× ISS), Spectre multipurpose spacecraft (8 crew + 150 t payload), Skyraker propulsion, and X-RAYJAR fusion reactor based on X-ray-induced fusion in LiD crystals (Belyaev et al., Phys. Rev. C 93, 034622, 2016). Includes critical assessment of post-OST space law and a European-led governance proposal.</p>
         <p class="pub-updated">Last updated: Rev. 4, March 2024</p>
@@ -1281,6 +1293,7 @@
       </div>
       <div class="pub-arrow">↗</div>
     </a>
+    -->
 
     <a class="pub-item" href="content/Report_DAloisio_et_al_HyperLander_Rev1.pdf">
       <div class="pub-year">2026</div>
@@ -1430,6 +1443,11 @@
       <p>The legal dimension is confronted directly: the Outer Space Treaty of 1967 cannot govern kinetic weapons, resource extraction, or the Spacepower doctrine now codified by the U.S. Space Force. The Framework proposes a European-led architecture for what comes next.</p>
       <a class="fw-btn" href="content/Report_DAloisio_Framework_Rev4.pdf">Read the full document ⤓</a>
     </div>
+
+    <div class="fw-logo">
+      <img src="content/Logo_SpaceFramework.png" alt="The Space Framework">
+    </div>
+
     <div class="fw-aside">
       <div class="fw-block">
         <p class="fw-label">Architecture</p>
